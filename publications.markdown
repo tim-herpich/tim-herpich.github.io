@@ -15,8 +15,7 @@ description: "A comprehensive list of my publications in industry and academia."
       <em>{{ publication.title }}</em><br>
        {{ publication.authors }}<br>
         {% if publication.journal %}{{ publication.journal }}{% endif %},
-        <strong>{% if publication.volume %}{{ publication.volume }}{% endif %}</strong> {% if publication.article %}{{ publication.article }}{% endif %}
-        {% if publication.year %}, {{ publication.year }}{% endif %}<br>
+    {% if publication.volume %}<strong>{{ publication.volume }}</strong>{% if publication.article %}, {{ publication.article }}{% endif %}{% endif %}{% if publication.year %}, {{ publication.year }}{% endif %}<br>
         {% if publication.link %}
           <a href="{{ publication.link }}" target="_blank">[publication]</a>
         {% endif %}
