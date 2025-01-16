@@ -1,7 +1,7 @@
 ---
-type: "Academia"
+type: "Journals"
 title: "Universality in driven Potts models"
-authors: "Herpich T. and Esposito M."
+authors: "Herpich T., and Esposito M."
 journal: "Physical Review E"
 year: 2019
 volume: 99

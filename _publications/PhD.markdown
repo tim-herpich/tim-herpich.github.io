@@ -1,6 +1,6 @@
 ---
-type: "Academia"
-title: "Stochastic thermodynamics of all-to-all interacting many-body systems"
+type: "Theses"
+title: " Collective Effects in Stochastic Thermodynamics"
 authors: "Herpich T."
 journal: "PhD Thesis, University of Luxembourg"
 year: 2020

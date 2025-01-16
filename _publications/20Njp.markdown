@@ -1,5 +1,5 @@
 ---
-type: "Academia"
+type: "Journals"
 title: "Stochastic thermodynamics of all-to-all interacting many-body systems"
 authors: "Herpich T., Cossetto T., Falasco G., and Esposito M."
 journal: "New Journal of Physics"

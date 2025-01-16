@@ -1,5 +1,5 @@
 ---
-type: "Academia"
+type: "Journals"
 title: "Collective Power: Minimal Model for Thermodynamics of Nonequilibrium Phase Transitions"
 authors: "Herpich T., Thingna J., and Esposito M."
 journal: "Physical Review X"

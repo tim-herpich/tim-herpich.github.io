@@ -1,5 +1,5 @@
 ---
-type: "Academia"
+type: "Journals"
 title: "Effective thermodynamics of two interacting underdamped Brownian particles"
 authors: "Herpich T., Shayanfard K, and Esposito M."
 journal: "Physical Review E"

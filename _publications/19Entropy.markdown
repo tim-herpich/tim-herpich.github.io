@@ -1,5 +1,5 @@
 ---
-type: "Academia"
+type: "Journals"
 title: "Thermodynamics of majority-logic decoding in information erasure"
 authors: "Sheng S., Herpich T., Diana G., and Esposito M."
 journal: "Entropy"
