@@ -84,6 +84,8 @@ plugins:
 
 collections:
   publications:
-    output: true
     permalink: /publications/:title/
+    sort_by: "year"
+  talks:
+    permalink: /talks/:title/
     sort_by: "year"

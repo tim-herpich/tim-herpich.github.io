@@ -1,9 +1,10 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
 layout: single
 permalink: /publications/
-description: "A comprehensive list of my publications in industry and academia."
+description: "A comprehensive list of journal publications, theses and whitepapers."
 ---
 
 <h1>Publications</h1>
