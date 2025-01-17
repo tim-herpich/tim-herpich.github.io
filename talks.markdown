@@ -19,13 +19,13 @@ description: "A comprehensive list of my public talks."
   {% for group in talks_by_year %}
     <h2>{{ group.name }}</h2> <!-- the year -->
     <ul>
-      {% for pub in group.items %}
+      {% for talk in group.items %}
       <li>
-        <em>{{ pub.title }}</em><br>
-        {% if pub.location %}{{ pub.location }}, {% endif %}
-        {% if pub.year %}{{ pub.year }}{% endif %}<br>
-        {% if pub.presentation %}
-          <a href="{{ pub.link }}" target="_blank">[presentation]</a>
+        <em>{{ talk.title }}</em><br>
+        {% if talk.location %}{{ talk.location }}, {% endif %}
+        {% if talk.year %}{{ talk.year }}{% endif %}<br>
+        {% if talk.presentation %}
+          <a href="{{ talk.presentation }}" target="_blank">[presentation]</a>
         {% endif %}
         <!-- etc. -->
       </li>
@@ -44,13 +44,13 @@ description: "A comprehensive list of my public talks."
       <h2>{{ type }}</h2> <!-- the type -->
       <ul>
         {% assign items = matching_group.first.items | sort: "year" | reverse %}
-        {% for pub in items %}
+        {% for talk in items %}
         <li>
-        <em>{{ pub.title }}</em><br>
-        {% if pub.location %}{{ pub.location }}, {% endif %}
-        {% if pub.year %}{{ pub.year }}{% endif %}<br>
-        {% if pub.presentation %}
-          <a href="{{ pub.link }}" target="_blank">[presentation]</a>
+        <em>{{ talk.title }}</em><br>
+        {% if talk.location %}{{ talk.location }}, {% endif %}
+        {% if talk.year %}{{ talk.year }}{% endif %}<br>
+        {% if talk.presentation %}
+          <a href="{{ talk.presentation }}" target="_blank">[presentation]</a>
         {% endif %}
         <!-- etc. -->
         </li>

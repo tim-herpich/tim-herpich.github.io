@@ -50,7 +50,7 @@ description: "A comprehensive list of journal publications, theses and whitepape
 <!-- 2) Group & render by TYPE -->
 <div id="pubs-by-type" style="display: none;">
   {% assign pubs_by_type = site.publications | group_by: "type" %}
-  {% assign type_order = "Whitepapers, Journals, Theses" | split: ", " %}
+  {% assign type_order = "Whitepapers, Journals, Theses, Other" | split: ", " %}
   {% for type in type_order %}
     {% assign matching_group = pubs_by_type | where: "name", type %}
     {% if matching_group.size > 0 %}
