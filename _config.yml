@@ -73,7 +73,7 @@ url: https://tim-herpich.github.io/ # the base hostname & protocol for your site
 repository: tim-herpich/tim-herpich.github.io
 logo: /assets/images/masthead_logo.png
 atom_feed:
-  hide: true
+  hide: false
 
 # Build settings
 theme: minimal-mistakes-jekyll

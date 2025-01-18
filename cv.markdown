@@ -120,7 +120,7 @@ description: "Overview of education, work experience, and professional milestone
 <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>AFR-PhD Grant (~160,000 EUR) from National Research Fund of Luxembourg</span>
+      <span>AFR-PhD Grant (160k EUR) from National Research Fund of Luxembourg</span>
       <span style="text-align: right; min-width: 100px;">04/2016</span>
     </div>
   </li>
