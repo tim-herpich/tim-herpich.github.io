@@ -7,6 +7,8 @@ permalink: /talks/
 description: "A comprehensive list of my public talks."
 ---
 
+<div class="reduced-font">
+
 <h1>Talks</h1>
 
 <!-- Toggle Buttons -->
@@ -59,6 +61,14 @@ description: "A comprehensive list of my public talks."
     {% endif %}
   {% endfor %}
 </div>
+</div>
+
+<style>
+  /* Reduce font size for the specific content block */
+  .reduced-font {
+    font-size: 80%; /* Adjust font size as needed */
+  }
+</style>
 
 <!-- Styles for active button -->
 <style>

@@ -7,6 +7,8 @@ permalink: /publications/
 description: "A comprehensive list of journal publications, theses and whitepapers."
 ---
 
+<div class="reduced-font">
+
 <h1>Publications</h1>
 
 <!-- Toggle Buttons -->
@@ -36,6 +38,9 @@ description: "A comprehensive list of journal publications, theses and whitepape
         {% if pub.year %}{{ pub.year }}{% endif %}<br>
         {% if pub.link %}
           <a href="{{ pub.link }}" target="_blank">[paper]</a>
+        {% endif %}
+        {% if pub.preprint %}
+          <a href="{{ pub.preprint }}" target="_blank">[preprint]</a>
         {% endif %}
         {% if pub.thesis %}
           <a href="{{ pub.thesis }}" target="_blank">[thesis]</a>
@@ -75,6 +80,9 @@ description: "A comprehensive list of journal publications, theses and whitepape
           {% if pub.link %}
             <a href="{{ pub.link }}" target="_blank">[paper]</a>
           {% endif %}
+          {% if pub.preprint %}
+            <a href="{{ pub.preprint }}" target="_blank">[preprint]</a>
+          {% endif %}
           {% if pub.thesis %}
             <a href="{{ pub.thesis }}" target="_blank">[thesis]</a>
           {% endif %}
@@ -84,6 +92,15 @@ description: "A comprehensive list of journal publications, theses and whitepape
     {% endif %}
   {% endfor %}
 </div>
+</div>
+
+<style>
+  /* Reduce font size for the specific content block */
+  .reduced-font {
+    font-size: 80%; /* Adjust font size as needed */
+  }
+</style>
+
 
 <!-- Styles for active button -->
 <style>
