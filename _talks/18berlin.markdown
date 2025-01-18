@@ -1,7 +1,7 @@
 ---
 type: "Conferences"
-title: " TBD"
+title: "Minimal Model for Thermodynamics of Nonequilibrium Phase Transitions"
 location: "Spring Meeting of the German Physical Society (DPG), Berlin, Germany"
 year: 2018
-presentation: "TBD" 
+presentation: "/assets/presentations/18Berlin.pdf" 
 ---

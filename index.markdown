@@ -5,7 +5,7 @@ description: "Tim Herpich, Consulting, Risk Management, Software Engineering, Ph
 
 <!--  > "Delivering innovative solutions that drive success and mitigate risks." -->
 
-Welcome to my Website!
+<h1>Welcome to my Website!</h1>
 
 <div class="reduced-font">
 

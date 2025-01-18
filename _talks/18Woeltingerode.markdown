@@ -1,7 +1,7 @@
 ---
 type: "Conferences"
-title: " TBD"
+title: "Minimal Model for Thermodynamics of Nonequilibrium Phase Transitions"
 location: "IV CRITICS Workshop (invited), Woeltingerode, Germany"
 year: 2018
-presentation: "TBD" 
+presentation: "/assets/presentations/18Potsdam.pdf" 
 ---

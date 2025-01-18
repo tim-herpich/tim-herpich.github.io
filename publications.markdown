@@ -42,6 +42,9 @@ description: "A comprehensive list of journal publications, theses and whitepape
         {% if pub.preprint %}
           <a href="{{ pub.preprint }}" target="_blank">[preprint]</a>
         {% endif %}
+        {% if pub.press %}
+          <a href="{{ pub.press }}" target="_blank">[press]</a>
+        {% endif %}
         {% if pub.thesis %}
           <a href="{{ pub.thesis }}" target="_blank">[thesis]</a>
         {% endif %}
@@ -82,6 +85,9 @@ description: "A comprehensive list of journal publications, theses and whitepape
           {% endif %}
           {% if pub.preprint %}
             <a href="{{ pub.preprint }}" target="_blank">[preprint]</a>
+          {% endif %}
+          {% if pub.press %}
+            <a href="{{ pub.press }}" target="_blank">[press]</a>
           {% endif %}
           {% if pub.thesis %}
             <a href="{{ pub.thesis }}" target="_blank">[thesis]</a>

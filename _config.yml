@@ -19,13 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 defaults:
-  # _posts
   - scope:
       path: ""
     values:
       layout: single
       author_profile: true
       classes: wide
+
 
 # header, + specs in _data/navigation.yml
 title: Tim Herpich
@@ -35,8 +35,8 @@ title: Tim Herpich
 author:
   name: Tim Herpich
   avatar: /assets/images/avatar.png
-  bio: Senior Consultant Risk Management and Software Engineering.
-  email: tim.herpich@d-fine.com
+  bio: Consultant Risk Management and Software Engineering.
+  # email: tim.herpich@d-fine.com
   location: Zurich, Switzerland
   links:
     - label: LinkedIn
@@ -74,6 +74,7 @@ repository: tim-herpich/tim-herpich.github.io
 logo: /assets/images/masthead_logo.png
 atom_feed:
   hide: false
+show_email: false # Set to false to disable email
 
 # Build settings
 theme: minimal-mistakes-jekyll

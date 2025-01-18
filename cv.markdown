@@ -17,7 +17,7 @@ description: "Overview of education, work experience, and professional milestone
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <span>Senior Consultant, d-fine AG, Zürich, Switzerland</span>
-      <span style="text-align: right; min-width: 100px;">since 03/2023</span>
+      <span style="text-align: right; min-width: 100px;">03/2023 - present</span>
     </div>
   </li>
   <li>

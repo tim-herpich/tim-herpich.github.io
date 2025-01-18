@@ -7,3 +7,36 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.back-to-top {
+    text-align: center; /* Center the link at the bottom */
+    margin-top: 2em; /* Add spacing above the link */
+  }
+  
+  #back-to-top {
+    display: inline-block;
+    background-color: #0092ca; /* Accent color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #back-to-top:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+
+  a {
+    color: #0092ca;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  a:hover {
+    color: white; /* Change text color */
+    background-color: #0056b3; /* Add background highlight */
+    padding: 2px 4px; /* Add slight padding for the effect */
+    border-radius: 3px; /* Optional: Rounded edges */
+  }
