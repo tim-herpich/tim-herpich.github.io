@@ -28,7 +28,7 @@ defaults:
 
 
 # header, + specs in _data/navigation.yml
-title: Tim Herpich
+# title: Tim Herpich
 # subtitle: "Personal Website"
 
 # author profile as side bar
