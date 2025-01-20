@@ -5,6 +5,7 @@
 layout: single
 permalink: /publications/
 description: "A comprehensive list of journal publications, theses and whitepapers."
+robots: noindex
 ---
 
 <div class="reduced-font">
