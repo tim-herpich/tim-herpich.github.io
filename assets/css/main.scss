@@ -41,6 +41,12 @@ search: false
     border-radius: 3px; /* Optional: Rounded edges */
   }
 
+  .active a {
+    font-weight: bold;
+    color: #0092ca; /* Adjust the color to match your theme */
+    text-decoration: underline; /* Optional */
+  }
+
 /*  body {
     background-image: url('/assets/images/welcome.jpg'); 
     background-size: cover; 

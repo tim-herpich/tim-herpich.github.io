@@ -71,7 +71,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://tim-herpich.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
 repository: tim-herpich/tim-herpich.github.io
-logo: /assets/images/masthead_logo.png
+# logo: /assets/images/masthead_logo.png
 atom_feed:
   hide: false
 show_email: false # Set to false to disable email
@@ -85,8 +85,10 @@ plugins:
 
 collections:
   publications:
-    permalink: /publications/:title/
+    output: true
+    permalink: /publications/items/:title/
     sort_by: "year"
   talks:
-    permalink: /talks/:title/
+    output: true
+    permalink: /talks/items/:title/
     sort_by: "year"
