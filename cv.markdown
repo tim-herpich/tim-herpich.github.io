@@ -36,6 +36,7 @@ robots: noindex
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <span>
         MSc, Business Administration, Mannheim Business School, Mannheim, Germany<br>
+        - Grade: GPA – 1.2.<br>
         - Thesis: An Innovative Strategy to Leverage Marketing Potentials on Ionity Charging Locations
       </span>
       <span style="text-align: right; min-width: 100px;">2022–2024</span>
@@ -54,6 +55,7 @@ robots: noindex
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <span>
         Master of Science, Theoretical and Mathematical Physics, Leipzig University, Leipzig, Germany<br>
+        - Grade: GPA – 1.0 (ranked first among peers).<br>
         - Thesis: Linear and nonlinear microrheology
       </span>
       <span style="text-align: right; min-width: 100px;">2013–2015</span>
@@ -63,6 +65,7 @@ robots: noindex
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <span>
         Bachelor of Science, Physics, Chemnitz University of Technology, Chemnitz, Germany<br>
+        - Grade: GPA – 1.3 (ranked first among peers).<br>
         - Thesis: Effekte der Tachyonenphysik
       </span>
       <span style="text-align: right; min-width: 100px;">2010–2013</span>
