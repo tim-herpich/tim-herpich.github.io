@@ -79,7 +79,7 @@ robots: noindex
 <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Level III candidate, Level II (2022) and I (2021)</span>
+      <span>Chatered Financial Analyst Program Level III candidate. Completion of Level II in 2022 and I in 2021</span>
     </div>
   </li>
   <li>
