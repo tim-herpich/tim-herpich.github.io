@@ -94,12 +94,12 @@ robots: noindex
 <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Regulatory Compliance: Solvency II, OECD export credits, risk-capital requirements</span>
+      <span>Regulatory Compliance: Solvency II, OECD framework for export credits</span>
     </div>
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Financial Modeling: (non-)market risks, export credits, valuations (e.g. CDS, Swaptions)</span>
+      <span>Finance: Quantitative risk assessment, financial risk modelling and reporting, valuations (e.g. CDS, Swaptions)</span>
     </div>
   </li>
   <li>
@@ -109,12 +109,12 @@ robots: noindex
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Programming Languages: Python, C, C#, R, VBA</span>
+      <span>Programming Languages: Python, C, C++, C#, R, VBA</span>
     </div>
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Tools: Git, CI/CD, Docker, Swagger/OpenAPI</span>
+      <span>Tools: Refinitiv, Git, CI/CD, Docker, Swagger/OpenAPI, JIRA</span>
     </div>
   </li>
 </ul>

@@ -11,9 +11,9 @@ description: "Tim Herpich, Consulting, Risk Management, Software Engineering, Ph
 
   <h2>About Me</h2>
   <p>
-    Since 2020, I have been a <strong>consultant</strong> in the financial services industry with a focus on European 
-    <strong>insurance companies</strong>, and I am currently working at the Zurich office of a German consulting boutique. 
-    My expertise lies in the <strong>mathematical modeling of (non-)market financial risks</strong> and the 
+    Since 2020, I have been a <strong>consultant</strong> in the financial services industry for German and Suisse clients. Currently, I am working at the Zurich office of a
+    <a href="https://www.d-fine.com/en/locations/switzerland/">European consulting boutique</a>. 
+    My expertise lies in the <strong>mathematical modeling of financial risks</strong> and the 
     <strong>development of bespoke software solutions</strong> tailored to client needs.
   </p>
   <p>
