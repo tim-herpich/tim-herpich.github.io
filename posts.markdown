@@ -1,13 +1,13 @@
 ---
 layout: single
-# title: "Blog Posts"
+title: "Blog Posts"
 permalink: /posts/
 description: "Posts about recent topics on finance, tech, or science."
-robots: noindex
-read_time: true
+# read_time: true
 comments: true
-share: true
-related: true
+share: false
+related: false
+# robots: noindex
 ---
 
 <!-- <h1>Recent Posts</h1> -->

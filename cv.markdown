@@ -5,7 +5,7 @@
 layout: single
 permalink: /cv/
 description: "Overview of education, work experience, and professional milestones."
-robots: noindex
+# robots: noindex
 ---
 
 <div class="reduced-font">

@@ -25,7 +25,8 @@ defaults:
       layout: single
       author_profile: true
       classes: wide
-
+      sidebar:
+        nav: "posts"
 
 # header, + specs in _data/navigation.yml
 title: Tim Herpich

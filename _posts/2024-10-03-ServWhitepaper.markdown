@@ -2,6 +2,7 @@
 layout: single
 title: "Pricing the Priceless: Export Credit Insurances"
 date: 2024-10-03
+last_modified_at: 2025-02-17
 author: "Tim Herpich"
 categories: [Finance, Risk Management]
 tags: [export credit insurance, pricing, risk, ECAs]
@@ -28,7 +29,7 @@ The result? A **consistent pricing framework** that enables ECAs to apply a unif
 ## <i class="fas fa-handshake"></i> Why This Matters  
 In an industry where no two transactions are alike, a structured approach to pricing modifications is essential. Whether extending repayment terms, increasing coverage, or adjusting policy terms post-inception, the ability to price these changes fairly is crucial for ECAs, banks, and exporters.
 
-🔍 **Curious?** Dive into the full whitepaper **[here](https://www.serv-ch.com/en/about-us/news/detail/dealing-with-the-non-marketable/)** and explore how this framework helps bring order to the challenge of pricing export credit insurance modifications.
+**Curious?** Dive into the full whitepaper **[here](https://www.serv-ch.com/en/about-us/news/detail/dealing-with-the-non-marketable/)** and explore how this framework helps bring order to the challenge of pricing export credit insurance modifications.
 
 ---
 

@@ -5,6 +5,7 @@
 layout: single
 permalink: /talks/
 description: "A comprehensive list of my public talks."
+# robots: noindex
 ---
 
 <div class="reduced-font">
