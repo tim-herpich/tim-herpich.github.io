@@ -28,6 +28,19 @@ defaults:
       sidebar:
         nav: "posts"
 
+comments:
+  provider: "giscus"
+  giscus:
+    repo: "tim-herpich/tim-herpich.github.io"
+    repo_id: "R_kgDOM8CUkQ" 
+    category: "Comments"
+    category_id: "DIC_kwDOM8CUkc4CnMNX"
+    # discussion_term: "url"
+    discussion_term: "pathname"
+    reactions_enabled: true
+    theme: "light"
+
+
 # header, + specs in _data/navigation.yml
 title: Tim Herpich
 # subtitle: "Personal Website"

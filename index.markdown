@@ -45,14 +45,14 @@ description: "Tim Herpich, Consulting, Risk Management, Software Engineering, Ph
 
   <div style="margin-bottom: 60px;"></div>
   <h2><i class="fas fa-lightbulb"></i> Why This Website?</h2>
-  <p>This website is not only intended to introduce myself but also serves as a hub for work in risk management & software engineering and aims to share insights that bridge the gap between theoretical models and real-world applications. On my <a href="/posts/">blog</a>, I explore various topics I have been working on and share relevant insights. Feel free to check it out and join the discussion!</p>
+  <p>This website is not only intended to introduce myself but also serves as a hub for work finance in general and risk management in particular and aims to share insights that bridge the gap between theoretical models and real-world applications. On my <a href="/posts/">blog</a>, I explore various topics I have been working on and share relevant insights. Feel free to check it out and join the discussion!</p>
 
 
   <div style="margin-bottom: 60px;"></div>
   <h2><i class="fas fa-envelope"></i> Contact Me</h2>
   <p>
     I am always eager to connect with others to exchange ideas or collaborate on interesting projects.
-    Whether you're interested in discussing the latest trends in risk management, academia or something else, and whether you are seeking insights or embarking on a collaborative venture, I welcome the opportunity to engage in meaningful conversations that drive mutual growth.
+    Whether you are interested in discussing the latest trends in risk management, academia or something else, and whether you are seeking insights or embarking on a collaborative venture, I welcome the opportunity to engage in meaningful conversations that drive mutual growth.
   </p>
   <p>
     Do not hesitate to contact me via <a href="https://docs.google.com/forms/d/1Z6J9c-2oqkAa1TTiqnBMEwx3F3yI0AgkzevY9lryfjs/viewform">the contact form</a> 
