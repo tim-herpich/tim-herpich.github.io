@@ -4,7 +4,6 @@ title: "Blog Posts"
 permalink: /posts/
 description: "Posts about recent topics on finance, tech, or science."
 # read_time: true
-comments: true
 share: false
 related: false
 # robots: noindex

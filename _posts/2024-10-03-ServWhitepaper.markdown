@@ -44,10 +44,10 @@ comments: true
 <h2><i class="fas fa-users"></i> The Team</h2>
 <p>Here’s a photo from the day of a presentation of our work to experts from other ECAs:</p>
 
-<figure style="text-align: center;">
-  <img src="/assets/images/serv_whitepaper_presentation.jpg" alt="The Whitepaper" width="800">
-  <figcaption style="font-size: 80%;">
-    <i class="fas fa-user"></i> From left to right: Heribert Knittlmayer (SERV), Aurelio Caliaro (SERV), me
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/assets/images/serv_whitepaper_presentation.jpg" alt="The Whitepaper" width="800" style="display: block; margin: 0 auto;">
+  <figcaption style="font-size: 80%; text-align: center; display: block; margin: 10px auto;">
+    From left to right: Heribert Knittlmayer (SERV), Aurelio Caliaro (SERV), me.<br><i>Image courtesy of SERV. All rights reserved.</i>
   </figcaption>
 </figure>
 

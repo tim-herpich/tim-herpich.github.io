@@ -7,6 +7,7 @@ author: "Tim Herpich"
 categories: [Finance, Risk Management]
 tags: [Solvency II, risk]
 excerpt: "Under Construction ..."
+comments: true
 ---
 
 Under Construction ...
