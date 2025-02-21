@@ -14,6 +14,7 @@ excerpt: "<div style='display: flex; align-items: center;'>
     How do you price export credit insurance modifications? Our latest whitepaper introduces a unified framework for the pricing of export credit insurance modifications.
   </div>
 </div>"
+comments: true
 ---
 
 <div style="margin-bottom: 40px;"></div>
