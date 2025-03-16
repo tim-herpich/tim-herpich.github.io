@@ -12,8 +12,8 @@ description: "Tim Herpich, Consulting, Risk Management, Software Engineering, Ph
   <h2><i class="fas fa-user"></i> About Me</h2>
   <h3>Professional Career</h3>
   <p>
-    Since 2020, I have been a <strong>consultant</strong> in the financial services industry for German and Suisse clients. Currently, I am working at the Zurich office of a
-    <a href="https://www.d-fine.com/en/locations/switzerland/">European consulting boutique</a>. 
+    I have been a <strong>consultant</strong> in the financial services industry since 2020 and currently work at the Zurich office of a
+    <a href="https://www.d-fine.com/en/locations/switzerland/">European consulting boutique</a>, serving German and Suisse clients. 
     My expertise lies in the <strong>mathematical modeling of financial risks</strong> and the 
     <strong>development of bespoke software solutions</strong> tailored to client needs.
   </p>
@@ -42,16 +42,15 @@ description: "Tim Herpich, Consulting, Risk Management, Software Engineering, Ph
     <a href="https://cfasocietyswitzerland.org/">CFA Society Switzerland</a>.
   </p>
 
-
   <div style="margin-bottom: 60px;"></div>
   <h2><i class="fas fa-lightbulb"></i> Why This Website?</h2>
-  <p>This website is not only intended to introduce myself but also serves as a hub for work finance in general and risk management in particular and aims to share insights that bridge the gap between theoretical models and real-world applications. On my <a href="/posts/">blog</a>, I explore various topics I have been working on and share relevant insights. Feel free to check it out and join the discussion!</p>
+  <p>This website is not only intended to introduce myself but also serves as a hub for finance topics and aims to share insights and to stimulate exchanges with interested readers. On my <a href="/posts/">blog</a>, I explore various topics I have been working on and share relevant insights. Feel free to check it out and join the discussion!</p>
 
 
   <div style="margin-bottom: 60px;"></div>
   <h2><i class="fas fa-envelope"></i> Contact Me</h2>
   <p>
-    I am always eager to connect with others to exchange ideas or collaborate on interesting projects.
+    I am always eager to <strong>connect</strong> with others to <strong>exchange ideas or collaborate on interesting projects</strong>.
     Whether you are interested in discussing the latest trends in risk management, academia or something else, and whether you are seeking insights or embarking on a collaborative venture, I welcome the opportunity to engage in meaningful conversations that drive mutual growth.
   </p>
   <p>
