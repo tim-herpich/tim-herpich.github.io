@@ -2,7 +2,7 @@
 layout: single
 title: "Dealing with the Non-Marketable: Export Credit Insurances"
 date: 2024-10-03
-last_modified_at: 2025-02-17
+last_modified_at: 2024-10-03
 author: "Tim Herpich"
 categories: [Finance, Risk Management]
 tags: [export credit insurance, pricing, risk, ECAs]
@@ -11,7 +11,7 @@ excerpt: "<div style='display: flex; align-items: center;'>
     <img src='/assets/images/serv_whitepaper_cover.png' width='150' style='border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);'>
   </div>
   <div style='flex: 1; padding-left: 15px;'>
-    How do you price export credit insurance modifications? Our latest whitepaper introduces a unified framework for the pricing of export credit insurance modifications.
+    How do you price export credit insurance modifications? Learn more about a unified framework we introduced for the pricing of export credit insurance modifications.
   </div>
 </div>"
 comments: true
@@ -47,7 +47,7 @@ comments: true
 <figure style="text-align: center; margin: 0 auto;">
   <img src="/assets/images/serv_whitepaper_presentation.jpg" alt="The Whitepaper" width="800" style="display: block; margin: 0 auto;">
   <figcaption style="font-size: 80%; text-align: center; display: block; margin: 10px auto;">
-    From left to right: Heribert Knittlmayer (SERV), Aurelio Caliaro (SERV), me.<br><i>Image courtesy of SERV. All rights reserved.</i>
+    From left to right: Heribert Knittlmayer (SERV), Aurelio Caliaro (SERV) and Me.<br><i>Image courtesy of SERV. All rights reserved.</i>
   </figcaption>
 </figure>
 

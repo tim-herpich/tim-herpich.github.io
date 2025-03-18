@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "Beyond Beta: Hunting for the Perfect Portfolio"
-date: 2020-11-01
-last_modified_at: 2025-02-17
+date: 2024-01-01
+last_modified_at: 2024-01-01
 author: "Tim Herpich"
 categories: [Finance, Risk Management, Capital Market Research]
 tags: [Solvency II, risk]

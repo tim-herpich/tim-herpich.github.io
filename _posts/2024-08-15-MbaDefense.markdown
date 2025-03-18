@@ -1,17 +1,17 @@
 ---
 layout: single
-title: "TBD"
-date: 2024-08-15
-last_modified_at: 2025-02-17
+title: "Lights, Camera, Leadership: Lessons Beyond the Books"
+date: 2024-08-20
+last_modified_at: 2024-08-20
 author: "Tim Herpich"
 categories: [Finance, Risk Management, Marketing]
-tags: [risk, marketing, emobility]
+tags: [risk, marketing, emobility, MBA]
 excerpt: "<div style='display: flex; align-items: center;'>
   <div style='flex: 0 0 175px; max-width: 175px;'>
-    <img src='/assets/images/factor_investing_cover.png' width='150' style='border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);'>
+    <img src='/assets/images/mbs.png' width='150' style='border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);'>
   </div>
   <div style='flex: 1; padding-left: 15px;'>
-  TBD.
+  I successfully completed an MBA program at Mannheim Business School. In this blog post, I briefly reflect on that two-year journey.
     </div>
 </div>"
 comments: true
@@ -20,22 +20,35 @@ comments: true
 <div style="margin-bottom: 40px;"></div>
 <div style="font-size: 90%;">
 
-<!-- <h2><i class="fas fa-history"></i> The History of Capital Market Research</h2>
-<p>The question of what constitutes an <strong>optimal investment portfolio</strong> has been at the heart of capital market research for decades. Traditionally, the <strong>Capital Asset Pricing Model (CAPM)</strong>, developed by <strong>William Sharpe</strong> and based on <strong>Harry Markowitz’s</strong> Modern Portfolio Theory, posits that the <strong>market portfolio</strong>—a fully diversified basket of all investable assets—represents the most efficient investment. According to CAPM, expected returns depend solely on systematic market risk (<strong>beta</strong>), meaning individual investors cannot achieve excess returns through stock selection or market timing. However, empirical studies have repeatedly challenged this assumption, leading to the emergence of <strong>factor investing</strong>.</p>
+<h2><i class="fas fa-graduation-cap"></i> The MBA Journey</h2>
 
-<p><strong>Factor investing</strong> builds upon CAPM by identifying additional risk premia beyond market beta. The pioneering work of <strong>Eugene Fama and Kenneth French</strong> introduced the <strong>three-factor model</strong>, which incorporates not just market risk but also <strong>size</strong> (small-cap stocks outperforming large caps) and <strong>value</strong> (stocks with high book-to-market ratios generating excess returns). Later, <strong>Mark Carhart</strong> extended this to a <strong>four-factor model</strong> by including <strong>momentum</strong>—the tendency of stocks that have performed well in the past to continue outperforming. Further refinements introduced the <strong>quality</strong> factor (<strong>Robert Novy-Marx</strong>), which rewards companies with strong profitability metrics, and even broader multi-factor models aiming to capture persistent return drivers.</p>
+<p>Embarking on the two-year <strong><a href="https://www.bwl.uni-mannheim.de/en/">Mannheim Business School</a></strong> MBA journey has been a truly transformative experience — both personally and professionally. What stood out most was the uniquely <strong>diverse and international environment</strong>, where classmates from varied professional, cultural, and personal backgrounds came together. This diversity enriched every discussion and constantly challenged my perspectives.</p>
 
-<h2><i class="fas fa-exclamation-triangle"></i> The Problem</h2>
-<p>While factor investing has historically been supported by empirical data, recent years have seen a significant underperformance of key factor portfolios—particularly <strong>value stocks</strong>—compared to simple market-cap-weighted index funds. This has led to renewed debates about the long-term persistence of <strong>factor premia</strong> and whether these excess returns were merely historical artifacts rather than robust market inefficiencies. The so-called <strong>post-publication effect</strong> suggests that once a factor is widely recognized and exploited, its return premium may disappear due to arbitrage and increased investor participation.</p>
+<p>A defining aspect of the program was the <strong>team-driven nature of nearly every assignment</strong>. With teams rotating frequently, each new project brought fresh dynamics and personalities, requiring quick adaptation to different working styles and expectations. Interestingly, I often found myself in leadership roles, carrying the added pressure of steering these diverse teams effectively toward our goals. Balancing personalities, identifying individual strengths, and ensuring cohesion under tight deadlines became a recurring challenge — one that pushed me far beyond my comfort zone and honed my interpersonal skills.</p>
 
-<h2><i class="fas fa-chart-line"></i> Status Quo and Conclusions</h2>
-<p>In light of these debates, the question arises: should a retail investor still follow the <strong>market-neutral approach of CAPM</strong> or can <strong>factor-based strategies</strong> indeed offer superior risk-adjusted returns? To shed light on this pressing question, the historical market data and the performance of factor investing strategies under different economic environments as well as the real-world constraints of factor investing and its implications on portfolio implementation are critically reviewed is examined in the following paper:</p>
+<p>Adding to the challenge were the <strong>unconventional formats of many assignments</strong>. From <strong>video-recorded presentations</strong> and <strong>staged acting scenes</strong> to hands-on workshops, the program constantly demanded creativity and adaptability. These formats tested not only our subject knowledge but also our ability to think on our feet, communicate effectively, and collaborate under unfamiliar conditions — valuable skills, particularly for someone with a background in theoretical physics like myself.</p>
 
-<p align="center">
-  <a href="/assets/publications/20FactorInvesting.pdf" target="_blank">
-    <img src="/assets/images/factor_investing_cover.png" alt="The Whitepaper" width="200">
-  </a>
-</p>
+<p>Academically, I especially enjoyed courses like <strong>Corporate Finance</strong>, <strong>Financial and Managerial Accounting</strong>, <strong>Mergers & Acquisitions</strong>, <strong>Data Science</strong>, and <strong>Innovation & Entrepreneurship</strong> for their engaging content and practical relevance.</p>
 
-<p>The take-home-message of this paper is that, while the cessation of previously discovered factor premia is not conclusive, the practical constraints faced by regulations and implementation suggest that a market-neutral, cost- and tax-efficient buy-and-hold portfolio remains the gold standard for any retail investor. </p> -->
+<h2><i class="fas fa-tasks"></i> The Business Master Project</h2>
+
+<p>The <strong>Business Master Project</strong> is widely regarded as the cornerstone of the Mannheim MBA — an opportunity to apply everything learned throughout the program to a real-world business challenge. Over the course of nearly a year, our team had the privilege of collaborating closely with <strong><a href="https://www.ionity.eu/">IONITY</a></strong>, our sponsoring company, on a highly engaging and forward-looking project.</p>
+
+<p>Our research focused on exploring the <strong>business potential of leveraging electric vehicle (EV) charging infrastructure for digital out-of-home (DOOH) advertising</strong>. Specifically, we evaluated strategic business models and assessed their profitability using net present value as the decision metric. Due to confidentiality agreements, the detailed analytical approach and results cannot be shared here.</p>
+
+<p>Throughout this project, I took on the leadership role — splitting the project into modules, defining deliverables and timelines, keeping the team aligned on our objectives, and driving progress. At times, driving progress meant pushing the team (hopefully not too hard) and reallocating tasks to ensure we stayed on track and met the high standards we set for ourselves. While this project certainly felt stressful at times, I hope the team shares my pride in the quality of our work, which was also recognized by the academic panel during our evaluation.</p>
+
+<p>The final thesis defense, where we presented our findings and recommendations to the academic panel and company representatives, was a proud culmination of months of hard work. More than just a deliverable, the Business Master Project became a true test of our <strong>teamwork, leadership, and resilience</strong>.</p>
+
+<p>Looking back, this project stands out as a highlight of the MBA — a powerful blend of <strong>academic challenge and people management</strong> that left a lasting impact on my personal and professional development.</p>
+
+<h2><i class="fas fa-users"></i> The Team</h2>
+<p>Here’s a photo taken directly after the defense of our Business Master Project:</p>
+
+<figure style="text-align: center; max-width: 500px; margin: 0 auto;">
+  <img src="/assets/images/mba_defense.jpg" alt="Team photo after defense" width="600" style="border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+  <figcaption style="margin-top: -10px; margin-bottom: 40px; font-size: 90%; color: #555;">
+    From left to right: Gerrit, me, Maria, Faith, and Volodymyr.
+  </figcaption>
+</figure>
 </div>

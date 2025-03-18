@@ -44,7 +44,7 @@ description: "Tim Herpich, Consulting, Risk Management, Software Engineering, Ph
 
   <div style="margin-bottom: 60px;"></div>
   <h2><i class="fas fa-lightbulb"></i> Why This Website?</h2>
-  <p>This website is not only intended to introduce myself but also serves as a <strong>platform to share insights</strong> I gained on topics in finance and to stimulate exchanges with interested readers. On my <a href="/posts/">blog</a>, I explore various topics ranging from <strong>risk management to capital market reserach</strong> and share relevant insights. Feel free to check it out and join the discussion!</p>
+  <p>This website is not only intended to introduce myself but also serves as a <strong>platform to share insights</strong> I gained on topics in finance and to stimulate exchanges with interested readers. On my <a href="/posts/">blog</a>, besides personal experiences, I explore various topics ranging from <strong>risk management to capital market reserach</strong> and share relevant insights. Feel free to check it out and join the discussion!</p>
 
 
   <div style="margin-bottom: 60px;"></div>
