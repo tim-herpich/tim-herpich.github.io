@@ -18,7 +18,7 @@ comments: true
 ---
 
 <div style="margin-bottom: 40px;"></div>
-<div style="font-size: 90%;">
+<div style="font-size: 80%;">
 
 <h2><i class="fas fa-balance-scale"></i> The Challenge</h2>
 <p><strong>Export Credit Agencies (ECAs)</strong> insure risks that commercial insurers avoid: long-term, high-risk, and often politically uncertain transactions. While pricing <strong>export credit insurance policies</strong> is already complex, pricing <em>modifications</em> to these policies is an even greater challenge. There are no regulatory guidelines, no established market benchmarks, and each export case exhibits unique characteristics and therefore idiosyncratic risk profiles.</p>
@@ -47,7 +47,7 @@ comments: true
 <figure style="text-align: center; margin: 0 auto;">
   <img src="/assets/images/serv_whitepaper_presentation.jpg" alt="The Whitepaper" width="800" style="display: block; margin: 0 auto;">
   <figcaption style="font-size: 80%; text-align: center; display: block; margin: 10px auto;">
-    From left to right: Heribert Knittlmayer (SERV), Aurelio Caliaro (SERV) and Me.<br><i>Image courtesy of SERV. All rights reserved.</i>
+    From left to right: Heribert Knittlmayer (SERV), Aurelio Caliaro (SERV) and me.<br><i>Image courtesy of SERV. All rights reserved.</i>
   </figcaption>
 </figure>
 

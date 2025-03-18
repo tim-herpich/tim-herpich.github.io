@@ -18,7 +18,7 @@ comments: true
 ---
 
 <div style="margin-bottom: 40px;"></div>
-<div style="font-size: 90%;">
+<div style="font-size: 80%;">
 
 <h2><i class="fas fa-history"></i> The History of Capital Market Research</h2>
 <p>The question of what constitutes an <strong>optimal investment portfolio</strong> has been at the heart of capital market research for decades. Traditionally, the <strong>Capital Asset Pricing Model (CAPM)</strong>, developed by <strong>William Sharpe</strong> and based on <strong>Harry Markowitz’s</strong> Modern Portfolio Theory, posits that the <strong>market portfolio</strong>—a fully diversified basket of all investable assets—represents the most efficient investment. According to CAPM, expected returns depend solely on systematic market risk (<strong>beta</strong>), meaning individual investors cannot achieve excess returns through stock selection or market timing. However, empirical studies have repeatedly challenged this assumption, leading to the emergence of <strong>factor investing</strong>.</p>
