@@ -3,8 +3,8 @@
 ## 📝 Overview
 This repository hosts a personal website powered by **Jekyll** and the **Minimal Mistakes theme**. The site showcases:
 
-- Academic and professional biography
-- Curriculum Vitae (CV)
+- Academic and professional **biography**
+- **Curriculum Vitae**
 - Academic and industrial **publications**
 - Academic and industrial **talks**
 - **Blog posts** on various topics
