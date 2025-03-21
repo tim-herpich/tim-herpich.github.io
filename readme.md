@@ -92,9 +92,13 @@ Pushing to the `main` branch triggers the deployment.
 ---
 
 ## ✅ License
-This project is open-source. You may customize it for your academic or professional use.
+The content of this website (articles, blog posts, publications) is licensed under the 
+[Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). 
 
----
+You are free to share and adapt the material for non-commercial purposes with proper attribution.
+
+© Tim Herpich
+
 
 ## 🙌 Credits
 Powered by:
@@ -104,5 +108,3 @@ Powered by:
 
 ---
 
-## 🖼 Screenshot
-*Optional: Add a screenshot or sample output of the deployed website here.*
