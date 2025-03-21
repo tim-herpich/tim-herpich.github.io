@@ -1,17 +1,15 @@
-
 # Personal Website
 
 ## 📝 Overview
-This repository hosts a personal academic website and portfolio powered by **Jekyll** and the **Minimal Mistakes theme**. The site showcases:
+This repository hosts a personal website powered by **Jekyll** and the **Minimal Mistakes theme**. The site showcases:
 
-- Academic **publications**
-- **Talks** and presentations
-- **Blog posts**
+- Academic and professional biography
 - Curriculum Vitae (CV)
-- Research in **risk management** and **capital markets**
-- Visual assets and project documentation
+- Academic and industrial **publications**
+- Academic and industrial **talks**
+- **Blog posts** on various topics
 
-The website is designed for easy maintenance, publication tracking, and serves as an academic landing page.
+The website is designed for easy maintenance, publication tracking, and serves as a professional landing page.
 
 ---
 
