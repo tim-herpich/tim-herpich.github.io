@@ -1,5 +1,5 @@
 
-# 📚 Academic Portfolio & Research Website
+# Personal Website
 
 ## 📝 Overview
 This repository hosts a personal academic website and portfolio powered by **Jekyll** and the **Minimal Mistakes theme**. The site showcases:
