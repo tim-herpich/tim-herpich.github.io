@@ -11,19 +11,24 @@ description: "Tim Herpich, Consulting, Risk Management, Software Engineering, Ph
   <div style="margin-bottom: 60px;"></div>
   <h2><i class="fas fa-user"></i> About Me</h2>
   <h3>Professional Career</h3>
-  <p>
+  <!-- <p>
     I have been a <strong>consultant</strong> in the financial services industry since 2020 and currently work at the Zurich office of a
     <a href="https://www.d-fine.com/en/locations/switzerland/">European consulting boutique</a>, serving German and Suisse clients. 
     My expertise lies in the <strong>mathematical modeling of financial risks</strong> and the 
     <strong>development of bespoke software solutions</strong> tailored to client needs.
-  </p>
+  </p> -->
   <p>
+    I am a <strong>project manager</strong> with a strong quantitative and technical background, currently based in the Zurich office of a 
+    <a href="https://www.d-fine.com/en/locations/switzerland/">European consulting boutique</a>. Since 2020, I have delivered 
+    <strong>software solutions at the intersection of technology and risk management</strong>, primarily for clients in the insurance sector across Germany and Switzerland. 
+    I work in <strong>agile, cross-functional environments</strong> and bring expertise in regulatory frameworks such as Solvency II, ORSA, and OECD guidelines.
+  </p>
+  <!-- <p>
     Recent accomplishments include leading the development and implementation of an OECD-compliant 
     <a href="https://www.serv-ch.com/en/about-us/news/detail/dealing-with-the-non-marketable/">pricing framework</a> for export credit risks 
-    and forecasting the implications of the 
-    <a href="https://data.consilium.europa.eu/doc/document/ST-5481-2024-INIT/en/pdf">Review of the Solvency II Directive</a> 
-    on the risk capital of European insurers. For further details, please browse through my <a href="/posts/">blog posts</a>.
-  </p>
+    and forecasting the implications of the Review of the Solvency II Directive on the risk capital of European insurers.
+    For further details, please browse through my <a href="/posts/">blog posts</a>.
+  </p> -->
   <h3>Academic Background</h3>
   <p>
     My academic background includes an <strong>MBA</strong>, which I obtained in 2024 from 
@@ -44,7 +49,7 @@ description: "Tim Herpich, Consulting, Risk Management, Software Engineering, Ph
 
   <div style="margin-bottom: 60px;"></div>
   <h2><i class="fas fa-lightbulb"></i> Why This Website?</h2>
-  <p>This website is not only intended to introduce myself but also serves as a <strong>platform to share insights</strong> I gained on topics in finance and to stimulate exchanges with interested readers. On my <a href="/posts/">blog</a>, besides personal experiences, I explore various topics ranging from <strong>risk management to capital market reserach</strong> and share relevant insights. Feel free to check it out and join the discussion!</p>
+  <p>This website is not only intended to introduce myself but also serves as a <strong>platform to share insights</strong> I gained on topics in finance and to stimulate exchanges with interested readers. On my <a href="/posts/">blog</a>, besides personal experiences, I explore various topics ranging from <strong>risk management to capital market research</strong> and share relevant insights. Feel free to check it out and join the discussion!</p>
 
 
   <div style="margin-bottom: 60px;"></div>

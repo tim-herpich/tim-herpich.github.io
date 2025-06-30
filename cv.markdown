@@ -17,13 +17,19 @@ description: "Overview of education, work experience, and professional milestone
 <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Senior Consultant, d-fine AG, Zürich, Switzerland</span>
-      <span style="text-align: right; min-width: 100px;">03/2023 - present</span>
+      <span>Manager, d-fine AG, Zürich, Switzerland</span>
+      <span style="text-align: right; min-width: 100px;">07/2025</span>
     </div>
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Senior Consultant, d-fine GmbH, Frankfurt, Germany</span>
+      <span>Senior Consultant, d-fine AG, Zürich, Switzerland</span>
+      <span style="text-align: right; min-width: 100px;">03/2023 - 06/2025</span>
+    </div>
+  </li>
+  <li>
+    <div style="display: flex; justify-content: space-between; align-items: baseline;">
+      <span>(Senior) Consultant, d-fine GmbH, Frankfurt, Germany</span>
       <span style="text-align: right; min-width: 100px;">06/2020 - 02/2023</span>
     </div>
   </li>
@@ -94,7 +100,7 @@ description: "Overview of education, work experience, and professional milestone
 <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Regulatory Compliance: Solvency II, OECD framework for export credits</span>
+      <span>Regulatory Compliance: Solvency II, ORSA, OECD framework for export credits</span>
     </div>
   </li>
   <li>
