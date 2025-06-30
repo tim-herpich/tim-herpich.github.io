@@ -94,7 +94,6 @@ The content of this website (articles, blog posts, publications) is licensed und
 [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). 
 
 You are free to share and adapt the material for non-commercial purposes with proper attribution.
-
 © Tim Herpich
 
 
