@@ -1,0 +1,115 @@
+// ===============================
+// Custom Theme Toggle Styles
+// ===============================
+
+// Dark theme
+[data-theme="dark"] {
+  body {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+
+  a {
+    color: #80cbc4;
+
+    &:hover {
+      color: #4db6ac;
+    }
+  }
+
+  .site-header,
+  .masthead,
+  .page__footer {
+    background-color: #1e1e1e;
+    color: #f0f0f0; // light text on dark bg
+  }
+
+  .site-nav,
+  .greedy-nav {
+    background-color: #1e1e1e;
+  }
+
+  .page__content {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+
+  code,
+  pre {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  blockquote {
+    border-left: 4px solid #80cbc4;
+    color: #cccccc;
+  }
+
+  table {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+}
+
+// Light theme
+[data-theme="light"] {
+  body {
+    background-color: #ffffff;
+    color: #222222;
+  }
+
+  a {
+    color: #0066cc;
+
+    &:hover {
+      color: #004c99;
+    }
+  }
+
+  .site-header,
+  .masthead,
+  .page__footer {
+    background-color: #f7f7f7;
+    color: #222222; // dark text on light bg
+  }
+
+  /* ensure footer non-links are dark */
+  .page__footer,
+  .page__footer *:not(a) {
+    color: #222222 !important;
+  }
+
+  .page__footer a {
+    color: #0066cc;
+  }
+
+  .page__footer a:hover {
+    color: #004c99;
+  }
+
+  .site-nav,
+  .greedy-nav {
+    background-color: #f7f7f7;
+  }
+
+  .page__content {
+    background-color: #ffffff;
+    color: #222222;
+  }
+
+  code,
+  pre {
+    background-color: #f0f0f0;
+    color: #333333;
+  }
+
+  blockquote {
+    border-left: 4px solid #0066cc;
+    color: #555555;
+  }
+
+  table {
+    background-color: #ffffff;
+    color: #222222;
+  }
+}

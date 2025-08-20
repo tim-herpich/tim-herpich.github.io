@@ -7,6 +7,8 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+/* Your dark-mode overrides */
+@import "custom/theme-toggle";
 
 .back-to-top {
     text-align: center; /* Center the link at the bottom */
