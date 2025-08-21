@@ -176,3 +176,55 @@
   width: 0.9rem;   /* SVG size */
   height: 0.9rem;
 }
+
+/* ===============================
+   Back-to-top button (theme-aware, styled)
+   =============================== */
+
+.back-to-top {
+  margin: 2rem 0;
+  text-align: right;
+}
+
+#back-to-top {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 1rem;          /* larger font */
+  font-weight: bold;        /* bold text */
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+}
+
+/* Light theme */
+[data-theme="light"] #back-to-top {
+  color: #fff;
+  background: #0066cc;
+}
+[data-theme="light"] #back-to-top:hover,
+[data-theme="light"] #back-to-top:focus {
+  background: #004c99;
+}
+
+/* Dark theme */
+[data-theme="dark"] #back-to-top {
+  color: #0b0b0b;
+  background: #80cbc4;
+}
+[data-theme="dark"] #back-to-top:hover,
+[data-theme="dark"] #back-to-top:focus {
+  background: #4db6ac;
+  color: #fff;
+}
+
+/* Focus outline for accessibility */
+#back-to-top:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, .35);
+}
+[data-theme="dark"] #back-to-top:focus {
+  box-shadow: 0 0 0 3px rgba(128, 203, 196, .35);
+}
