@@ -32,15 +32,18 @@
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
-        <!-- ✨ Theme toggle button added -->
+        <!-- Theme toggle -->
         <div class="masthead__menu-item" style="margin-left:0.5rem">
-          <button type="button"
-                  aria-label="Toggle color theme"
-                  onclick="toggleTheme()"
-                  class="btn btn--inverse"
-                  style="padding:0.4rem 0.6rem">
-            <span class="icon" aria-hidden="true">🌓</span>
-            <span data-theme-label style="margin-left:0.25rem; font-size:0.9em">Auto</span>
+          <button
+            type="button"
+            class="btn btn--inverse"
+            id="theme-toggle"
+            aria-label="Toggle color theme"
+            aria-pressed="false"
+            onclick="toggleTheme()"
+          >
+            <span data-theme-icon aria-hidden="true">☀️</span>
+            <span class="visually-hidden">Toggle theme</span>
           </button>
         </div>
       </nav>

@@ -113,3 +113,20 @@
     color: #222222;
   }
 }
+
+#theme-toggle {
+  border-radius: 9999px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.6rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#theme-toggle .fa-sun,
+#theme-toggle .fa-moon {
+  font-size: 1rem;
+}
