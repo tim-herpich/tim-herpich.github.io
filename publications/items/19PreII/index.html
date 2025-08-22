@@ -1,0 +1,446 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Effective thermodynamics of two interacting underdamped Brownian particles - Tim Herpich</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Tim Herpich">
+  
+  <meta property="article:author" content="Tim Herpich">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Tim Herpich">
+<meta property="og:title" content="Effective thermodynamics of two interacting underdamped Brownian particles">
+<meta property="og:url" content="https://tim-herpich.github.io//publications/items/19PreII/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2025-08-22T12:07:21+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://tim-herpich.github.io//publications/items/19PreII/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Tim Herpich Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript">
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+
+  // theme pre-init: Light by default, Dark if previously chosen
+  (function() {
+    try {
+      var pref = localStorage.getItem('theme') || 'light';
+      var t = (pref === 'dark') ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.toggle('theme-dark',  t === 'dark');
+      document.documentElement.classList.toggle('theme-light', t === 'light');
+    } catch (e) {}
+  })();
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+<script src="/assets/js/theme-toggle.js" defer></script>
+<script src="/assets/js/sort-toggle.js" defer></script>
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+
+    <!-- Favicon Links -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/icons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/icons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LPERS69DJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9LPERS69DJ');
+  </script>
+  <!-- Google tag (gtag.js) -->
+
+  <!-- No indexing for Goolge Search Coonsole -->
+  
+</head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          <!-- Empty to remove title from header -->
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/cv/"
+                
+                
+              >CV</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/publications/"
+                
+                
+              >Publications</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/talks/"
+                
+                
+              >Talks</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/posts/"
+                
+                
+              >Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+        <!-- Theme toggle -->
+        <div class="masthead__menu-item" style="margin-left:0.5rem">
+          <button
+            type="button"
+            class="btn btn--inverse"
+            id="theme-toggle"
+            aria-label="Toggle color theme"
+            aria-pressed="false"
+            onclick="toggleTheme()"
+          >
+            <span data-theme-icon aria-hidden="true">☀️</span>
+            <span class="visually-hidden">Toggle theme</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <head>
+  <!-- No indexing for Goolge Search Coonsole -->
+  
+</head>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://tim-herpich.github.io//">
+        <img src="/assets/images/avatar.png" alt="Tim Herpich" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <!-- <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://tim-herpich.github.io//" itemprop="url">Tim Herpich</a>
+    </h3> -->
+    <h3 class="author__name p-name" itemprop="name">
+      Tim Herpich
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Technology &amp; Risk Manager</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Zurich, Switzerland</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://www.linkedin.com/in/timherpich" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/tim-herpich" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://orcid.org/0000-0002-2749-2557" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-link" aria-hidden="true"></i><span class="label">ORCID</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Effective thermodynamics of two interacting underdamped Brownian particles">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="https://tim-herpich.github.io//publications/items/19PreII/" itemprop="url">Effective thermodynamics of two interacting underdamped Brownian particles
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        
+
+        <div><a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.101.022116" class="btn btn--primary">Direct Link</a></div>
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/publications/items/19Pre/" class="pagination--pager" title="Universality in driven Potts models
+">Previous</a>
+    
+    
+      <a href="/publications/items/20FactorInvesting/" class="pagination--pager" title="Has (multi-)factor investing become obsolete?
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div class="back-to-top">
+      <a href="#" id="back-to-top" title="Back to Top">↑ Back to Top</a>
+    </div>
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/in/timherpich" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://github.com/tim-herpich" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://orcid.org/0000-0002-2749-2557" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> ORCID</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">  &copy; 2025 Tim Herpich. This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License.
+  <!--<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+  Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. -->
+</div>
+
+      </footer>
+    </div>
+
+    
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
