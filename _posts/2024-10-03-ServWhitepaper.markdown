@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Dealing with the Non-Marketable: Export Credit Insurances"
+title: "3. Dealing with the Non-Marketable: Export Credit Insurances"
 date: 2024-10-03
 last_modified_at: 2024-10-03
 author: "Tim Herpich"
@@ -46,7 +46,7 @@ comments: true
 
 <figure style="text-align: center; margin: 0 auto;">
   <img src="/assets/images/serv_whitepaper_presentation.jpg" alt="The Whitepaper" width="800" style="display: block; margin: 0 auto;">
-  <figcaption style="font-size: 80%; text-align: center; display: block; margin: 10px auto;">
+  <figcaption style="text-align: center; display: block; margin: 10px auto;">
     From left to right: Heribert Knittlmayer (SERV), Aurelio Caliaro (SERV) and me.<br><i>Image courtesy of SERV. All rights reserved.</i>
   </figcaption>
 </figure>

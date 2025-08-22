@@ -99,27 +99,27 @@ description: "Overview of education, work experience, and professional milestone
 <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Regulatory Compliance: Solvency II, ORSA, OECD framework for export credits</span>
+      <span>Financial Services: Risk assessment, portfolio analytics, insurance & asset management industry</span>
     </div>
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Finance: Quantitative risk assessment, financial risk modelling and reporting, valuations (e.g. CDS, Swaptions)</span>
+      <span>Project Management: Agile, stakeholder engagement, cross-functional team leadership</span>
     </div>
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Project Management: Scrum, Stakeholder Management, Cross-Functional Leadership</span>
+      <span>Regulatory Compliance: Solvency II, DORA, OECD framework for export credit risks</span>
     </div>
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Programming Languages: Python, C, C++, C#, R, VBA</span>
+      <span>Programming Languages: Python, C#, C/C++, Java, R, HTML, CSS, VBA</span>
     </div>
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Tools: Refinitiv, Git, CI/CD, Docker, Swagger/OpenAPI, JIRA</span>
+      <span>Tools & Technologies: CI/CD, Docker, Git, REST API / Swagger, JIRA, Confluence, Refinitiv, Bloomberg, SQL</span>
     </div>
   </li>
 </ul>
