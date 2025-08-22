@@ -8,13 +8,15 @@ description: "A comprehensive list of journal publications, theses and whitepape
 # robots: noindex
 ---
 
-<div class="reduced-font">
-
 <h1>Publications</h1>
 
-<!-- Toggle Buttons -->
-<button id="btn-year" class="active" onclick="showByYear()"><strong>Sort by Year</strong></button>
-<button id="btn-type" onclick="showByType()"><strong>Sort by Type</strong></button>
+<div class="reduced-font">
+
+{% include sort-toggle.html
+   a="pubs-by-year"
+   b="pubs-by-type"
+   label_a="Sort by Year"
+   label_b="Sort by Type" %}
 
 <!-- 1) Group & render by YEAR -->
 <div id="pubs-by-year">
@@ -99,50 +101,5 @@ description: "A comprehensive list of journal publications, theses and whitepape
     {% endif %}
   {% endfor %}
 </div>
+
 </div>
-
-<style>
-  /* Reduce font size for the specific content block */
-  .reduced-font {
-    font-size: 80%; /* Adjust font size as needed */
-  }
-</style>
-
-
-<!-- Styles for active button -->
-<style>
-button {
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  background-color: white;
-}
-
-button.active {
-  background-color: #0092ca; /* Blue background */
-  color: white;
-  border: 1px solid #0056b3; /* Darker blue border */
-}
-</style>
-
-<!-- Simple JS to toggle sections -->
-<script>
-function showByYear() {
-  document.getElementById('pubs-by-year').style.display = 'block';
-  document.getElementById('pubs-by-type').style.display = 'none';
-  
-  // Set active button
-  document.getElementById('btn-year').classList.add('active');
-  document.getElementById('btn-type').classList.remove('active');
-}
-
-function showByType() {
-  document.getElementById('pubs-by-year').style.display = 'none';
-  document.getElementById('pubs-by-type').style.display = 'block';
-  
-  // Set active button
-  document.getElementById('btn-type').classList.add('active');
-  document.getElementById('btn-year').classList.remove('active');
-}
-</script>

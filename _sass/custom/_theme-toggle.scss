@@ -228,3 +228,89 @@
 [data-theme="dark"] #back-to-top:focus {
   box-shadow: 0 0 0 3px rgba(128, 203, 196, .35);
 }
+
+/* ===============================
+   Sort toggle buttons (theme-aware)
+   =============================== */
+.sort-toggle {
+  margin: 0 0 1rem 0;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.sort-btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.9 em;
+  font-weight: bold;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease, border-color .2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,.06);
+}
+
+/* Light theme */
+[data-theme="light"] .sort-btn {
+  color: #222;
+  border-color: #0066cc;
+}
+[data-theme="light"] .sort-btn:hover,
+[data-theme="light"] .sort-btn:focus {
+  color: #fff;
+  background: #0066cc;
+  border-color: #004c99;
+}
+[data-theme="light"] .sort-btn.active {
+  color: #fff;
+  background: #0066cc;
+  border-color: #004c99;
+}
+
+/* Dark theme */
+[data-theme="dark"] .sort-btn {
+  color: #e6e6e6;
+  border-color: #80cbc4;
+  background: #121212; /* subtle filled look to match dark surfaces */
+}
+[data-theme="dark"] .sort-btn:hover,
+[data-theme="dark"] .sort-btn:focus {
+  color: #0b0b0b;
+  background: #80cbc4;
+  border-color: #4db6ac;
+}
+[data-theme="dark"] .sort-btn.active {
+  color: #0b0b0b;
+  background: #80cbc4;
+  border-color: #4db6ac;
+}
+
+/* Focus ring */
+.sort-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, .35);
+}
+[data-theme="dark"] .sort-btn:focus {
+  box-shadow: 0 0 0 3px rgba(128, 203, 196, .35);
+}
+
+/* ===============================
+   Utility: Reduced Font
+   =============================== */
+.reduced-font {
+  font-size: 80%;   // 80% of normal text
+  line-height: 1.6;    // keep readability
+}
+
+// .reduced-font h1,
+// .reduced-font h2,
+// .reduced-font h3 {
+//   font-size: 0.9em;    // scale down headings a bit too
+// }
+
+h1 {
+  margin-bottom: 2cm; /* increase space after h1 */
+}

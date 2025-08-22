@@ -64,10 +64,3 @@ description: "Tim Herpich, Consulting, Risk Management, Software Engineering, Ph
     or via <a href="https://www.linkedin.com/in/timherpich">LinkedIn</a>.
   </p>
 </div>
-
-<style>
-  /* Reduce font size for the specific content block */
-  .reduced-font {
-    font-size: 80%; /* Adjust font size as needed */
-  }
-</style>
