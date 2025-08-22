@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "MBA: Lessons Beyond the Books"
+title: "2. MBA: Lessons Beyond the Books"
 date: 2024-08-20
 last_modified_at: 2024-08-20
 author: "Tim Herpich"
@@ -51,7 +51,7 @@ comments: true
 
 <figure style="text-align: center; max-width: 500px; margin: 0 auto;">
   <img src="/assets/images/mba_defense.jpg" alt="Team photo after defense" width="600" style="border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-  <figcaption style="margin-top: -10px; margin-bottom: 40px; font-size: 90%; color: #555;">
+  <figcaption style="margin-top: -10px; margin-bottom: 40px; color: #555;">
     From left to right: Gerrit, me, Maria, Faith, and Volodymyr.
   </figcaption>
 </figure>
