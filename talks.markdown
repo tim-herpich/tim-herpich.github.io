@@ -64,5 +64,10 @@ description: "A comprehensive list of my public talks."
     {% endif %}
   {% endfor %}
 </div>
-
 </div>
+
+<style>
+h1 {
+  margin-bottom: 0.5cm;
+}
+</style>

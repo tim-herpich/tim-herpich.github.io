@@ -103,3 +103,9 @@ description: "A comprehensive list of journal publications, theses and whitepape
 </div>
 
 </div>
+
+<style>
+h1 {
+  margin-bottom: 0.5cm;
+}
+</style>
