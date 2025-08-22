@@ -1,0 +1,329 @@
+// ===============================
+// Custom Theme Toggle Styles
+// ===============================
+
+// Dark theme
+[data-theme="dark"] {
+  body {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+
+  a {
+    color: #80cbc4;
+
+    &:hover {
+      color: #4db6ac;
+    }
+  }
+
+  .site-header,
+  .masthead,
+  .page__footer {
+    background-color: #1e1e1e;
+    color: #f0f0f0; // light text on dark bg
+  }
+
+  .site-nav,
+  .greedy-nav {
+    background-color: #1e1e1e;
+  }
+
+  .page__content {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+
+  code,
+  pre {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  blockquote {
+    border-left: 4px solid #80cbc4;
+    color: #cccccc;
+  }
+
+  table {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+
+  /* --- Dark theme: footer + author social links --- */
+  /* Make both icon + text readable with teal palette */
+  .page__footer .social-icons a,
+  .author__urls a {
+    color: #80cbc4 !important;           // text inside links
+  }
+  .page__footer .social-icons a:hover,
+  .author__urls a:hover {
+    color: #4db6ac !important;
+  }
+  .page__footer .social-icons a i,
+  .author__urls a i {
+    color: #80cbc4 !important;           // icons
+  }
+  .page__footer .social-icons a:hover i,
+  .author__urls a:hover i {
+    color: #4db6ac !important;
+  }
+  .author__urls .label {
+    color: #e6e6e6 !important;           // labels beside icons
+  }
+}
+
+// Light theme
+[data-theme="light"] {
+  body {
+    background-color: #ffffff;
+    color: #222222;
+  }
+
+  a {
+    color: #0066cc;
+
+    &:hover {
+      color: #004c99;
+    }
+  }
+
+  .site-header,
+  .masthead,
+  .page__footer {
+    background-color: #f7f7f7;
+    color: #222222; // dark text on light bg
+  }
+
+  /* ensure footer non-links are dark */
+  .page__footer,
+  .page__footer *:not(a) {
+    color: #222222 !important;
+  }
+
+  /* --- Light theme: footer + author social links (split colors) --- */
+  /* Text should be black, icons blue */
+  .page__footer .social-icons a,
+  .author__urls a {
+    color: #222222 !important;           // link text (labels)
+  }
+  .page__footer .social-icons a:hover,
+  .author__urls a:hover {
+    color: #222222 !important;           // keep labels black on hover
+  }
+  .page__footer .social-icons a i,
+  .author__urls a i {
+    color: #0066cc !important;           // icons blue
+  }
+  .page__footer .social-icons a:hover i,
+  .author__urls a:hover i {
+    color: #004c99 !important;           // icons darker on hover
+  }
+  .author__urls a .label {
+    color: #222222 !important;           // explicit for author labels
+  }
+
+  .site-nav,
+  .greedy-nav {
+    background-color: #f7f7f7;
+  }
+
+  .page__content {
+    background-color: #ffffff;
+    color: #222222;
+  }
+
+  code,
+  pre {
+    background-color: #f0f0f0;
+    color: #333333;
+  }
+
+  blockquote {
+    border-left: 4px solid #0066cc;
+    color: #555555;
+  }
+
+  table {
+    background-color: #ffffff;
+    color: #222222;
+  }
+}
+
+/* ===============================
+   Theme Toggle Button Styling
+   =============================== */
+#theme-toggle {
+  border-radius: 9999px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 0.4rem;   /* smaller padding */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Size the icon inside the button */
+#theme-toggle [data-theme-icon] {
+  display: inline-flex;
+  width: 0.9rem;   /* reduced size */
+  height: 0.9rem;
+  font-size: 0.9rem;   /* emoji size */
+}
+#theme-toggle [data-theme-icon] svg {
+  width: 0.9rem;   /* SVG size */
+  height: 0.9rem;
+}
+
+/* ===============================
+   Back-to-top button (theme-aware, styled)
+   =============================== */
+
+.back-to-top {
+  margin: 2rem 0;
+  text-align: right;
+}
+
+#back-to-top {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 1rem;          /* larger font */
+  font-weight: bold;        /* bold text */
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+}
+
+/* Light theme */
+[data-theme="light"] #back-to-top {
+  color: #fff;
+  background: #0066cc;
+}
+[data-theme="light"] #back-to-top:hover,
+[data-theme="light"] #back-to-top:focus {
+  background: #004c99;
+}
+
+/* Dark theme */
+[data-theme="dark"] #back-to-top {
+  color: #0b0b0b;
+  background: #80cbc4;
+}
+[data-theme="dark"] #back-to-top:hover,
+[data-theme="dark"] #back-to-top:focus {
+  background: #4db6ac;
+  color: #fff;
+}
+
+/* Focus outline for accessibility */
+#back-to-top:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, .35);
+}
+[data-theme="dark"] #back-to-top:focus {
+  box-shadow: 0 0 0 3px rgba(128, 203, 196, .35);
+}
+
+/* ===============================
+   Sort toggle buttons (theme-aware)
+   =============================== */
+.sort-toggle {
+  margin: 0 0 1rem 0;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sort-btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.9 em;
+  font-weight: bold;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease, border-color .2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,.06);
+}
+
+/* Light theme */
+[data-theme="light"] .sort-btn {
+  color: #222;
+  border-color: #0066cc;
+}
+[data-theme="light"] .sort-btn:hover,
+[data-theme="light"] .sort-btn:focus {
+  color: #fff;
+  background: #0066cc;
+  border-color: #004c99;
+}
+[data-theme="light"] .sort-btn.active {
+  color: #fff;
+  background: #0066cc;
+  border-color: #004c99;
+}
+
+/* Dark theme */
+[data-theme="dark"] .sort-btn {
+  color: #e6e6e6;
+  border-color: #80cbc4;
+  background: #121212; /* subtle filled look to match dark surfaces */
+}
+[data-theme="dark"] .sort-btn:hover,
+[data-theme="dark"] .sort-btn:focus {
+  color: #0b0b0b;
+  background: #80cbc4;
+  border-color: #4db6ac;
+}
+[data-theme="dark"] .sort-btn.active {
+  color: #0b0b0b;
+  background: #80cbc4;
+  border-color: #4db6ac;
+}
+
+/* Focus ring */
+.sort-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, .35);
+}
+[data-theme="dark"] .sort-btn:focus {
+  box-shadow: 0 0 0 3px rgba(128, 203, 196, .35);
+}
+
+/* ===============================
+   Utility: Reduced Font
+   =============================== */
+.reduced-font {
+  font-size: 80%;   // 80% of normal text
+  line-height: 1.6;    // keep readability
+}
+
+// .reduced-font h1,
+// .reduced-font h2,
+// .reduced-font h3 {
+//   font-size: 0.9em;    // scale down headings a bit too
+// }
+
+h1 {
+  margin-bottom: 2cm; /* increase space after h1 */
+}
+
+.reduced-font hr {
+  margin-top: 0.5rem;   /* keep line close to the post above */
+  margin-bottom: 2cm; /* extra space before the next post */
+  border: 0;
+  border-top: 1px solid #ccc; /* thin separator */
+}
+
+/* Remove bottom spacing from the last hr */
+.reduced-font hr:last-of-type {
+  margin-bottom: 0;
+}

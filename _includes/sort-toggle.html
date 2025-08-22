@@ -1,0 +1,8 @@
+<div class="sort-toggle" data-a="{{ include.a }}" data-b="{{ include.b }}">
+  <button type="button" class="sort-btn active" data-mode="a">
+    {{ include.label_a | default: "Sort A" }}
+  </button>
+  <button type="button" class="sort-btn" data-mode="b">
+    {{ include.label_b | default: "Sort B" }}
+  </button>
+</div>

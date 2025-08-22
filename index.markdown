@@ -21,12 +21,12 @@ description: "Tim Herpich, Consulting, Risk Management, Software Engineering, Ph
   <p>
     I am a <strong>project manager</strong> with a strong quantitative and technical background, currently based in the Zurich office of a 
     <a href="https://www.d-fine.com/en/locations/switzerland/">European consulting boutique</a>. Since 2020, I have delivered 
-    <strong>software solutions at the intersection of technology and risk management</strong>, primarily for clients in the insurance sector across Germany and Switzerland. 
+    <strong>software solutions at the intersection of technology and risk management</strong>, primarily for clients in the insurance sector across Germany and Switzerland.
     I work in <strong>agile, cross-functional environments</strong> and bring expertise in regulatory frameworks such as Solvency II, ORSA, and OECD guidelines.
   </p>
   <!-- <p>
-    Recent accomplishments include leading the development and implementation of an OECD-compliant 
-    <a href="https://www.serv-ch.com/en/about-us/news/detail/dealing-with-the-non-marketable/">pricing framework</a> for export credit risks 
+    Recent accomplishments include leading the development and implementation of an OECD-compliant
+    <a href="https://www.serv-ch.com/en/about-us/news/detail/dealing-with-the-non-marketable/">pricing framework</a> for export credit risks
     and forecasting the implications of the Review of the Solvency II Directive on the risk capital of European insurers.
     For further details, please browse through my <a href="/posts/">blog posts</a>.
   </p> -->
@@ -64,10 +64,3 @@ description: "Tim Herpich, Consulting, Risk Management, Software Engineering, Ph
     or via <a href="https://www.linkedin.com/in/timherpich">LinkedIn</a>.
   </p>
 </div>
-
-<style>
-  /* Reduce font size for the specific content block */
-  .reduced-font {
-    font-size: 80%; /* Adjust font size as needed */
-  }
-</style>

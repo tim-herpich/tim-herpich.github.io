@@ -8,13 +8,15 @@ description: "A comprehensive list of my public talks."
 # robots: noindex
 ---
 
-<div class="reduced-font">
-
 <h1>Talks</h1>
 
-<!-- Toggle Buttons -->
-<button id="btn-year" class="active" onclick="showByYear()"><strong>Sort by Year</strong></button>
-<button id="btn-type" onclick="showByType()"><strong>Sort by Type</strong></button>
+<div class="reduced-font">
+
+{% include sort-toggle.html
+   a="talks-by-year"
+   b="talks-by-type"
+   label_a="Sort by Year"
+   label_b="Sort by Type" %}
 
 <!-- 1) Group & render by YEAR -->
 <div id="talks-by-year">
@@ -49,13 +51,13 @@ description: "A comprehensive list of my public talks."
         {% assign items = matching_group.first.items | sort: "year" | reverse %}
         {% for talk in items %}
         <li>
-        <em>{{ talk.title }}</em><br>
-        {% if talk.location %}{{ talk.location }}, {% endif %}
-        {% if talk.year %}{{ talk.year }}{% endif %}<br>
-        {% if talk.presentation %}
-          <a href="{{ talk.presentation }}" target="_blank">[presentation]</a>
-        {% endif %}
-        <!-- etc. -->
+          <em>{{ talk.title }}</em><br>
+          {% if talk.location %}{{ talk.location }}, {% endif %}
+          {% if talk.year %}{{ talk.year }}{% endif %}<br>
+          {% if talk.presentation %}
+            <a href="{{ talk.presentation }}" target="_blank">[presentation]</a>
+          {% endif %}
+          <!-- etc. -->
         </li>
         {% endfor %}
       </ul>
@@ -65,46 +67,7 @@ description: "A comprehensive list of my public talks."
 </div>
 
 <style>
-  /* Reduce font size for the specific content block */
-  .reduced-font {
-    font-size: 80%; /* Adjust font size as needed */
-  }
-</style>
-
-<!-- Styles for active button -->
-<style>
-button {
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  background-color: white;
-}
-
-button.active {
-  background-color: #0092ca; /* Blue background */
-  color: white;
-  border: 1px solid #0056b3; /* Darker blue border */
+h1 {
+  margin-bottom: 0.5cm;
 }
 </style>
-
-<!-- Simple JS to toggle sections -->
-<script>
-function showByYear() {
-  document.getElementById('talks-by-year').style.display = 'block';
-  document.getElementById('talks-by-type').style.display = 'none';
-  
-  // Set active button
-  document.getElementById('btn-year').classList.add('active');
-  document.getElementById('btn-type').classList.remove('active');
-}
-
-function showByType() {
-  document.getElementById('talks-by-year').style.display = 'none';
-  document.getElementById('talks-by-type').style.display = 'block';
-  
-  // Set active button
-  document.getElementById('btn-type').classList.add('active');
-  document.getElementById('btn-year').classList.remove('active');
-}
-</script>

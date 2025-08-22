@@ -7,10 +7,9 @@ permalink: /cv/
 description: "Overview of education, work experience, and professional milestones."
 # robots: noindex
 ---
+<h1>Curriculum Vitae</h1>
 
 <div class="reduced-font">
-
-<h1>Curriculum Vitae<h1>
 
 <!-- Work Experience -->
 <h2>Work Experience</h2>
@@ -147,10 +146,3 @@ description: "Overview of education, work experience, and professional milestone
     </div>
   </li>
 </ul>
-
-<style>
-  /* Reduce font size for the specific content block */
-  .reduced-font {
-    font-size: 80%; /* Adjust font size as needed */
-  }
-</style>
