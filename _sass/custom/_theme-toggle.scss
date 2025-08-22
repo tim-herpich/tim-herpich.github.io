@@ -314,3 +314,15 @@
 h1 {
   margin-bottom: 2cm; /* increase space after h1 */
 }
+
+.reduced-font hr {
+  margin-top: 0.5rem;   /* keep line close to the post above */
+  margin-bottom: 2cm; /* extra space before the next post */
+  border: 0;
+  border-top: 1px solid #ccc; /* thin separator */
+}
+
+/* Remove bottom spacing from the last hr */
+.reduced-font hr:last-of-type {
+  margin-bottom: 0;
+}
