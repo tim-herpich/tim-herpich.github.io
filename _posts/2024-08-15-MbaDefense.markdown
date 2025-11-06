@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "2. MBA: Lessons Beyond the Books"
+title: "MBA: Lessons Beyond the Books"
 date: 2024-08-20
 last_modified_at: 2024-08-20
 author: "Tim Herpich"

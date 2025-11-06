@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "1. Beyond Beta: Hunting for the Perfect Portfolio"
+title: "Beyond Beta: Hunting for the Perfect Portfolio"
 date: 2024-01-01
 last_modified_at: 2024-01-01
 author: "Tim Herpich"

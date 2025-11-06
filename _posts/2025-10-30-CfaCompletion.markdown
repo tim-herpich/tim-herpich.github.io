@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "4. My CFA Journey: From Curiosity to Charterholder"
+title: "My CFA Journey: From Curiosity to Charterholder"
 date: 2025-10-30
 last_modified_at: 2025-10-30
 author: "Tim Herpich"
@@ -41,6 +41,16 @@ comments: true
 
 <p>Following completion, I joined <a href="https://cfasocietyswitzerland.org/" target="_blank">CFA Society Switzerland</a>. I look forward to engaging with professionals who share a commitment to continuous learning and high standards in the financial industry. It is an opportunity to exchange ideas, stay connected to current developments, and continue personal and professional growth.</p>
 
-<p>More information about the CFA Institute and the CFA Program can be found on the <a href="https://www.cfainstitute.org/" target="_blank">CFA Institute website</a>.</p>
+<p style="margin-bottom: 50px;">
+More information about the CFA Institute and the CFA Program can be found on the <a href="https://www.cfainstitute.org/" target="_blank">CFA Institute website</a>.
+</p>
+
+<figure style="text-align: center; max-width: 500px; margin: 0 auto;">
+  <img src="/assets/images/cfa-logo.png" alt="CFA Institute Logo" width="600" style="border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+  <figcaption style="margin-top: -10px; margin-bottom: 40px; color: #555;">
+        <i>Image courtesy of the CFA Institute. All rights reserved.</i>
+  </figcaption>
+</figure>
+
 
 </div>

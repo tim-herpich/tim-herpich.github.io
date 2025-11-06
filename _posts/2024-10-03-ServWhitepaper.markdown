@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "3. Dealing with the Non-Marketable: Export Credit Insurances"
+title: "Dealing with the Non-Marketable: Export Credit Insurances"
 date: 2024-10-03
 last_modified_at: 2024-10-03
 author: "Tim Herpich"

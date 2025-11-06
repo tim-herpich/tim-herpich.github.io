@@ -42,10 +42,13 @@ description: "Tim Herpich, Consulting, Risk Management, Asset Management, Softwa
     <a href="https://tim-herpich.github.io/talks/">talks</a> at international conferences. Before my doctoral studies, I obtained an MSc 
     with distinction in Theoretical Physics in 2015 and a BSc in Physics in 2013.
   </p>
-  <h3>Extracurricular Activities</h3>
+
   <p>
-    I am currently sitting for the Level III <strong>CFA</strong> exam with the goal of becoming a member of the 
-    <a href="https://cfasocietyswitzerland.org/">CFA Society Switzerland</a>.
+    In addition to my academic training, I am a <strong>Chartered Financial Analyst (CFA)</strong> Charterholder. 
+    The program’s broad curriculum in investment analysis, portfolio management, and ethics complements my quantitative background 
+    and supports my work at the intersection of technology and risk & asset management. 
+    As a member of the <a href="https://cfasocietyswitzerland.org/" target="_blank">CFA Society Switzerland</a>, 
+    I stay engaged with ongoing developments in the investment community and contribute to the exchange of ideas among finance professionals.
   </p>
 
   <div style="margin-bottom: 60px;"></div>
@@ -57,7 +60,7 @@ description: "Tim Herpich, Consulting, Risk Management, Asset Management, Softwa
   <h2>✉️ Contact Me</h2>
   <p>
     I am always eager to <strong>connect</strong> with others to <strong>exchange ideas or collaborate on interesting projects</strong>.
-    Whether you are interested in discussing the latest trends in risk management, academia or something else, and whether you are seeking insights or embarking on a collaborative venture, I welcome the opportunity to engage in meaningful conversations that drive mutual growth.
+    Whether you are interested in discussing the latest trends in risk & asset management or academia, and whether you are seeking insights or embarking on a collaborative venture, I welcome the opportunity to engage in meaningful conversations that drive mutual growth.
   </p>
   <p>
     Do not hesitate to contact me via <a href="https://docs.google.com/forms/d/1Z6J9c-2oqkAa1TTiqnBMEwx3F3yI0AgkzevY9lryfjs/viewform">the form</a> 
