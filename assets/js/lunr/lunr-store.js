@@ -17,6 +17,12 @@ var store = [{
         "url": "/finance/risk%20management/2024/10/03/ServWhitepaper.html",
         "teaser": null
       },{
+        "title": "4. My CFA Journey: From Curiosity to Charterholder",
+        "excerpt":"How It Began My journey with the Chartered Financial Analyst (CFA) Program began out of curiosity rather than ambition. I wanted to understand financial systems more deeply, and the CFA curriculum appeared to offer a structured path. At the time, I had little idea of the scope, discipline, and time...","categories": ["Finance","Personal Growth"],
+        "tags": ["CFA","learning","career","finance","achievement"],
+        "url": "/finance/personal%20growth/2025/10/30/CfaCompletion.html",
+        "teaser": null
+      },{
         "title": "Collective Power: Minimal Model for Thermodynamics of Nonequilibrium Phase Transitions",
         "excerpt":" ","categories": [],
         "tags": [],
