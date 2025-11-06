@@ -30,14 +30,13 @@ comments:
   provider: "giscus"
   giscus:
     repo: "tim-herpich/tim-herpich.github.io"
-    repo_id: "R_kgDOM8CUkQ" 
+    repo_id: "R_kgDOM8CUkQ"
     category: "Comments"
     category_id: "DIC_kwDOM8CUkc4CnMNX"
     # discussion_term: "url"
     discussion_term: "pathname"
     reactions_enabled: true
     theme: "light"
-
 
 # header, + specs in _data/navigation.yml
 title: Tim Herpich
@@ -73,7 +72,6 @@ footer:
     - label: ORCID
       # icon: "fab fa-fw fa-github"
       url: https://orcid.org/0000-0002-2749-2557
-
 
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to the personal website of Tim Herpich!
