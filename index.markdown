@@ -12,17 +12,11 @@ description: "Tim Herpich, Consulting, Risk Management, Asset Management, Softwa
   <div style="margin-bottom: 60px;"></div>
   <h2>💼 About Me</h2>
   <h3>Professional Career</h3>
-  <!-- <p>
-    I have been a <strong>consultant</strong> in the financial services industry since 2020 and currently work at the Zurich office of a
-    <a href="https://www.d-fine.com/en/locations/switzerland/">European consulting boutique</a>, serving German and Suisse clients. 
-    My expertise lies in the <strong>mathematical modeling of financial risks</strong> and the 
-    <strong>development of bespoke software solutions</strong> tailored to client needs.
-  </p> -->
   <p>
-    I am a <strong>project manager</strong> working in financial services with a strong quantitative and technical background, currently based in the Zurich office of a 
+    I am a manager working in financial services with a strong quantitative and technical background, currently based in the Zurich office of a 
     <a href="https://www.d-fine.com/en/locations/switzerland/">European consulting boutique</a>. Since 2020, I have delivered 
-    <strong>software solutions at the intersection of technology and risk & asset management</strong>, supporting clients in the insurance & asset management sector across Switzerland and Germany.
-    My work focuses on translating regulatory and risk requirements (e.g. Solvency II, DORA, OECD guidelines) into <strong>practical, data-driven solutions</strong> that strengthen clients’ risk frameworks and enhance investment processes. I thrive in <strong>agile, cross-functional environments</strong>, bringing together technical expertise and a deep understanding of risk and asset management challenges.
+    software solutions at the intersection of technology and risk & asset management, supporting clients in the insurance & asset management sector across Switzerland and Germany.
+    My work focuses on translating regulatory and risk requirements (e.g. Solvency II & UK, DORA, OECD guidelines) into practical, data-driven solutions that strengthen clients’ risk frameworks and enhance investment processes. I thrive in agile, cross-functional environments, bringing together technical expertise and a deep understanding of risk and asset management challenges.
   </p>
   <!-- <p>
     Recent accomplishments include leading the development and implementation of an OECD-compliant
@@ -32,19 +26,19 @@ description: "Tim Herpich, Consulting, Risk Management, Asset Management, Softwa
   </p> -->
   <h3>Academic Background</h3>
   <p>
-    My academic background includes an <strong>MBA</strong>, which I obtained in 2024 from 
+    My academic background includes an MBA, which I obtained in 2024 from 
     <a href="https://www.mannheim-business-school.com/">Mannheim Business School</a>. In 2020, I received a 
-    <strong>PhD in Statistical Physics</strong> in an internationally renowned research group 
+    PhD in Statistical Physics in an internationally renowned research group 
     under the supervision of <a href="https://sites.google.com/site/massimilianoespositogennaro/home">Prof. M. Esposito</a>. 
-    My doctoral research focused on <strong>nonequilibrium thermodynamics</strong>, phase transitions, and 
-    <strong>Monte-Carlo simulations</strong>, culminating in multiple 
+    My doctoral research focused on nonequilibrium thermodynamics, phase transitions, and 
+    Monte-Carlo simulations, culminating in multiple 
     <a href="https://tim-herpich.github.io/publications/">peer-reviewed publications</a> and various 
     <a href="https://tim-herpich.github.io/talks/">talks</a> at international conferences. Before my doctoral studies, I obtained an MSc 
     with distinction in Theoretical Physics in 2015 and a BSc in Physics in 2013.
   </p>
 
   <p>
-    In addition to my academic training, I am a <strong>Chartered Financial Analyst (CFA)</strong> Charterholder. 
+    In addition to my academic training, I am a Chartered Financial Analyst (CFA) Charterholder. 
     The program’s broad curriculum in investment analysis, portfolio management, and ethics complements my quantitative background 
     and supports my work at the intersection of technology and risk & asset management. 
     As a member of the <a href="https://cfasocietyswitzerland.org/" target="_blank">CFA Society Switzerland</a>, 
@@ -53,13 +47,13 @@ description: "Tim Herpich, Consulting, Risk Management, Asset Management, Softwa
 
   <div style="margin-bottom: 60px;"></div>
   <h2>💡 Why This Website?</h2>
-  <p>This website is not only intended to introduce myself but also serves as a <strong>platform to share insights</strong> I gained on topics in financial services and to stimulate exchanges with interested readers. On my <a href="/posts/">blog</a>, besides personal experiences, I explore various topics ranging from <strong>risk to asset management</strong> and share relevant insights. Feel free to check it out and join the discussion!</p>
+  <p>This website is not only intended to introduce myself but also serves as a platform to share insights I gained on topics in financial services and to stimulate exchanges with interested readers. On my <a href="/posts/">blog</a>, besides personal experiences, I explore various topics ranging from risk to asset management and share relevant insights. Feel free to check it out and join the discussion!</p>
 
 
   <div style="margin-bottom: 60px;"></div>
   <h2>✉️ Contact Me</h2>
   <p>
-    I am always eager to <strong>connect</strong> with others to <strong>exchange ideas or collaborate on interesting projects</strong>.
+    I am always eager to connect with others to exchange ideas or collaborate on interesting projects.
     Whether you are interested in discussing the latest trends in risk & asset management or academia, and whether you are seeking insights or embarking on a collaborative venture, I welcome the opportunity to engage in meaningful conversations that drive mutual growth.
   </p>
   <p>
