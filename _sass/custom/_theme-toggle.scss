@@ -16,9 +16,19 @@
 
   /* Dark glass for the content card */
   .page {
-    background: rgba(10, 10, 18, 0.9);
+    background: rgba(10, 10, 18, 0.3);
     box-shadow: 0 28px 80px rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+  }
+
+  /* Inner content also slightly transparent */
+  .page__content {
+    background-color: rgba(12, 12, 20, 0.65);
+    /* more see-through */
+    color: #f0f0f0;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
   }
 
   a {
@@ -39,11 +49,6 @@
   .site-nav,
   .greedy-nav {
     background-color: #1e1e1e;
-  }
-
-  .page__content {
-    background-color: #121212;
-    color: #f0f0f0;
   }
 
   code,
@@ -106,9 +111,18 @@
   }
 
   .page {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.5);
+    /* ~18% transparent */
     box-shadow: 0 28px 80px rgba(0, 0, 0, 0.18);
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+  }
+
+  .page__content {
+    background-color: rgba(240, 240, 245, 0.7);
+    color: #222222;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
   }
 
   a {
@@ -160,11 +174,6 @@
   .site-nav,
   .greedy-nav {
     background-color: #f7f7f7;
-  }
-
-  .page__content {
-    background-color: #ffffff;
-    color: #222222;
   }
 
   code,
