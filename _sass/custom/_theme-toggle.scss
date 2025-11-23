@@ -95,33 +95,32 @@
 // Light theme
 [data-theme="light"] {
   body {
-    /* Light theme: transparent gradient + image so the image is actually visible */
     background:
       linear-gradient(
         180deg,
-        rgba(245, 251, 255, 0.82) 0%,
-        rgba(255, 255, 255, 0.85) 40%,
-        rgba(247, 247, 255, 0.9) 100%
+        rgba(245, 251, 255, 0.75) 0%,
+        rgba(255, 255, 255, 0.80) 40%,
+        rgba(247, 247, 255, 0.85) 100%
       ),
       url('/assets/images/background_white.jpg') center top / cover fixed no-repeat;
     background-attachment: fixed;
-    background-blend-mode: overlay; /* key: let the image show through */
+    background-blend-mode: overlay;
     color: #222222;
   }
 
-  /* Outer light glass card */
+  /* Outer light glass card — slightly grayer + more transparent */
   .page {
-    background: rgba(255, 255, 255, 0.55); /* semi-transparent */
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.14);
-    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.55); /* was 0.7 */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.14); /* softer */
+    backdrop-filter: blur(18px);
     border-radius: 16px;
   }
 
-  /* Inner light gray content box */
+  /* Inner content box — cooler gray and more transparent */
   .page__content {
     background-color: rgba(220, 220, 230, 0.45); /* grayer + more transparent */
     color: #222222;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(14px);
     border-radius: 12px;
   }
 
@@ -140,13 +139,11 @@
     color: #222222;
   }
 
-  /* ensure footer non-links are dark */
   .page__footer,
   .page__footer *:not(a) {
     color: #222222 !important;
   }
 
-  /* footer + author social links */
   .page__footer .social-icons a,
   .author__urls a {
     color: #222222 !important;
