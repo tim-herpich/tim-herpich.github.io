@@ -107,3 +107,8 @@ a:hover {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+/* Add inside margins to content box */
+.page__content {
+  padding: 2.0rem 2.5rem !important;   /* top/bottom, left/right */
+}
