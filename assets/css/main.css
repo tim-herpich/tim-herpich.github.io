@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ========================================================================== Air skin ========================================================================== */
 /* Colors */
 .page__footer { color: #fff !important; }
@@ -1298,14 +1299,15 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   .page__hero-caption a { color: #000 !important; }
   /* Hide the following elements on print ========================================================================== */
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
-/* Your dark-mode overrides */
-[data-theme="dark"] { /* --- Dark theme: footer + author social links --- */ /* Make both icon + text readable with teal palette */ }
-[data-theme="dark"] body { background-color: #121212; color: #f0f0f0; }
+/* Your dark/light mode + glass + buttons */
+[data-theme="dark"] { /* Dark glass for the content card */ /* Inner content also slightly transparent */ /* --- Dark theme: footer + author social links --- */ }
+[data-theme="dark"] body { /* Base gradient + optional image */ background: radial-gradient(circle at 0% 0%, rgba(27, 39, 53, 0.92) 0%, rgba(9, 10, 15, 0.96) 55%, rgba(2, 3, 7, 0.98) 100%), url("/assets/images/background_dark.jpg") center top/cover fixed no-repeat; background-attachment: fixed; background-blend-mode: overlay; color: #f0f0f0; }
+[data-theme="dark"] .page { background: rgba(10, 10, 18, 0.5); box-shadow: 0 28px 80px rgba(0, 0, 0, 0.7); backdrop-filter: blur(16px); border-radius: 16px; }
+[data-theme="dark"] .page__content { background-color: rgba(12, 12, 20, 0.65); /* more see-through */ color: #f0f0f0; backdrop-filter: blur(10px); border-radius: 12px; }
 [data-theme="dark"] a { color: #80cbc4; }
 [data-theme="dark"] a:hover { color: #4db6ac; }
 [data-theme="dark"] .site-header, [data-theme="dark"] .masthead, [data-theme="dark"] .page__footer { background-color: #1e1e1e; color: #f0f0f0; }
 [data-theme="dark"] .site-nav, [data-theme="dark"] .greedy-nav { background-color: #1e1e1e; }
-[data-theme="dark"] .page__content { background-color: #121212; color: #f0f0f0; }
 [data-theme="dark"] code, [data-theme="dark"] pre { background-color: #2a2a2a; color: #e0e0e0; }
 [data-theme="dark"] blockquote { border-left: 4px solid #80cbc4; color: #cccccc; }
 [data-theme="dark"] table { background-color: #1e1e1e; color: #e0e0e0; }
@@ -1315,8 +1317,10 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 [data-theme="dark"] .page__footer .social-icons a:hover i, [data-theme="dark"] .author__urls a:hover i { color: #4db6ac !important; }
 [data-theme="dark"] .author__urls .label { color: #e6e6e6 !important; }
 
-[data-theme="light"] { /* ensure footer non-links are dark */ /* --- Light theme: footer + author social links (split colors) --- */ /* Text should be black, icons blue */ }
-[data-theme="light"] body { background-color: #ffffff; color: #222222; }
+[data-theme="light"] { /* Outer light glass card */ /* Inner light gray content box */ /* ensure footer non-links are dark */ /* footer + author social links */ }
+[data-theme="light"] body { /* Light theme: more gray and more transparent */ background: linear-gradient(180deg, rgba(235, 241, 247, 0.78) 0%, rgba(240, 244, 250, 0.8) 40%, rgba(232, 236, 246, 0.82) 100%), url("/assets/images/background_white.jpg") center top/cover fixed no-repeat; background-attachment: fixed; background-blend-mode: overlay; color: #222222; }
+[data-theme="light"] .page { background: rgba(240, 240, 245, 0.3); /* more gray + more transparent */ box-shadow: 0 28px 80px rgba(0, 0, 0, 0.18); backdrop-filter: blur(18px); border-radius: 16px; }
+[data-theme="light"] .page__content { background-color: rgba(230, 240, 255, 0.4); color: #222222; backdrop-filter: blur(12px); border-radius: 12px; }
 [data-theme="light"] a { color: #0066cc; }
 [data-theme="light"] a:hover { color: #004c99; }
 [data-theme="light"] .site-header, [data-theme="light"] .masthead, [data-theme="light"] .page__footer { background-color: #f7f7f7; color: #222222; }
@@ -1327,33 +1331,33 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 [data-theme="light"] .page__footer .social-icons a:hover i, [data-theme="light"] .author__urls a:hover i { color: #004c99 !important; }
 [data-theme="light"] .author__urls a .label { color: #222222 !important; }
 [data-theme="light"] .site-nav, [data-theme="light"] .greedy-nav { background-color: #f7f7f7; }
-[data-theme="light"] .page__content { background-color: #ffffff; color: #222222; }
 [data-theme="light"] code, [data-theme="light"] pre { background-color: #f0f0f0; color: #333333; }
 [data-theme="light"] blockquote { border-left: 4px solid #0066cc; color: #555555; }
 [data-theme="light"] table { background-color: #ffffff; color: #222222; }
 
 /* =============================== Theme Toggle Button Styling =============================== */
-#theme-toggle { border-radius: 9999px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; padding: 0.3rem 0.4rem; /* smaller padding */ background: transparent; border: none; cursor: pointer; }
+#theme-toggle { border-radius: 9999px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; padding: 0.3rem 0.4rem; background: transparent; border: none; cursor: pointer; }
 
-/* Size the icon inside the button */
-#theme-toggle [data-theme-icon] { display: inline-flex; width: 0.9rem; /* reduced size */ height: 0.9rem; font-size: 0.9rem; /* emoji size */ }
+#theme-toggle [data-theme-icon] { display: inline-flex; width: 0.9rem; height: 0.9rem; font-size: 0.9rem; }
 
-#theme-toggle [data-theme-icon] svg { width: 0.9rem; /* SVG size */ height: 0.9rem; }
+#theme-toggle [data-theme-icon] svg { width: 0.9rem; height: 0.9rem; }
 
 /* =============================== Back-to-top button (theme-aware, styled) =============================== */
-.back-to-top { margin: 2rem 0; text-align: right; }
+/* Center the wrapper inside the content card */
+.back-to-top { text-align: center !important; margin-top: 2rem; margin-bottom: 1.5rem; }
 
-#back-to-top { display: inline-block; padding: 0.6rem 1.2rem; border-radius: 9999px; font-size: 1rem; /* larger font */ font-weight: bold; /* bold text */ line-height: 1.2; text-decoration: none; transition: background-color .2s ease, color .2s ease, box-shadow .2s ease; border: none; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
+/* Smaller pill-shaped button */
+#back-to-top { display: inline-block; padding: 0.4rem 1rem; border-radius: 1.5rem; font-size: 0.75rem; font-weight: 600; line-height: 1.1; text-decoration: none; border: none; transition: background-color 0.2s ease, color 0.2s ease; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); }
 
-/* Light theme */
-[data-theme="light"] #back-to-top { color: #fff; background: #0066cc; }
+/* Light theme colors */
+[data-theme="light"] #back-to-top { background: #0066cc; color: #ffffff; }
 
 [data-theme="light"] #back-to-top:hover, [data-theme="light"] #back-to-top:focus { background: #004c99; }
 
-/* Dark theme */
-[data-theme="dark"] #back-to-top { color: #0b0b0b; background: #80cbc4; }
+/* Dark theme colors */
+[data-theme="dark"] #back-to-top { background: #80cbc4; color: #0b0b0b; }
 
-[data-theme="dark"] #back-to-top:hover, [data-theme="dark"] #back-to-top:focus { background: #4db6ac; color: #fff; }
+[data-theme="dark"] #back-to-top:hover, [data-theme="dark"] #back-to-top:focus { background: #4db6ac; color: #ffffff; }
 
 /* Focus outline for accessibility */
 #back-to-top:focus { outline: none; box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.35); }
@@ -1361,23 +1365,19 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 [data-theme="dark"] #back-to-top:focus { box-shadow: 0 0 0 3px rgba(128, 203, 196, 0.35); }
 
 /* =============================== Sort toggle buttons (theme-aware) =============================== */
-.sort-toggle { margin: 0 0 1rem 0; display: flex; gap: .5rem; flex-wrap: wrap; justify-content: center; }
+.sort-toggle { margin: 0 0 1rem 0; display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; }
 
-.sort-btn { display: inline-block; padding: 0.4rem 1rem; border-radius: 9999px; font-size: 0.9 em; font-weight: bold; line-height: 1.2; border: 1px solid transparent; background: transparent; cursor: pointer; transition: background-color .2s ease, color .2s ease, box-shadow .2s ease, border-color .2s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06); }
+.sort-btn { display: inline-block; padding: 0.4rem 1rem; border-radius: 9999px; font-size: 0.9em; font-weight: bold; line-height: 1.2; border: 1px solid transparent; background: transparent; cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06); }
 
 /* Light theme */
 [data-theme="light"] .sort-btn { color: #222; border-color: #0066cc; }
 
-[data-theme="light"] .sort-btn:hover, [data-theme="light"] .sort-btn:focus { color: #fff; background: #0066cc; border-color: #004c99; }
-
-[data-theme="light"] .sort-btn.active { color: #fff; background: #0066cc; border-color: #004c99; }
+[data-theme="light"] .sort-btn:hover, [data-theme="light"] .sort-btn:focus, [data-theme="light"] .sort-btn.active { color: #fff; background: #0066cc; border-color: #004c99; }
 
 /* Dark theme */
-[data-theme="dark"] .sort-btn { color: #e6e6e6; border-color: #80cbc4; background: #121212; /* subtle filled look to match dark surfaces */ }
+[data-theme="dark"] .sort-btn { color: #e6e6e6; border-color: #80cbc4; background: #121212; /* subtle filled look */ }
 
-[data-theme="dark"] .sort-btn:hover, [data-theme="dark"] .sort-btn:focus { color: #0b0b0b; background: #80cbc4; border-color: #4db6ac; }
-
-[data-theme="dark"] .sort-btn.active { color: #0b0b0b; background: #80cbc4; border-color: #4db6ac; }
+[data-theme="dark"] .sort-btn:hover, [data-theme="dark"] .sort-btn:focus, [data-theme="dark"] .sort-btn.active { color: #0b0b0b; background: #80cbc4; border-color: #4db6ac; }
 
 /* Focus ring */
 .sort-btn:focus { outline: none; box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.35); }
@@ -1389,22 +1389,31 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 h1 { margin-bottom: 2cm; /* increase space after h1 */ }
 
-.reduced-font hr { margin-top: 0.5rem; /* keep line close to the post above */ margin-bottom: 2cm; /* extra space before the next post */ border: 0; border-top: 1px solid #ccc; /* thin separator */ }
+.reduced-font hr { margin-top: 0.5rem; margin-bottom: 2cm; border: 0; border-top: 1px solid #ccc; }
 
 /* Remove bottom spacing from the last hr */
 .reduced-font hr:last-of-type { margin-bottom: 0; }
 
-.back-to-top { text-align: center; /* Center the link at the bottom */ margin-top: 2em; /* Add spacing above the link */ }
-
-#back-to-top { display: inline-block; background-color: #0092ca; /* Accent color */ color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; font-size: 14px; transition: background-color 0.3s ease; }
-
-#back-to-top:hover { background-color: #0056b3; /* Darker color on hover */ }
-
+/* =============================== Global link styling (base) =============================== */
 a { color: #0092ca; text-decoration: none; transition: background-color 0.3s ease, color 0.3s ease; }
 
-a:hover { color: white; /* Change text color */ background-color: #0092ca; /* Add background highlight */ padding: 2px 4px; /* Add slight padding for the effect */ border-radius: 3px; /* Optional: Rounded edges */ }
+a:hover { color: #ffffff; background-color: #0092ca; padding: 2px 4px; border-radius: 3px; }
 
-.active a { font-weight: bold; color: #0092ca; /* Adjust the color to match your theme */ text-decoration: underline; /* Optional */ }
+/* Active menu item */
+.active a { font-weight: bold; color: #0092ca; text-decoration: underline; }
 
-/*  body { background-image: url('/assets/images/welcome.jpg');  background-size: cover;  background-position: center;  background-attachment: fixed;  background-repeat: no-repeat;  color: #333;  }
-*/
+/* ========================================= Layout tweaks: remove band under header ========================================= */
+/* Let the body background show, no extra layer */
+.initial-content, .wrapper { background: transparent !important; padding-top: 0 !important; margin-top: 0 !important; }
+
+/* Kill the vertical gap that Minimal Mistakes adds */
+.page { margin-top: 1.5cm !important; /* no band between masthead and card */ padding-top: 0 !important; }
+
+/* Default theme gives this a margin-top: 1em – remove it */
+.page__inner-wrap { margin-top: 0 !important; }
+
+/* Keep a nice padding *inside* the card instead of outside spacing */
+.page__content { padding: 2rem 2.5rem !important; /* top/bottom, left/right */ }
+
+/* Remove the empty meta footer band under the content */
+.page > .page__inner-wrap > .page__meta, .page > .page__inner-wrap > .comment__date { display: none; margin: 0 !important; padding: 0 !important; border: 0 !important; }
