@@ -8,9 +8,8 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* Your dark/light mode + glass overrides */
+/* Your dark/light mode + glass + buttons */
 @import "custom/theme-toggle";
-
 
 /* ===============================
    Global link styling (base)
@@ -23,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: #ffffff;
   background-color: #0092ca;
   padding: 2px 4px;
   border-radius: 3px;
@@ -36,41 +35,30 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ===============================
-   Remove the white band under the header
-   =============================== */
+/* =========================================
+   Layout tweaks: remove band under header
+   ========================================= */
 
-.initial-content {
-  background: transparent !important; /* remove white layer */
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-/* Make wrapper transparent so body background shows through */
+/* Let the body background show, no extra layer */
+.initial-content,
 .wrapper {
   background: transparent !important;
-}
-
-/* Remove extra space below the masthead/header */
-.masthead,
-.site-header {
-  margin-bottom: 0 !important;
-}
-
-/* Create the desired gap with the card itself */
-.page {
-  margin-top: 1.5cm !important;  /* spacing between header and card */
   padding-top: 0 !important;
-}
-
-/* Remove divider spacing if any */
-.page__title,
-.page__meta {
   margin-top: 0 !important;
+}
+
+/* Kill the vertical gap that Minimal Mistakes adds */
+.page {
+  margin-top: 1.5cm !important;     /* no band between masthead and card */
   padding-top: 0 !important;
 }
 
-/* Add inside margins to content box */
+/* Default theme gives this a margin-top: 1em – remove it */
+.page__inner-wrap {
+  margin-top: 0 !important;
+}
+
+/* Keep a nice padding *inside* the card instead of outside spacing */
 .page__content {
-  padding: 2rem 2.5rem !important; /* top/bottom, left/right */
+  padding: 2rem 2.5rem !important;  /* top/bottom, left/right */
 }
