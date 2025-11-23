@@ -8,36 +8,9 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* Your dark-mode overrides */
+/* Your dark/light mode + glass overrides */
 @import "custom/theme-toggle";
 
-/* ===============================
-   Back-to-top (light overrides)
-   =============================== */
-
-.back-to-top {
-  text-align: center;
-  /* Center the link at the bottom */
-  margin-top: 2em;
-  /* Add spacing above the link */
-}
-
-#back-to-top {
-  display: inline-block;
-  background-color: #0092ca;
-  /* Accent color */
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
-}
-
-#back-to-top:hover {
-  background-color: #0056b3;
-  /* Darker color on hover */
-}
 
 /* ===============================
    Global link styling (base)
@@ -51,13 +24,9 @@ a {
 
 a:hover {
   color: white;
-  /* Change text color */
   background-color: #0092ca;
-  /* Add background highlight */
   padding: 2px 4px;
-  /* Slight padding for the effect */
   border-radius: 3px;
-  /* Rounded edges */
 }
 
 /* Active menu item */
@@ -72,7 +41,7 @@ a:hover {
    =============================== */
 
 .initial-content {
-  background: transparent !important;   /* remove white layer */
+  background: transparent !important; /* remove white layer */
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
@@ -88,16 +57,9 @@ a:hover {
   margin-bottom: 0 !important;
 }
 
-/* Create the desired gap (0.75cm) with the card itself */
+/* Create the desired gap with the card itself */
 .page {
-  margin-top: 1.5cm !important;        /* this is your spacing */
-  padding-top: 0 !important;
-}
-
-/* Make sure inner wrappers don't add extra top space */
-.page__inner-wrap,
-.page__content {
-  margin-top: 0 !important;
+  margin-top: 1.5cm !important;  /* spacing between header and card */
   padding-top: 0 !important;
 }
 
@@ -110,10 +72,5 @@ a:hover {
 
 /* Add inside margins to content box */
 .page__content {
-  padding: 2.0rem 2.5rem !important;   /* top/bottom, left/right */
+  padding: 2rem 2.5rem !important; /* top/bottom, left/right */
 }
-
-// /* Extra padding for single pages (keep the gray background from theme-toggle) */
-// .layout--single .page__content {
-//   padding: 0rem 3rem !important;  /* adjust to taste */
-// }

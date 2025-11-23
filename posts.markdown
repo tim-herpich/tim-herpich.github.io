@@ -1,6 +1,5 @@
 ---
 layout: single
-title: "Blog Posts"
 permalink: /posts/
 description: "Posts about recent topics on finance, tech, or science."
 # read_time: true
@@ -8,6 +7,8 @@ share: false
 related: false
 # robots: noindex
 ---
+
+<h1>Blog Posts</h1>
 
 <div class="reduced-font">
 {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
@@ -21,3 +22,4 @@ related: false
   <hr>
 {% endfor %}
 </div>
+
