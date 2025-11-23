@@ -5,8 +5,29 @@
 // Dark theme
 [data-theme="dark"] {
   body {
-    background-color: #121212;
+    /* Base gradient + optional image */
+    background:
+      radial-gradient(circle at 0% 0%, rgba(27, 39, 53, 0.92) 0%, rgba(9, 10, 15, 0.96) 55%, rgba(2, 3, 7, 0.98) 100%),
+      url('/assets/images/background_dark.jpg') center top / cover fixed no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
     color: #f0f0f0;
+  }
+
+  /* Dark glass for the content card */
+  .page {
+    background: rgba(10, 10, 18, 0.5);
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+  }
+
+  /* Inner content also slightly transparent */
+  .page__content {
+    background-color: rgba(12, 12, 20, 0.65); /* more see-through */
+    color: #f0f0f0;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
   }
 
   a {
@@ -29,11 +50,6 @@
     background-color: #1e1e1e;
   }
 
-  .page__content {
-    background-color: #121212;
-    color: #f0f0f0;
-  }
-
   code,
   pre {
     background-color: #2a2a2a;
@@ -51,33 +67,62 @@
   }
 
   /* --- Dark theme: footer + author social links --- */
-  /* Make both icon + text readable with teal palette */
   .page__footer .social-icons a,
   .author__urls a {
-    color: #80cbc4 !important;           // text inside links
+    color: #80cbc4 !important;
   }
+
   .page__footer .social-icons a:hover,
   .author__urls a:hover {
     color: #4db6ac !important;
   }
+
   .page__footer .social-icons a i,
   .author__urls a i {
-    color: #80cbc4 !important;           // icons
+    color: #80cbc4 !important;
   }
+
   .page__footer .social-icons a:hover i,
   .author__urls a:hover i {
     color: #4db6ac !important;
   }
+
   .author__urls .label {
-    color: #e6e6e6 !important;           // labels beside icons
+    color: #e6e6e6 !important;
   }
 }
 
 // Light theme
 [data-theme="light"] {
   body {
-    background-color: #ffffff;
+    /* Light theme: more gray and more transparent */
+    background:
+      linear-gradient(
+        180deg,
+        rgba(235, 241, 247, 0.78) 0%,
+        rgba(240, 244, 250, 0.80) 40%,
+        rgba(232, 236, 246, 0.82) 100%
+      ),
+      url('/assets/images/background_white.jpg') center top / cover fixed no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
     color: #222222;
+  }
+
+  /* Outer light glass card */
+  .page {
+    background: rgba(240, 240, 245, 0.30); /* more gray + more transparent */
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(18px);
+    border-radius: 16px;
+  }
+
+  /* Inner light gray content box */
+  .page__content {
+    background-color: rgba(230, 240, 255, 0.40);
+    color: #222222;
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
   }
 
   a {
@@ -92,7 +137,7 @@
   .masthead,
   .page__footer {
     background-color: #f7f7f7;
-    color: #222222; // dark text on light bg
+    color: #222222;
   }
 
   /* ensure footer non-links are dark */
@@ -101,36 +146,34 @@
     color: #222222 !important;
   }
 
-  /* --- Light theme: footer + author social links (split colors) --- */
-  /* Text should be black, icons blue */
+  /* footer + author social links */
   .page__footer .social-icons a,
   .author__urls a {
-    color: #222222 !important;           // link text (labels)
+    color: #222222 !important;
   }
+
   .page__footer .social-icons a:hover,
   .author__urls a:hover {
-    color: #222222 !important;           // keep labels black on hover
+    color: #222222 !important;
   }
+
   .page__footer .social-icons a i,
   .author__urls a i {
-    color: #0066cc !important;           // icons blue
+    color: #0066cc !important;
   }
+
   .page__footer .social-icons a:hover i,
   .author__urls a:hover i {
-    color: #004c99 !important;           // icons darker on hover
+    color: #004c99 !important;
   }
+
   .author__urls a .label {
-    color: #222222 !important;           // explicit for author labels
+    color: #222222 !important;
   }
 
   .site-nav,
   .greedy-nav {
     background-color: #f7f7f7;
-  }
-
-  .page__content {
-    background-color: #ffffff;
-    color: #222222;
   }
 
   code,
@@ -159,21 +202,21 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.3rem 0.4rem;   /* smaller padding */
+  padding: 0.3rem 0.4rem;
   background: transparent;
   border: none;
   cursor: pointer;
 }
 
-/* Size the icon inside the button */
 #theme-toggle [data-theme-icon] {
   display: inline-flex;
-  width: 0.9rem;   /* reduced size */
+  width: 0.9rem;
   height: 0.9rem;
-  font-size: 0.9rem;   /* emoji size */
+  font-size: 0.9rem;
 }
+
 #theme-toggle [data-theme-icon] svg {
-  width: 0.9rem;   /* SVG size */
+  width: 0.9rem;
   height: 0.9rem;
 }
 
@@ -181,52 +224,58 @@
    Back-to-top button (theme-aware, styled)
    =============================== */
 
+/* Center the wrapper inside the content card */
 .back-to-top {
-  margin: 2rem 0;
-  text-align: right;
+  text-align: center !important;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
+/* Smaller pill-shaped button */
 #back-to-top {
   display: inline-block;
-  padding: 0.6rem 1.2rem;
-  border-radius: 9999px;
-  font-size: 1rem;          /* larger font */
-  font-weight: bold;        /* bold text */
-  line-height: 1.2;
+  padding: 0.4rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.1;
   text-decoration: none;
-  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
   border: none;
-  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.20);
 }
 
-/* Light theme */
+/* Light theme colors */
 [data-theme="light"] #back-to-top {
-  color: #fff;
   background: #0066cc;
+  color: #ffffff;
 }
+
 [data-theme="light"] #back-to-top:hover,
 [data-theme="light"] #back-to-top:focus {
   background: #004c99;
 }
 
-/* Dark theme */
+/* Dark theme colors */
 [data-theme="dark"] #back-to-top {
-  color: #0b0b0b;
   background: #80cbc4;
+  color: #0b0b0b;
 }
+
 [data-theme="dark"] #back-to-top:hover,
 [data-theme="dark"] #back-to-top:focus {
   background: #4db6ac;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Focus outline for accessibility */
 #back-to-top:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, .35);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.35);
 }
+
 [data-theme="dark"] #back-to-top:focus {
-  box-shadow: 0 0 0 3px rgba(128, 203, 196, .35);
+  box-shadow: 0 0 0 3px rgba(128, 203, 196, 0.35);
 }
 
 /* ===============================
@@ -235,7 +284,7 @@
 .sort-toggle {
   margin: 0 0 1rem 0;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -244,14 +293,17 @@
   display: inline-block;
   padding: 0.4rem 1rem;
   border-radius: 9999px;
-  font-size: 0.9 em;
+  font-size: 0.9em;
   font-weight: bold;
   line-height: 1.2;
   border: 1px solid transparent;
   background: transparent;
   cursor: pointer;
-  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease, border-color .2s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,.06);
+  transition: background-color 0.2s ease,
+              color 0.2s ease,
+              box-shadow 0.2s ease,
+              border-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 /* Light theme */
@@ -259,12 +311,9 @@
   color: #222;
   border-color: #0066cc;
 }
+
 [data-theme="light"] .sort-btn:hover,
-[data-theme="light"] .sort-btn:focus {
-  color: #fff;
-  background: #0066cc;
-  border-color: #004c99;
-}
+[data-theme="light"] .sort-btn:focus,
 [data-theme="light"] .sort-btn.active {
   color: #fff;
   background: #0066cc;
@@ -275,14 +324,11 @@
 [data-theme="dark"] .sort-btn {
   color: #e6e6e6;
   border-color: #80cbc4;
-  background: #121212; /* subtle filled look to match dark surfaces */
+  background: #121212; /* subtle filled look */
 }
+
 [data-theme="dark"] .sort-btn:hover,
-[data-theme="dark"] .sort-btn:focus {
-  color: #0b0b0b;
-  background: #80cbc4;
-  border-color: #4db6ac;
-}
+[data-theme="dark"] .sort-btn:focus,
 [data-theme="dark"] .sort-btn.active {
   color: #0b0b0b;
   background: #80cbc4;
@@ -292,35 +338,30 @@
 /* Focus ring */
 .sort-btn:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, .35);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.35);
 }
+
 [data-theme="dark"] .sort-btn:focus {
-  box-shadow: 0 0 0 3px rgba(128, 203, 196, .35);
+  box-shadow: 0 0 0 3px rgba(128, 203, 196, 0.35);
 }
 
 /* ===============================
    Utility: Reduced Font
    =============================== */
 .reduced-font {
-  font-size: 80%;   // 80% of normal text
-  line-height: 1.6;    // keep readability
+  font-size: 80%; // 80% of normal text
+  line-height: 1.6; // keep readability
 }
-
-// .reduced-font h1,
-// .reduced-font h2,
-// .reduced-font h3 {
-//   font-size: 0.9em;    // scale down headings a bit too
-// }
 
 h1 {
   margin-bottom: 2cm; /* increase space after h1 */
 }
 
 .reduced-font hr {
-  margin-top: 0.5rem;   /* keep line close to the post above */
-  margin-bottom: 2cm; /* extra space before the next post */
+  margin-top: 0.5rem;
+  margin-bottom: 2cm;
   border: 0;
-  border-top: 1px solid #ccc; /* thin separator */
+  border-top: 1px solid #ccc;
 }
 
 /* Remove bottom spacing from the last hr */

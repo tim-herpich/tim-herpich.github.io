@@ -7,54 +7,66 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-/* Your dark-mode overrides */
+
+/* Your dark/light mode + glass + buttons */
 @import "custom/theme-toggle";
 
-.back-to-top {
-    text-align: center; /* Center the link at the bottom */
-    margin-top: 2em; /* Add spacing above the link */
-  }
-  
-  #back-to-top {
-    display: inline-block;
-    background-color: #0092ca; /* Accent color */
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-  }
-  
-  #back-to-top:hover {
-    background-color: #0056b3; /* Darker color on hover */
-  }
+/* ===============================
+   Global link styling (base)
+   =============================== */
 
-  a {
-    color: #0092ca;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  a:hover {
-    color: white; /* Change text color */
-    background-color: #0092ca; /* Add background highlight */
-    padding: 2px 4px; /* Add slight padding for the effect */
-    border-radius: 3px; /* Optional: Rounded edges */
-  }
+a {
+  color: #0092ca;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  .active a {
-    font-weight: bold;
-    color: #0092ca; /* Adjust the color to match your theme */
-    text-decoration: underline; /* Optional */
-  }
+a:hover {
+  color: #ffffff;
+  background-color: #0092ca;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
 
-/*  body {
-    background-image: url('/assets/images/welcome.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
-    background-repeat: no-repeat; 
-    color: #333; 
-  }
-*/
+/* Active menu item */
+.active a {
+  font-weight: bold;
+  color: #0092ca;
+  text-decoration: underline;
+}
+
+/* =========================================
+   Layout tweaks: remove band under header
+   ========================================= */
+
+/* Let the body background show, no extra layer */
+.initial-content,
+.wrapper {
+  background: transparent !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Kill the vertical gap that Minimal Mistakes adds */
+.page {
+  margin-top: 1.5cm !important;     /* no band between masthead and card */
+  padding-top: 0 !important;
+}
+
+/* Default theme gives this a margin-top: 1em – remove it */
+.page__inner-wrap {
+  margin-top: 0 !important;
+}
+
+/* Keep a nice padding *inside* the card instead of outside spacing */
+.page__content {
+  padding: 2rem 2.5rem !important;  /* top/bottom, left/right */
+}
+
+/* Remove the empty meta footer band under the content */
+.page > .page__inner-wrap > .page__meta {
+  display: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}

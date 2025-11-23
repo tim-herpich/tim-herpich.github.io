@@ -5,7 +5,7 @@ description: "Tim Herpich, Consulting, Risk Management, Asset Management, Softwa
 
 <!--  > "Delivering innovative solutions that drive success and mitigate risks." -->
 
-<h1>Welcome to my Website</h1>
+<h1>Welcome To My Website</h1>
 
 
 <div class="reduced-font">
