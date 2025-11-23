@@ -112,3 +112,8 @@ a:hover {
 .page__content {
   padding: 2.0rem 2.5rem !important;   /* top/bottom, left/right */
 }
+
+// /* Extra padding for single pages (keep the gray background from theme-toggle) */
+// .layout--single .page__content {
+//   padding: 0rem 3rem !important;  /* adjust to taste */
+// }
