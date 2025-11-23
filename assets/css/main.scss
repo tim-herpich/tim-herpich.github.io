@@ -62,3 +62,11 @@ a:hover {
 .page__content {
   padding: 2rem 2.5rem !important;  /* top/bottom, left/right */
 }
+
+/* Remove the empty meta footer band under the content */
+.page > .page__inner-wrap > .page__meta {
+  display: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
