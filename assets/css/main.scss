@@ -7,54 +7,103 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
 /* Your dark-mode overrides */
 @import "custom/theme-toggle";
 
+/* ===============================
+   Back-to-top (light overrides)
+   =============================== */
+
 .back-to-top {
-    text-align: center; /* Center the link at the bottom */
-    margin-top: 2em; /* Add spacing above the link */
-  }
-  
-  #back-to-top {
-    display: inline-block;
-    background-color: #0092ca; /* Accent color */
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-  }
-  
-  #back-to-top:hover {
-    background-color: #0056b3; /* Darker color on hover */
-  }
+  text-align: center;
+  /* Center the link at the bottom */
+  margin-top: 2em;
+  /* Add spacing above the link */
+}
 
-  a {
-    color: #0092ca;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  a:hover {
-    color: white; /* Change text color */
-    background-color: #0092ca; /* Add background highlight */
-    padding: 2px 4px; /* Add slight padding for the effect */
-    border-radius: 3px; /* Optional: Rounded edges */
-  }
+#back-to-top {
+  display: inline-block;
+  background-color: #0092ca;
+  /* Accent color */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
 
-  .active a {
-    font-weight: bold;
-    color: #0092ca; /* Adjust the color to match your theme */
-    text-decoration: underline; /* Optional */
-  }
+#back-to-top:hover {
+  background-color: #0056b3;
+  /* Darker color on hover */
+}
 
-/*  body {
-    background-image: url('/assets/images/welcome.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
-    background-repeat: no-repeat; 
-    color: #333; 
-  }
-*/
+/* ===============================
+   Global link styling (base)
+   =============================== */
+
+a {
+  color: #0092ca;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  color: white;
+  /* Change text color */
+  background-color: #0092ca;
+  /* Add background highlight */
+  padding: 2px 4px;
+  /* Slight padding for the effect */
+  border-radius: 3px;
+  /* Rounded edges */
+}
+
+/* Active menu item */
+.active a {
+  font-weight: bold;
+  color: #0092ca;
+  text-decoration: underline;
+}
+
+/* ===============================
+   Remove the white band under the header
+   =============================== */
+
+.initial-content {
+  background: transparent !important;   /* remove white layer */
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Make wrapper transparent so body background shows through */
+.wrapper {
+  background: transparent !important;
+}
+
+/* Remove extra space below the masthead/header */
+.masthead,
+.site-header {
+  margin-bottom: 0 !important;
+}
+
+/* Create the desired gap (0.75cm) with the card itself */
+.page {
+  margin-top: 1.5cm !important;        /* this is your spacing */
+  padding-top: 0 !important;
+}
+
+/* Make sure inner wrappers don't add extra top space */
+.page__inner-wrap,
+.page__content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Remove divider spacing if any */
+.page__title,
+.page__meta {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
