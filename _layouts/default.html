@@ -37,10 +37,10 @@
   {% include_cached skip-links.html %}
   {% include_cached masthead.html %}
 
-  <div class="initial-content">
+  <main id="main" class="initial-content">
     {{ content }}
     {% include after-content.html %}
-  </div>
+  </main>
 
   {% if site.search == true %}
   <div class="search-content">

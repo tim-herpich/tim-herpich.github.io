@@ -8,7 +8,7 @@ categories: [Finance, Risk Management, Capital Market Research]
 tags: [Solvency II, risk]
 excerpt: "<div style='display: flex; align-items: center;'>
   <div style='flex: 0 0 175px; max-width: 175px;'>
-    <img src='/assets/images/factor_investing_cover.png' width='150' style='border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);'>
+  <img src='/assets/images/factor_investing_cover.png' alt='Factor investing cover' width='150' style='border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);'>
   </div>
   <div style='flex: 1; padding-left: 15px;'>
   How do you construct an optimal equity portfolio as a retail investor? This question has been subject of decades of capital market research and is still heavily debated. In this blog post, I briefly recapitulate the key findings of research and analyze the current status quo in a paper of mine.
