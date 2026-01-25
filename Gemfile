@@ -9,13 +9,9 @@ gem "github-pages", group: :jekyll_plugins
 gem "faraday-retry"
 
 group :development do
-  # HTML + link checking
-  gem "html-proofer", "~> 5.0", require: false
+  # Ruby 3.1–compatible, minimal dependency tree
+  gem "html-proofer", "~> 4.4", require: false
 
-  # Dependency vulnerability scanning
+  # Dependency vulnerability checks
   gem "bundler-audit", require: false
-
-  # Fix for Ruby 3.1: afm 1.0.0 requires Ruby >= 3.2
-  gem "afm", "< 1.0"
-
 end
