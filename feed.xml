@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://tim-herpich.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://tim-herpich.github.io//" rel="alternate" type="text/html" /><updated>2026-01-02T01:10:44+00:00</updated><id>https://tim-herpich.github.io//feed.xml</id><title type="html">Tim Herpich</title><subtitle>Welcome to the personal website of Tim Herpich! Here, you&apos;ll find an in-depth look at my academic contributions in theoretical physics (stochatic thermodynamics) and my journey as a consultant in the financial industry. This site is designed to be a hub for sharing my work, connecting with like-minded professionals, and exploring innovative ideas. Discover more about me and my journey as you navigate through the sections of this site.</subtitle><author><name>Tim Herpich</name></author><entry><title type="html">My CFA Journey: From Curiosity to Charterholder</title><link href="https://tim-herpich.github.io//finance/personal%20growth/2025/10/30/CfaCompletion.html" rel="alternate" type="text/html" title="My CFA Journey: From Curiosity to Charterholder" /><published>2025-10-30T00:00:00+00:00</published><updated>2025-10-30T00:00:00+00:00</updated><id>https://tim-herpich.github.io//finance/personal%20growth/2025/10/30/CfaCompletion</id><content type="html" xml:base="https://tim-herpich.github.io//finance/personal%20growth/2025/10/30/CfaCompletion.html"><![CDATA[<div style="margin-bottom: 40px;"></div>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://tim-herpich.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://tim-herpich.github.io//" rel="alternate" type="text/html" /><updated>2026-01-25T00:43:10+00:00</updated><id>https://tim-herpich.github.io//feed.xml</id><title type="html">Tim Herpich</title><subtitle>Welcome to the personal website of Tim Herpich! Here, you&apos;ll find an in-depth look at my academic contributions in theoretical physics (stochatic thermodynamics) and my journey as a consultant in the financial industry. This site is designed to be a hub for sharing my work, connecting with like-minded professionals, and exploring innovative ideas. Discover more about me and my journey as you navigate through the sections of this site.</subtitle><author><name>Tim Herpich</name></author><entry><title type="html">My CFA Journey: From Curiosity to Charterholder</title><link href="https://tim-herpich.github.io//finance/personal%20growth/2025/10/30/CfaCompletion.html" rel="alternate" type="text/html" title="My CFA Journey: From Curiosity to Charterholder" /><published>2025-10-30T00:00:00+00:00</published><updated>2025-10-30T00:00:00+00:00</updated><id>https://tim-herpich.github.io//finance/personal%20growth/2025/10/30/CfaCompletion</id><content type="html" xml:base="https://tim-herpich.github.io//finance/personal%20growth/2025/10/30/CfaCompletion.html"><![CDATA[<div style="margin-bottom: 40px;"></div>
 <div style="font-size: 80%;">
 
 <h2><i class="fas fa-lightbulb"></i> How It Began</h2>
@@ -38,10 +38,12 @@ More information about the CFA Institute and the CFA Program can be found on the
 <div style="font-size: 80%;">
 
 <h2><i class="fas fa-balance-scale"></i> The Challenge</h2>
-<p><strong>Export Credit Agencies (ECAs)</strong> insure risks that commercial insurers avoid: long-term, high-risk, and often politically uncertain transactions. While pricing <strong>export credit insurance policies</strong> is already complex, pricing <em>modifications</em> to these policies is an even greater challenge. There are no regulatory guidelines, no established market benchmarks, and each export case exhibits unique characteristics and therefore idiosyncratic risk profiles.</p>
+<p>Export Credit Agencies (ECAs) insure risks that commercial insurers avoid: long-term, high-risk, and often politically uncertain transactions. While pricing export credit insurance policies is already complex, pricing <em>modifications</em> to these policies is an even greater challenge. There are no regulatory guidelines, no established market benchmarks, and each export case exhibits unique characteristics and therefore idiosyncratic risk profiles.</p>
 
 <h2><i class="fas fa-calculator"></i> A Unified Mathematical Framework</h2>
-<p>Colleagues from <strong>Schweizerische Exportrisikoversicherung (SERV)</strong> and I tackled this challenge in a <strong>whitepaper</strong>:</p>
+<p>Colleagues from Schweizerische Exportrisikoversicherung (SERV) and I tackled this challenge in a whitepaper:</p>
+
+<div style="margin-bottom: 60px;"></div>
 
 <p align="center">
   <a href="https://www.serv-ch.com/fileadmin/user_upload/files/Praemien/SERV-Pricing_Framework.pdf" target="_blank">
@@ -49,17 +51,22 @@ More information about the CFA Institute and the CFA Program can be found on the
   </a>
 </p>
 
-<p>Our whitepaper introduces a <strong>mathematical framework</strong> that brings structure to this problem. It starts by examining existing models for the initial pricing of export credit insurances and then introduces a central quantity: the <strong>Specific Risk Premium</strong>. As shown, this quantity allows for a standardized pricing across different export credit insurance modifications by aligning the idiosyncratic risks with the corresponding protection offered by the ECA. The result? A <strong>pricing methodology</strong> that enables ECAs to apply a unified approach across a diverse range of export business cases — ensuring fairness, efficiency, and better risk management.</p>
+<div style="margin-bottom: 60px;"></div>
+
+
+<p>Our whitepaper introduces a mathematical framework that brings structure to this problem. It starts by examining existing models for the initial pricing of export credit insurances and then introduces a central quantity: the Specific Risk Premium. As shown, this quantity allows for a standardized pricing across different export credit insurance modifications by aligning the idiosyncratic risks with the corresponding protection offered by the ECA. The result? A pricing methodology that enables ECAs to apply a unified approach across a diverse range of export business cases — ensuring fairness, efficiency, and better risk management.</p>
 
 <h2><i class="fas fa-handshake"></i> Why This Matters</h2>
 <p>In an industry where no two transactions are alike, a structured approach to pricing modifications is essential. Whether extending repayment terms, increasing coverage, or adjusting policy terms post-inception, the ability to price these changes fairly is crucial for ECAs, banks, and exporters.</p>
 
-<p><strong>Curious?</strong> Dive into the full whitepaper <strong><a href="https://www.serv-ch.com/en/about-us/news/detail/dealing-with-the-non-marketable/">here</a></strong> and explore how this framework helps bring order to the challenge of pricing export credit insurance modifications.</p>
+<p>Curious? Dive into the full whitepaper <a href="https://www.serv-ch.com/en/about-us/news/detail/dealing-with-the-non-marketable/">here</a> and explore how this framework helps bring order to the challenge of pricing export credit insurance modifications.</p>
 
 <!-- <div style="margin-bottom: 100px;"></div> -->
 
 <h2><i class="fas fa-users"></i> The Team</h2>
-<p>Here’s a photo from the day of a presentation of our work to experts from other ECAs:</p>
+<p>This photo was taken during the presentation of our work to experts from other ECAs:</p>
+
+<div style="margin-bottom: 40px;"></div>
 
 <figure style="text-align: center; margin: 0 auto;">
   <img src="/assets/images/serv_whitepaper_presentation.jpg" alt="The Whitepaper" width="800" style="display: block; margin: 0 auto;" />
@@ -73,35 +80,37 @@ More information about the CFA Institute and the CFA Program can be found on the
 
 <h2><i class="fas fa-graduation-cap"></i> The MBA Journey</h2>
 
-<p>Embarking on the two-year <strong><a href="https://www.bwl.uni-mannheim.de/en/">Mannheim Business School</a></strong> MBA journey has been a truly transformative experience — both personally and professionally. What stood out most was the uniquely <strong>diverse and international environment</strong>, where classmates from varied professional, cultural, and personal backgrounds came together. This diversity enriched every discussion and constantly challenged my perspectives.</p>
+<p>Embarking on the two-year <a href="https://www.bwl.uni-mannheim.de/en/">Mannheim Business School</a> MBA journey has been a truly transformative experience — both personally and professionally. What stood out most was the uniquely diverse and international environment, where classmates from varied professional, cultural, and personal backgrounds came together. This diversity enriched every discussion and constantly challenged my perspectives.</p>
 
-<p>A defining aspect of the program was the <strong>team-driven nature of nearly every assignment</strong>. With teams rotating frequently, each new project brought fresh dynamics and personalities, requiring quick adaptation to different working styles and expectations. Interestingly, I often found myself in leadership roles, carrying the added pressure of steering these diverse teams effectively toward our goals. Balancing personalities, identifying individual strengths, and ensuring cohesion under tight deadlines became a recurring challenge — one that pushed me far beyond my comfort zone and honed my <strong>interpersonal skills</strong>.</p>
+<p>A defining aspect of the program was the team-driven nature of nearly every assignment. With teams rotating frequently, each new project brought fresh dynamics and personalities, requiring quick adaptation to different working styles and expectations. Interestingly, I often found myself in leadership roles, carrying the added pressure of steering these diverse teams effectively toward our goals. Balancing personalities, identifying individual strengths, and ensuring cohesion under tight deadlines became a recurring challenge — one that pushed me far beyond my comfort zone and honed my interpersonal skills.</p>
 
 <!--
- <p>Adding to the challenge were the <strong>unconventional formats of many assignments</strong>. From <strong>video-recorded presentations</strong> and <strong>staged acting scenes</strong> to hands-on workshops, the program constantly demanded creativity and adaptability. These formats tested not only our subject knowledge but also our ability to think on our feet, communicate effectively, and collaborate under unfamiliar conditions — valuable skills, particularly for someone with a background in theoretical physics like myself.</p>
+ <p>Adding to the challenge were the unconventional formats of many assignments. From video-recorded presentations and staged acting scenes to hands-on workshops, the program constantly demanded creativity and adaptability. These formats tested not only our subject knowledge but also our ability to think on our feet, communicate effectively, and collaborate under unfamiliar conditions — valuable skills, particularly for someone with a background in theoretical physics like myself.</p>
 
-<p>Academically, I especially enjoyed courses like <strong>Corporate Finance</strong>, <strong>Financial and Managerial Accounting</strong>, <strong>Mergers & Acquisitions</strong>, <strong>Data Science</strong>, and <strong>Innovation & Entrepreneurship</strong> for their engaging content and practical relevance.</p>
+<p>Academically, I especially enjoyed courses like Corporate Finance, Financial and Managerial Accounting, Mergers & Acquisitions, Data Science, and Innovation & Entrepreneurship for their engaging content and practical relevance.</p>
 -->
 
 <h2><i class="fas fa-tasks"></i> The Business Master Project</h2>
 
-<p>The <strong>Business Master Project</strong> is widely regarded as the cornerstone of the Mannheim MBA — an opportunity to apply everything learned throughout the program to a real-world business challenge. Over the course of nearly a year, our team had the privilege of collaborating closely with <strong><a href="https://www.ionity.eu/">IONITY</a></strong>, our sponsoring company, on a highly engaging and forward-looking project.</p>
+<p>The Business Master Project is widely regarded as the cornerstone of the Mannheim MBA — an opportunity to apply everything learned throughout the program to a real-world business challenge. Over the course of nearly a year, our team had the privilege of collaborating closely with <a href="https://www.ionity.eu/">IONITY</a>, our sponsoring company, on a highly engaging and forward-looking project.</p>
 
-<p>Our research focused on exploring the <strong>business potential of leveraging electric vehicle (EV) charging infrastructure for digital out-of-home (DOOH) advertising</strong>. Specifically, we evaluated strategic business models and assessed their profitability using net present value as the decision metric. Due to confidentiality agreements, the detailed analytical approach and results cannot be shared here.</p>
+<p>Our research focused on exploring the business potential of leveraging electric vehicle (EV) charging infrastructure for digital out-of-home (DOOH) advertising. Specifically, we evaluated strategic business models and assessed their profitability using net present value as the decision metric. Due to confidentiality agreements, the detailed analytical approach and results cannot be shared here.</p>
 
 <p>Throughout this project, I took on the leadership role — splitting the project into modules, defining deliverables and timelines, keeping the team aligned on our objectives, and driving progress. At times, driving progress meant pushing the team (hopefully not too hard) and reallocating tasks to ensure we stayed on track and met the high standards we set for ourselves. While this project certainly felt stressful at times, I hope the team shares my confidence in the quality of our work, which was also recognized by the academic panel during the evaluation of our final thesis defense.</p>
 
 <!--
-<p>The final thesis defense, where we presented our findings and recommendations to the academic panel and company representatives, was a proud culmination of months of hard work. More than just a deliverable, the Business Master Project became a true test of our <strong>teamwork, leadership, and resilience</strong>.</p>
+<p>The final thesis defense, where we presented our findings and recommendations to the academic panel and company representatives, was a proud culmination of months of hard work. More than just a deliverable, the Business Master Project became a true test of our teamwork, leadership, and resilience.</p>
 -->
 
-<p>Looking back, this project stands out as a highlight of the MBA — a powerful blend of <strong>academic challenge and people management</strong> that left a lasting impact on my personal and professional development.</p>
+<p>Looking back, this project stands out as a highlight of the MBA — a powerful blend of academic challenge and people management that left a lasting impact on my personal and professional development.</p>
 
 <h2><i class="fas fa-users"></i> The Team</h2>
-<p>Here’s a photo taken directly after the defense of our Business Master Project:</p>
+<p>This photo was taken directly after the defense of our Business Master’s Project.</p>
+
+<div style="margin-bottom: 40px;"></div>
 
 <figure style="text-align: center; max-width: 500px; margin: 0 auto;">
-  <img src="/assets/images/mba_defense.jpg" alt="Team photo after defense" width="600" style="border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);" />
+  <img src="/assets/images/mba_defense.jpg" alt="Team photo after defense" width="800" style="border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);" />
   <figcaption style="margin-top: -10px; margin-bottom: 40px; color: #555;">
     From left to right: Gerrit, me, Maria, Faith, and Volodymyr.
   </figcaption>
@@ -109,22 +118,26 @@ More information about the CFA Institute and the CFA Program can be found on the
 </div>]]></content><author><name>Tim Herpich</name></author><category term="Finance" /><category term="Risk Management" /><category term="Marketing" /><category term="risk" /><category term="marketing" /><category term="emobility" /><category term="MBA" /><summary type="html"><![CDATA[I successfully completed an MBA program at Mannheim Business School. In this blog post, I briefly reflect on that two-year journey.]]></summary></entry><entry><title type="html">Beyond Beta: Hunting for the Perfect Portfolio</title><link href="https://tim-herpich.github.io//finance/risk%20management/capital%20market%20research/2024/01/01/FactorInvesting.html" rel="alternate" type="text/html" title="Beyond Beta: Hunting for the Perfect Portfolio" /><published>2024-01-01T00:00:00+00:00</published><updated>2024-01-01T00:00:00+00:00</updated><id>https://tim-herpich.github.io//finance/risk%20management/capital%20market%20research/2024/01/01/FactorInvesting</id><content type="html" xml:base="https://tim-herpich.github.io//finance/risk%20management/capital%20market%20research/2024/01/01/FactorInvesting.html"><![CDATA[<div style="margin-bottom: 40px;"></div>
 <div style="font-size: 80%;">
 
-<h2><i class="fas fa-history"></i> The History of Capital Market Research</h2>
-<p>The question of what constitutes an <strong>optimal investment portfolio</strong> has been at the heart of capital market research for decades. Traditionally, the <strong>Capital Asset Pricing Model (CAPM)</strong>, developed by <strong>William Sharpe</strong> and based on <strong>Harry Markowitz’s</strong> Modern Portfolio Theory, posits that the <strong>market portfolio</strong>—a fully diversified basket of all investable assets—represents the most efficient investment. According to CAPM, expected returns depend solely on systematic market risk (<strong>beta</strong>), meaning individual investors cannot achieve excess returns through stock selection or market timing. However, empirical studies have repeatedly challenged this assumption, leading to the emergence of <strong>factor investing</strong>.</p>
+<h2><i class="fas fa-history"></i> Six Decades of Capital Market Research</h2>
+<p>The question of what constitutes an optimal investment portfolio has been at the heart of capital market research for decades. Traditionally, the Capital Asset Pricing Model (CAPM), developed by William Sharpe and based on Harry Markowitz’s Modern Portfolio Theory, posits that the market portfolio—a fully diversified basket of all investable assets—represents the most efficient investment. According to CAPM, expected returns depend solely on systematic market risk (beta), meaning individual investors cannot achieve excess returns through stock selection or market timing. However, empirical studies have repeatedly challenged this assumption, leading to the emergence of factor investing.</p>
 
-<p><strong>Factor investing</strong> builds upon CAPM by identifying additional risk premia beyond market beta. The pioneering work of <strong>Eugene Fama and Kenneth French</strong> introduced the <strong>three-factor model</strong>, which incorporates not just market risk but also <strong>size</strong> (small-cap stocks outperforming large caps) and <strong>value</strong> (stocks with high book-to-market ratios generating excess returns). Later, <strong>Mark Carhart</strong> extended this to a <strong>four-factor model</strong> by including <strong>momentum</strong>—the tendency of stocks that have performed well in the past to continue outperforming. Further refinements introduced the <strong>quality</strong> factor (<strong>Robert Novy-Marx</strong>), which rewards companies with strong profitability metrics, and even broader multi-factor models aiming to capture persistent return drivers.</p>
+<p>Factor investing builds upon CAPM by identifying additional risk premia beyond market beta. The pioneering work of Eugene Fama and Kenneth French introduced the three-factor model, which incorporates not just market risk but also size (small-cap stocks outperforming large caps) and value (stocks with high book-to-market ratios generating excess returns). Later, Mark Carhart extended this to a four-factor model by including momentum—the tendency of stocks that have performed well in the past to continue outperforming. Further refinements introduced the quality factor (Robert Novy-Marx), which rewards companies with strong profitability metrics, and even broader multi-factor models aiming to capture persistent return drivers.</p>
 
 <h2><i class="fas fa-exclamation-triangle"></i> The Problem</h2>
-<p>While factor investing has historically been supported by empirical data, recent years have seen a significant underperformance of key factor portfolios—particularly <strong>value stocks</strong>—compared to simple market-cap-weighted index funds. This has led to renewed debates about the long-term persistence of <strong>factor premia</strong> and whether these excess returns were merely historical artifacts rather than robust market inefficiencies. The so-called <strong>post-publication effect</strong> suggests that once a factor is widely recognized and exploited, its return premium may disappear due to arbitrage and increased investor participation.</p>
+<p>While factor investing has historically been supported by empirical data, recent years have seen a significant underperformance of key factor portfolios—particularly value stocks—compared to simple market-cap-weighted index funds. This has led to renewed debates about the long-term persistence of factor premia and whether these excess returns were merely historical artifacts rather than robust market inefficiencies. The so-called post-publication effect suggests that once a factor is widely recognized and exploited, its return premium may disappear due to arbitrage and increased investor participation.</p>
 
-<h2><i class="fas fa-chart-line"></i> Status Quo and Conclusions</h2>
-<p>In light of these debates, the question arises: should a retail investor still follow the <strong>market-neutral approach of CAPM</strong> or can <strong>factor-based strategies</strong> indeed offer superior risk-adjusted returns? To shed light on this pressing question, the historical market data and the performance of factor investing strategies under different economic environments as well as the real-world constraints of factor investing and its implications on portfolio implementation are examined in the following paper:</p>
+<h2><i class="fas fa-chart-line"></i> Analysis and Conclusions</h2>
+<p>In light of these debates, the question arises: should a retail investor still follow the market-neutral approach of CAPM or can factor-based strategies indeed offer superior risk-adjusted returns? To shed light on this pressing question, the historical market data and the performance of factor investing strategies under different economic environments as well as the real-world constraints of factor investing and its implications on portfolio implementation are examined in the following paper:</p>
+
+<div style="margin-bottom: 60px;"></div>
 
 <p align="center">
   <a href="/assets/publications/20FactorInvesting.pdf" target="_blank">
-    <img src="/assets/images/factor_investing_cover.png" alt="The Whitepaper" width="200" />
+    <img src="/assets/images/factor_investing_cover.png" alt="The Whitepaper" width="500" />
   </a>
 </p>
 
-<p>The take-home-message of this paper is that, while the cessation of previously discovered factor premia is not conclusive, the practical constraints due to regulations and implementation suggest that a market-neutral, cost- and tax-efficient buy-and-hold portfolio remains the gold standard for any retail investor. </p>
+<div style="margin-bottom: 60px;"></div>
+
+<p>The central conclusion of the paper is that, while the empirical evidence does not conclusively rule out the continued existence of certain factor premia, their practical exploitability for retail investors is severely constrained. Transaction costs, turnover, tax inefficiencies, model instability, and regulatory frictions significantly erode the theoretical excess returns suggested by academic models. In particular, once factors are widely disseminated and incorporated into investable products, their performance tends to weaken, consistent with the post-publication effect observed in the literature. As a result, the paper argues that a broadly diversified, market-cap-weighted buy-and-hold portfolio—designed to be cost-efficient, tax-efficient, and robust across market regimes—remains the most reliable and economically sound investment strategy for retail investors.</p>
 </div>]]></content><author><name>Tim Herpich</name></author><category term="Finance" /><category term="Risk Management" /><category term="Capital Market Research" /><category term="Solvency II" /><category term="risk" /><summary type="html"><![CDATA[How do you construct an optimal equity portfolio as a retail investor? This question has been subject of decades of capital market research and is still heavily debated. In this blog post, I briefly recapitulate the key findings of research and analyze the current status quo in a paper of mine.]]></summary></entry></feed>

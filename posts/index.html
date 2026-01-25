@@ -55,35 +55,41 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Tim Herpich Feed">
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Tim Herpich Feed">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script type="text/javascript">
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-  
+<script>
+  document.documentElement.classList.remove('no-js');
+  document.documentElement.classList.add('js');
 
-  // theme pre-init: Light by default, Dark if previously chosen
-  (function() {
+  window.enable_copy_code_button = document.documentElement.dataset.enableCopy === "true";
+
+  (function () {
     try {
       var pref = localStorage.getItem('theme') || 'light';
       var t = (pref === 'dark') ? 'dark' : 'light';
       document.documentElement.setAttribute('data-theme', t);
-      document.documentElement.classList.toggle('theme-dark',  t === 'dark');
+      document.documentElement.classList.toggle('theme-dark', t === 'dark');
       document.documentElement.classList.toggle('theme-light', t === 'light');
-    } catch (e) {}
+    } catch (e) { }
   })();
 </script>
 
+<meta data-enable-copy="false">
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style"
+  onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+</noscript>
 
 
 
 <script src="/assets/js/theme-toggle.js" defer></script>
 <script src="/assets/js/sort-toggle.js" defer></script>
-
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
@@ -376,7 +382,6 @@
   <hr />
 
 </div>
-
 
         
       </section>

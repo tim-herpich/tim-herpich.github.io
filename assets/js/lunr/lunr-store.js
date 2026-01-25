@@ -1,6 +1,6 @@
 var store = [{
         "title": "Beyond Beta: Hunting for the Perfect Portfolio",
-        "excerpt":"The History of Capital Market Research The question of what constitutes an optimal investment portfolio has been at the heart of capital market research for decades. Traditionally, the Capital Asset Pricing Model (CAPM), developed by William Sharpe and based on Harry Markowitz’s Modern Portfolio Theory, posits that the market portfolio—a...","categories": ["Finance","Risk Management","Capital Market Research"],
+        "excerpt":"Six Decades of Capital Market Research The question of what constitutes an optimal investment portfolio has been at the heart of capital market research for decades. Traditionally, the Capital Asset Pricing Model (CAPM), developed by William Sharpe and based on Harry Markowitz’s Modern Portfolio Theory, posits that the market portfolio—a...","categories": ["Finance","Risk Management","Capital Market Research"],
         "tags": ["Solvency II","risk"],
         "url": "/finance/risk%20management/capital%20market%20research/2024/01/01/FactorInvesting.html",
         "teaser": null
