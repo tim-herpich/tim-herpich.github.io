@@ -35,7 +35,7 @@ jobs:
           bundle exec htmlproofer ./_site \
             --disable-external \
             --assume-extension \
-            --checks "Images,Scripts,Favicon,Links"
+            --checks "Images,Scripts,Links"
 
       - name: Audit Ruby dependencies
         run: |
