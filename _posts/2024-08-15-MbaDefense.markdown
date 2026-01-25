@@ -8,7 +8,7 @@ categories: [Finance, Risk Management, Marketing]
 tags: [risk, marketing, emobility, MBA]
 excerpt: "<div style='display: flex; align-items: center;'>
   <div style='flex: 0 0 175px; max-width: 175px;'>
-    <img src='/assets/images/mbs.png' width='150' style='border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);'>
+  <img src='/assets/images/mbs.png' alt='Mannheim Business School (MBA)' width='150' style='border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);'>
   </div>
   <div style='flex: 1; padding-left: 15px;'>
   I successfully completed an MBA program at Mannheim Business School. In this blog post, I briefly reflect on that two-year journey.

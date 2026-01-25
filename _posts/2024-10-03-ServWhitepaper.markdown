@@ -8,7 +8,7 @@ categories: [Finance, Risk Management]
 tags: [export credit insurance, pricing, risk, ECAs]
 excerpt: "<div style='display: flex; align-items: center;'>
   <div style='flex: 0 0 175px; max-width: 175px;'>
-    <img src='/assets/images/serv_whitepaper_cover.png' width='150' style='border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);'>
+  <img src='/assets/images/serv_whitepaper_cover.png' alt='SERV whitepaper cover' width='150' style='border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);'>
   </div>
   <div style='flex: 1; padding-left: 15px;'>
     How do you price export credit insurance modifications? Learn more about a unified framework we introduced for the pricing of export credit insurance modifications.

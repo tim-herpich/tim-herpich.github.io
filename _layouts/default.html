@@ -3,23 +3,24 @@
 
 <!doctype html>
 {% include copyright.html %}
-<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+<html lang="{{ site.locale | replace: " _", "-" | default: "en" }}" class="no-js">
 
-    <!-- Favicon Links -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/assets/icons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/assets/icons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<head>
+  {% include head.html %}
+  {% include head/custom.html %}
+
+  <!-- Favicon Links -->
+  <link rel="icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}" type="image/x-icon">
+  <link rel="icon" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}" sizes="32x32" type="image/png">
+  <link rel="icon" href="{{ '/assets/icons/favicon-16x16.png' | relative_url }}" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LPERS69DJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-9LPERS69DJ');
   </script>
@@ -31,33 +32,35 @@
   {% endif %}
 </head>
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
+<body
+  class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  {% include_cached skip-links.html %}
+  {% include_cached masthead.html %}
 
-    <div class="initial-content">
-      {{ content }}
-      {% include after-content.html %}
-    </div>
+  <main id="main" class="initial-content">
+    {{ content }}
+    {% include after-content.html %}
+  </main>
 
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
-    {% endif %}
+  {% if site.search == true %}
+  <div class="search-content">
+    {% include_cached search/search_form.html %}
+  </div>
+  {% endif %}
 
-    <div class="back-to-top">
-      <a href="#" id="back-to-top" title="Back to Top">↑ Back to Top</a>
-    </div>
+  <div class="back-to-top">
+    <a href="#" id="back-to-top" title="Back to Top">↑ Back to Top</a>
+  </div>
 
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
-    </div>
+  <div id="footer" class="page__footer">
+    <footer>
+      {% include footer/custom.html %}
+      {% include_cached footer.html %}
+    </footer>
+  </div>
 
-    
-    {% include scripts.html %}
-  </body>
+
+  {% include scripts.html %}
+</body>
+
 </html>

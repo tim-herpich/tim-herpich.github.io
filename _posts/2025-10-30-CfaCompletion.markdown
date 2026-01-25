@@ -8,7 +8,7 @@ categories: [Finance, Personal Growth]
 tags: [CFA, learning, career, finance, achievement]
 excerpt: "<div style='display: flex; align-items: center;'>
   <div style='flex: 0 0 175px; max-width: 175px;'>
-    <img src='/assets/images/cfa-logo.png' width='150' style='border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);'>
+    <img src='/assets/images/cfa-logo.png' alt='CFA Institute logo' width='150' style='border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);'>
   </div>
   <div style='flex: 1; padding-left: 15px;'>
     A reflection on my path through the CFA Program — from curiosity to the final exam, and what I learned along the way.

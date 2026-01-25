@@ -1,0 +1,43 @@
+name: jekyll-ci
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1.7"
+          bundler: "2.6.9"
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build --trace --strict_front_matter
+
+      - name: Check generated HTML
+        run: |
+          bundle exec htmlproofer ./_site \
+            --disable-external \
+            --assume-extension \
+            --checks "Images,Scripts,Links"
+
+      - name: Audit Ruby dependencies
+        run: |
+          bundle exec bundler-audit update
+          bundle exec bundler-audit check
