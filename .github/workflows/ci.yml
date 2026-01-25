@@ -1,0 +1,46 @@
+name: CI (Jekyll)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Build (strict)
+        run: bundle exec jekyll build --trace --strict_front_matter
+
+      - name: HTMLProofer
+        run: |
+          bundle exec htmlproofer ./_site \
+            --assume-extension \
+            --check-html \
+            --check-opengraph \
+            --enforce-https \
+            --ignore-status-codes "429,403" \
+            --ignore-urls "/^https:\\/\\/localhost/,/^http:\\/\\/localhost/" \
+            --typhoeus-config "{ \"timeout\": 20, \"connecttimeout\": 20 }"
+
+      - name: Bundler Audit (known vulnerabilities)
+        run: |
+          bundle exec bundler-audit update
+          bundle exec bundler-audit check
