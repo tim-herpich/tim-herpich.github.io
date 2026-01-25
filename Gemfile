@@ -5,8 +5,7 @@ source "https://rubygems.org"
 # GitHub Pages pins Jekyll + plugins to supported versions
 gem "github-pages", group: :jekyll_plugins
 
-# Required by html-proofer / Faraday >= 2
-gem "faraday-retry"
+gem "nokogiri", "< 1.19"
 
 group :development do
   # Ruby 3.1–compatible, minimal dependency tree
