@@ -22,4 +22,3 @@ related: false
   <hr>
 {% endfor %}
 </div>
-
