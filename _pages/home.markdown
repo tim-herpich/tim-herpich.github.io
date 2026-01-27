@@ -1,4 +1,5 @@
 ---
+permalink: /
 layout: single
 description: "Tim Herpich, Consulting, Risk Management, Asset Management, Software Engineering, Physics."
 ---
