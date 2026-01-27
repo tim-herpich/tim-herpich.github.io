@@ -18,6 +18,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+
+# root pages moved into "_pages/"
+include:
+  - _pages
+
+# Prevents processing/junk
+exclude:
+  - .jekyll-cache
+  - _site
+  - vendor
+  - node_modules
+
 defaults:
   - scope:
       path: ""
