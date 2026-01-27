@@ -1,5 +1,11 @@
 # Personal Website
 
+This repository hosts my personal website, built with **Jekyll** and the **Minimal Mistakes** theme and deployed automatically via **GitHub Pages**.
+
+The site serves as a professional and academic landing page, combining biographical information with publications, talks, and blog-style content.
+
+---
+
 ## 📝 Overview
 This repository hosts a personal website powered by **Jekyll** and the **Minimal Mistakes theme**. The site showcases:
 
@@ -9,35 +15,42 @@ This repository hosts a personal website powered by **Jekyll** and the **Minimal
 - Academic and industrial **talks**
 - **Blog posts** on various topics
 
-The website is designed for easy maintenance, publication tracking, and serves as a professional landing page.
+Content is Markdown-driven and structured to be easy to maintain and extend over time.
 
 ---
 
 ## 🗂 Project Structure
 
-| 📁 Folder | 📄 Description |
-|-------|------------|
-| `_posts/` | Blog posts and research articles |
-| `_publications/` | Detailed publication metadata |
-| `_talks/` | Conference and seminar talks |
-| `_data/` | Site navigation and UI text data |
-| `_includes/`, `_layouts/`, `_sass/` | Jekyll theme components |
-| `assets/` | CSS, JavaScript, images, and PDFs |
-| `_site/` | Generated static site (auto-generated) |
-| `.github/workflows/` | GitHub Actions for deployment |
-| `Gemfile`, `Gemfile.lock` | Ruby dependencies for Jekyll |
-| `_config.yml` | Site-wide configuration file |
+```text
+
+├── _pages/                # Static pages
+├── _posts/                # Blog posts
+├── _publications/         # Publication collection items
+├── _talks/                # Talks collection items
+├── _data/                 # Navigation, UI text, and site data
+├── _includes/             # Theme includes
+├── _layouts/              # Layout templates
+├── _sass/                 # Theme and custom styles
+├── assets/                # CSS, JS, images, PDFs
+├── .github/workflows/     # CI / deployment workflows
+├── index.md               # Homepage (served at /)
+├── _config.yml            # Site-wide configuration
+├── Gemfile                # Ruby dependencies
+├── Gemfile.lock           # Locked dependency versions
+└── README.md              # Repository documentation
+```
 
 ---
 
 ## ⚙️ Features
 
-- ✅ Responsive academic website template
+- ✅ Responsive academic website template (Minimal Mistakes)
 - ✅ Markdown-driven content
-- ✅ Integrated publications, talks, and blog support
-- ✅ Supports PDFs (papers, presentations)
+- ✅ Collections for **publications** and **talks**
+- ✅ PDF support for papers and presentations
+- ✅ Author profile sidebar and wide layouts
 - ✅ Automatic deployment with **GitHub Actions**
-- ✅ Customizable theme and styles via `_sass/`
+- ✅ Customizable styles via `_sass/`
 
 ---
 
@@ -57,19 +70,26 @@ bundle install
 ```bash
 bundle exec jekyll serve
 ```
-Website will be available at: `http://localhost:4000`
+Website will be available at: 
+```
+http://localhost:4000
+```
+
+> Changes to `_config.yml` require restarting the server.
 
 ---
 
 ## 📖 Content Management
 
 | 📄 Content | 📂 Directory |
-|--------|-----------|
-| **Blog Post** | `_posts/YYYY-MM-DD-title.markdown` |
-| **Publication** | `_publications/` |
-| **Talk** | `_talks/` |
-| **Images / PDFs** | `assets/images/`, `assets/publications/`, `assets/presentations/` |
-| **Navigation/Labels** | `_data/navigation.yml`, `_data/ui-text.yml` |
+|--------------|----------|
+| Blog Post | `_posts/YYYY-MM-DD-title.markdown` |
+| Static Page | `_pages/*.md` |
+| Publication | `_publications/` |
+| Talk | `_talks/` |
+| Images | `assets/images/` |
+| PDFs | `assets/publications/`, `assets/presentations/` |
+| Navigation / UI Text | `_data/navigation.yml`, `_data/ui-text.yml` |
 
 ---
 
@@ -78,30 +98,45 @@ The website deploys automatically via **GitHub Pages** using:
 ```
 .github/workflows/pages.yml
 ```
+Pull requests into the `main` branch trigger the deployment.
+
+---
+
+## 🌐 Continuous Integration & Deployment
+
+### CI Pipeline (GitHub Actions)
+
+CI workflow: `.github/workflows/ci.yml`
+
+Runs on:
+- `push` to `main`
+- `pull_request` targeting `main`
+- manual trigger (`workflow_dispatch`)
+
+What it does:
+- Checks out the repo
+- Sets up Ruby **3.1.7** + Bundler **2.6.9** (with bundler cache)
+- Builds the site: `bundle exec jekyll build --trace --strict_front_matter`
+- Runs HTML checks (html-proofer) on `_site` (images/scripts/links; external links disabled)
+- Audits Ruby gems using `bundler-audit`
+
+### 🌐 Deployment
+The website deploys automatically via **GitHub Pages** using:
+```
+.github/workflows/pages.yml
+```
 Pushing to the `main` branch triggers the deployment.
 
 ---
 
-## 📂 Example Asset Usage
-- 📄 **Presentation PDF**: `assets/presentations/19Boston.pdf`
-- 📄 **Publication PDF**: `assets/publications/20FactorInvesting.pdf`
-- 🖼 **Images**: `assets/images/mba_defense.jpg`
-
----
-
 ## ✅ License
-The content of this website (articles, blog posts, publications) is licensed under the 
-[Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). 
 
-You are free to share and adapt the material for non-commercial purposes with proper attribution.
-© Tim Herpich
+© Tim Herpich. All rights reserved.
 
+The content of this website — including but not limited to text, articles, blog posts, publications, figures, and presentations — is **not licensed for reuse**.
 
-## 🙌 Credits
-Powered by:
+If you are interested in reusing any part of the content, please contact me directly to request permission.
 
-- [Jekyll](https://jekyllrb.com/)
-- [Minimal Mistakes Theme](https://mmistakes.github.io/minimal-mistakes/)
+**Unauthorized use of this material is prohibited**.
 
 ---
-
