@@ -23,6 +23,12 @@ var store = [{
         "url": "/finance/personal%20growth/2025/10/30/CfaCompletion.html",
         "teaser": null
       },{
+        "title": "Solvency II Review: Rethinking Long-Term Guarantees",
+        "excerpt":"Introduction and Motivation We recently published a whitepaper on the Solvency II Review, focusing on the new Long-Term Guarantees (LTG) measures — in particular interest-rate extrapolation and the volatility adjustment. The paper provides a detailed analysis of both methodologies and the practical challenges observed during implementation. Extrapolation: Introducing Market Sensitivity...","categories": ["Finance","Risk Management"],
+        "tags": ["Solvency II","LTG","extrapolation","volatility adjustment","insurance"],
+        "url": "/finance/risk%20management/2026/02/10/DfineWhitepaper.html",
+        "teaser": null
+      },{
         "title": "Collective Power: Minimal Model for Thermodynamics of Nonequilibrium Phase Transitions",
         "excerpt":" ","categories": [],
         "tags": [],
@@ -63,6 +69,12 @@ var store = [{
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/publications/items/24Serv/",
+        "teaser": null
+      },{
+        "title": "Solvency II Review – What’s New for the Long-Term Guarantees",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/publications/items/26dfine/",
         "teaser": null
       },{
         "title": "Effekte der Tachyonenphysik",
