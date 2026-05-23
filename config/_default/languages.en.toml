@@ -1,0 +1,23 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "Tim Herpich"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+description = "Welcome to the personal website of Tim Herpich."
+
+[params.author]
+name = "Tim Herpich"
+image = "/assets/images/avatar.png"
+headline = "Risk & Technology Manager in Insurance and Asset Management"
+bio = "Risk & Technology Manager in Insurance and Asset Management"
+links = [
+  { linkedin = "https://www.linkedin.com/in/timherpich" },
+  { github = "https://github.com/tim-herpich" },
+  { orcid = "https://orcid.org/0000-0002-2749-2557" }
+]

@@ -1,0 +1,40 @@
+[[main]]
+name = "Home"
+pageRef = "/"
+weight = 10
+
+[[main]]
+name = "CV"
+pageRef = "cv"
+weight = 20
+
+[[main]]
+name = "Publications"
+pageRef = "publications"
+weight = 30
+
+[[main]]
+name = "Talks"
+pageRef = "talks"
+weight = 40
+
+[[main]]
+name = "Blog"
+pageRef = "posts"
+weight = 50
+
+[[footer]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/timherpich"
+weight = 10
+
+[[footer]]
+name = "GitHub"
+url = "https://github.com/tim-herpich"
+weight = 20
+
+[[footer]]
+name = "ORCID"
+url = "https://orcid.org/0000-0002-2749-2557"
+weight = 30
+
