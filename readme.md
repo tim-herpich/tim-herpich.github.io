@@ -28,17 +28,16 @@ Content is Markdown-driven and structured to be easy to maintain and extend over
 │   └── about/             # About page
 ├── layouts/               # Custom Hugo templates for publications and talks
 ├── static/assets/         # Images, PDFs, icons, and legacy static assets
-├── themes/blowfish/       # Blowfish theme submodule
+├── themes/blowfish/       # Vendored Blowfish theme
 ├── .github/workflows/     # CI workflows
 └── readme.md              # Repository documentation
 ```
 
 ## Local Setup
 
-Install Hugo Extended, then fetch the theme submodule:
+Install Hugo Extended, then start the local server:
 
 ```bash
-git submodule update --init --recursive
 hugo server
 ```
 
@@ -82,7 +81,7 @@ Runs on:
 
 What it does:
 
-- Checks out the repository with submodules
+- Checks out the repository
 - Installs Hugo Extended
 - Builds the site with `hugo --gc --minify`
 
