@@ -1,11 +1,12 @@
 <li>
   <em>{{ .Title }}</em><br>
   {{ with .Params.authors }}
-    {{ $authors := split . ", " }}
-    {{ range $index, $author := $authors }}
-      {{ if in $author "Herpich T." }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}{{ if lt (add $index 1) (len $authors) }}, {{ end }}
-    {{ end }}
-    <br>
+  {{ $authors := split . ", " }}
+  {{ range $index, $author := $authors }}
+  {{ if in $author "Herpich T." }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}{{ if lt (add $index 1)
+  (len $authors) }}, {{ end }}
+  {{ end }}
+  <br>
   {{ end }}
   {{ with .Params.journal }}{{ . }}, {{ end }}{{ with .Params.year }}{{ . }}{{ end }}<br>
   {{ with .Params.link }}<a href="{{ . }}" target="_blank" rel="noopener">[paper]</a>{{ end }}
@@ -13,4 +14,3 @@
   {{ with .Params.press }} <a href="{{ . }}" target="_blank" rel="noopener">[press]</a>{{ end }}
   {{ with .Params.thesis }} <a href="{{ . }}" target="_blank" rel="noopener">[thesis]</a>{{ end }}
 </li>
-

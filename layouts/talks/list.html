@@ -6,12 +6,12 @@
   </header>
 
   <div class="collection-toggle" data-toggle-group="talks">
-    <button type="button" data-target="talks-by-year" class="active">Sort by Year</button>
+    <button type="button" data-target="talks-by-year" class="is-active">Sort by Year</button>
     <button type="button" data-target="talks-by-type">Sort by Type</button>
   </div>
 
   {{ $pages := where .Site.RegularPages "Section" "talks" }}
-  <section id="talks-by-year" class="collection-panel active">
+  <section id="talks-by-year" class="collection-panel is-active">
     {{ $sortedByYear := sort $pages "Params.year" "desc" }}
     {{ $currentYear := "" }}
     {{ range $sortedByYear }}
