@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 description: "Overview of education, work experience, and professional milestones."
+layout: "simple"
 # robots: noindex
 ---
 <h1>Curriculum Vitae</h1>

@@ -4,9 +4,14 @@ pageRef = "/"
 weight = 10
 
 [[main]]
+name = "About Me"
+pageRef = "about"
+weight = 20
+
+[[main]]
 name = "CV"
 pageRef = "cv"
-weight = 20
+weight = 21
 
 [[main]]
 name = "Publications"
