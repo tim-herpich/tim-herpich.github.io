@@ -21,5 +21,5 @@ This website serves as a platform to share insights from my work in financial se
 
 I am always happy to connect, exchange ideas, or explore potential collaborations.
 
-- [Contact form](https://docs.google.com/forms/d/1Z6J9c-2oqkAa1TTiqnBMEwx3F3yI0AgkzevY9lryfjs/viewform)
+- {{< email email="tim.herpich@d-fine.com" subject="Website inquiry" text="Email me" >}}
 - [LinkedIn](https://www.linkedin.com/in/timherpich)

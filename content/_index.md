@@ -13,4 +13,4 @@ Explore my work:
 - [Talks](/talks/)
 - [Blog](/posts/)
 
-For collaborations or exchange, please use the [contact form](https://docs.google.com/forms/d/1Z6J9c-2oqkAa1TTiqnBMEwx3F3yI0AgkzevY9lryfjs/viewform) or connect via [LinkedIn](https://www.linkedin.com/in/timherpich).
+For collaborations or exchange, please {{< email email="tim.herpich@d-fine.com" subject="Website inquiry" text="email me" >}} or connect via [LinkedIn](https://www.linkedin.com/in/timherpich).
