@@ -4,7 +4,7 @@ pageRef = "/"
 weight = 10
 
 [[main]]
-name = "About Me"
+name = "About"
 pageRef = "about"
 weight = 20
 

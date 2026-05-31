@@ -20,11 +20,8 @@
 
 .explore-work__label {
   margin: 0 0 0.9rem;
-  font-size: 0.85rem;
+  font-size: 2rem;
   font-weight: 800;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgb(8 145 178);
 }
 
 .dark .explore-work__label {

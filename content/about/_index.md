@@ -1,9 +1,8 @@
 ---
-title: "About Me"
+title: "About"
 layout: "simple"
 ---
 
-## Profile
 
 I am a manager in financial services with a strong quantitative and technical background, currently based in the Zurich office of a [European consulting boutique](https://www.d-fine.com/en/locations/switzerland/). I consult at the intersection of technology, risk, and asset management for insurance and asset management clients in Switzerland and Germany.
 
