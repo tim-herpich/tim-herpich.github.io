@@ -1,3 +1,25 @@
+body {
+  background-image:
+    linear-gradient(rgba(248, 250, 252, 0.8), rgba(248, 250, 252, 0.8)),
+    url('/assets/images/background_white.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html.dark body {
+  background-image:
+    linear-gradient(rgba(10, 14, 22, 0.76), rgba(10, 14, 22, 0.76)),
+    url('/assets/images/background_dark.jpg');
+}
+
+@media (max-width: 767px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
 .explore-work {
   margin-top: 2rem;
 }
@@ -24,9 +46,9 @@
   font-weight: 800;
 }
 
-.dark .explore-work__label {
+/* .dark .explore-work__label {
   color: rgb(103 232 249);
-}
+} */
 
 .explore-work__grid {
   display: grid;
