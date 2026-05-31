@@ -12,32 +12,38 @@
 
   {{ $pages := where .Site.RegularPages "Section" "talks" }}
   <section id="talks-by-year" class="collection-panel active">
-    {{ range $pages.GroupByParam "year" "desc" }}
-      <h2>{{ .Key }}</h2>
+    {{ $sortedByYear := sort $pages "Params.year" "desc" }}
+    {{ $currentYear := "" }}
+    {{ range $sortedByYear }}
+    {{ $year := printf "%v" .Params.year }}
+    {{ if and $year (ne $year "<nil>") }}
+      {{ if ne $year $currentYear }}
+      {{ if ne $currentYear "" }}</ul>{{ end }}
+      <h2>{{ $year }}</h2>
       <ul>
-        {{ range .Pages.ByTitle }}
-          {{ partial "talk-item.html" . }}
+        {{ $currentYear = $year }}
         {{ end }}
-      </ul>
-    {{ end }}
+        {{ partial "talk-item.html" . }}
+        {{ end }}
+        {{ end }}
+        {{ if ne $currentYear "" }}</ul>{{ end }}
   </section>
 
   <section id="talks-by-type" class="collection-panel">
     {{ $typeOrder := slice "Conferences" "Online" }}
     {{ range $typeOrder }}
-      {{ $type := . }}
-      {{ $items := where $pages "Params.type" $type }}
-      {{ if gt (len $items) 0 }}
-        <h2>{{ $type }}</h2>
-        <ul>
-          {{ range sort $items "Params.year" "desc" }}
-            {{ partial "talk-item.html" . }}
-          {{ end }}
-        </ul>
+    {{ $type := . }}
+    {{ $items := where $pages "Params.type" $type }}
+    {{ if gt (len $items) 0 }}
+    <h2>{{ $type }}</h2>
+    <ul>
+      {{ range sort $items "Params.year" "desc" }}
+      {{ partial "talk-item.html" . }}
       {{ end }}
+    </ul>
+    {{ end }}
     {{ end }}
   </section>
 </article>
 {{ partial "collection-toggle-script.html" . }}
 {{ end }}
-

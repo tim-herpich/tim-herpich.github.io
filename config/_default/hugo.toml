@@ -16,7 +16,6 @@ talks = "/talks/items/:slug/"
 [taxonomies]
 tag = "tags"
 category = "categories"
-author = "authors"
 series = "series"
 
 [outputs]

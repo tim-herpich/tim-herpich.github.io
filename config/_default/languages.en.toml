@@ -13,7 +13,7 @@ description = "Welcome to the personal website of Tim Herpich."
 
 [params.author]
 name = "Tim Herpich"
-image = "/assets/images/avatar.png"
+image = "images/avatar.png"
 headline = "Risk & Technology Manager in Insurance and Asset Management"
 bio = "Risk & Technology Manager in Insurance and Asset Management"
 links = [
