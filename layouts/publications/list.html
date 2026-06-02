@@ -1,0 +1,49 @@
+{{ define "main" }}
+<article class="prose dark:prose-invert max-w-none">
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="collection-toggle" data-toggle-group="publications">
+    <button type="button" data-target="pubs-by-year" class="is-active">Sort by Year</button>
+    <button type="button" data-target="pubs-by-type">Sort by Type</button>
+  </div>
+
+  {{ $pages := where .Site.RegularPages "Section" "publications" }}
+  <section id="pubs-by-year" class="collection-panel is-active">
+    {{ $sortedByYear := sort $pages "Params.year" "desc" }}
+    {{ $currentYear := "" }}
+    {{ range $sortedByYear }}
+    {{ $year := printf "%v" .Params.year }}
+    {{ if and $year (ne $year "<nil>") }}
+      {{ if ne $year $currentYear }}
+      {{ if ne $currentYear "" }}</ul>{{ end }}
+      <h2>{{ $year }}</h2>
+      <ul>
+        {{ $currentYear = $year }}
+        {{ end }}
+        {{ partial "publication-item.html" . }}
+        {{ end }}
+        {{ end }}
+        {{ if ne $currentYear "" }}</ul>{{ end }}
+  </section>
+
+  <section id="pubs-by-type" class="collection-panel">
+    {{ $typeOrder := slice "Whitepapers" "Journals" "Theses" "Other" }}
+    {{ range $typeOrder }}
+    {{ $type := . }}
+    {{ $items := where $pages "Params.type" $type }}
+    {{ if gt (len $items) 0 }}
+    <h2>{{ $type }}</h2>
+    <ul>
+      {{ range sort $items "Params.year" "desc" }}
+      {{ partial "publication-item.html" . }}
+      {{ end }}
+    </ul>
+    {{ end }}
+    {{ end }}
+  </section>
+</article>
+{{ partial "collection-toggle-script.html" . }}
+{{ end }}

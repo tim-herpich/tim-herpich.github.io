@@ -1,0 +1,27 @@
+baseURL = "https://tim-herpich.github.io/"
+defaultContentLanguage = "en"
+enableEmoji = true
+enableRobotsTXT = true
+summaryLength = 30
+theme = "blowfish"
+
+[pagination]
+pagerSize = 10
+
+[permalinks]
+posts = "/posts/:year/:month/:slug/"
+publications = "/publications/items/:slug/"
+talks = "/talks/items/:slug/"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+changefreq = "weekly"
+filename = "sitemap.xml"
+priority = 0.5

@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="prose dark:prose-invert max-w-none">
+  <h1>{{ .Title }}</h1>
+  <ul>
+    {{ partial "talk-item.html" . }}
+  </ul>
+  {{ .Content }}
+</article>
+{{ end }}
+
