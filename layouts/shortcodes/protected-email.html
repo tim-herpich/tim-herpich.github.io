@@ -1,0 +1,25 @@
+{{ $user := .Get "user" }}
+{{ $domain := .Get "domain" }}
+{{ $subject := .Get "subject" | default "" }}
+{{ $text := .Get "text" | default "email me" }}
+
+<a href="#" class="protected-email" data-user="{{ $user }}" data-domain="{{ $domain }}" data-subject="{{ $subject }}">
+    {{ $text }}
+</a>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".protected-email").forEach(function (link) {
+            const user = link.dataset.user;
+            const domain = link.dataset.domain;
+            const subject = link.dataset.subject;
+            let href = "mailto:" + user + "@" + domain;
+
+            if (subject) {
+                href += "?subject=" + encodeURIComponent(subject);
+            }
+
+            link.setAttribute("href", href);
+        });
+    });
+</script>

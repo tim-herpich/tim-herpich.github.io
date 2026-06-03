@@ -8,7 +8,7 @@ description: "Tim Herpich, Consulting, Risk Management, Asset Management, Softwa
 
 I am a manager in financial services with a quantitative and technical background, working with insurers and asset managers on topics at the intersection of technology, risk, and investment.
 
-This website brings together the main strands of my work: applied perspectives from consulting, research from my academic background in statistical physics, and selected writing on risk management, asset management, and technical delivery.
+This website brings together the main strands of my work: applied perspectives from consulting on risk management, asset management, and technical delivery.
 
 ---
 
@@ -22,4 +22,4 @@ This website brings together the main strands of my work: applied perspectives f
 	</div>
 </div>
 
-For collaborations, speaking invitations, or expert exchange, please {{< email email="tim.herpich@d-fine.com" subject="Website inquiry" text="email me" >}} or connect via [LinkedIn](https://www.linkedin.com/in/timherpich).
+For collaborations or casual exchange, please {{< protected-email user="tim.herpich" domain="d-fine.com" subject="Website inquiry" text="email me" >}} or connect via [LinkedIn](https://www.linkedin.com/in/timherpich).
