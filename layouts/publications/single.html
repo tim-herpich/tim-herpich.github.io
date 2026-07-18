@@ -1,10 +1,12 @@
 {{ define "main" }}
-<article class="prose dark:prose-invert max-w-none">
-  <h1>{{ .Title }}</h1>
-  <ul>
+<article class="library-page library-page--publications">
+  <header class="library-hero">
+    <p class="library-eyebrow">Publication</p>
+    <h1>{{ strings.TrimSpace .Title }}</h1>
+  </header>
+  <ol class="collection-list">
     {{ partial "publication-item.html" . }}
-  </ul>
-  {{ .Content }}
+  </ol>
+  {{ with .Content }}<div class="prose dark:prose-invert max-w-none">{{ . }}</div>{{ end }}
 </article>
 {{ end }}
-

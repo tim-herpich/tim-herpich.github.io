@@ -1,16 +1,23 @@
-<li>
-  <em>{{ .Title }}</em><br>
-  {{ with .Params.authors }}
-  {{ $authors := split . ", " }}
-  {{ range $index, $author := $authors }}
-  {{ if in $author "Herpich T." }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}{{ if lt (add $index 1)
-  (len $authors) }}, {{ end }}
-  {{ end }}
-  <br>
-  {{ end }}
-  {{ with .Params.journal }}{{ . }}, {{ end }}{{ with .Params.year }}{{ . }}{{ end }}<br>
-  {{ with .Params.link }}<a href="{{ . }}" target="_blank" rel="noopener">[paper]</a>{{ end }}
-  {{ with .Params.preprint }} <a href="{{ . }}" target="_blank" rel="noopener">[preprint]</a>{{ end }}
-  {{ with .Params.press }} <a href="{{ . }}" target="_blank" rel="noopener">[press]</a>{{ end }}
-  {{ with .Params.thesis }} <a href="{{ . }}" target="_blank" rel="noopener">[thesis]</a>{{ end }}
+<li class="collection-item publication-item">
+  <div class="collection-item__body">
+    <p class="collection-item__type">{{ .Params.type }}</p>
+    <h3>{{ strings.TrimSpace .Title }}</h3>
+    {{ with .Params.authors }}
+    <p class="collection-item__authors">
+      {{ $authors := split . ", " }}
+      {{ range $index, $author := $authors }}
+      {{ if in $author "Herpich T." }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}{{ if lt (add $index 1) (len $authors) }}, {{ end }}
+      {{ end }}
+    </p>
+    {{ end }}
+    <p class="collection-item__meta">
+      {{ with .Params.journal }}{{ . }}{{ end }}{{ with .Params.volume }} · Vol. {{ . }}{{ end }}{{ with .Params.article }} · {{ . }}{{ end }}{{ with .Params.year }} · {{ . }}{{ end }}
+    </p>
+    <div class="collection-item__links">
+      {{ with .Params.link }}<a href="{{ . }}" target="_blank" rel="noopener">Paper</a>{{ end }}
+      {{ with .Params.preprint }}<a href="{{ . }}" target="_blank" rel="noopener">Preprint</a>{{ end }}
+      {{ with .Params.press }}<a href="{{ . }}" target="_blank" rel="noopener">Press</a>{{ end }}
+      {{ with .Params.thesis }}<a href="{{ . }}" target="_blank" rel="noopener">Thesis</a>{{ end }}
+    </div>
+  </div>
 </li>
