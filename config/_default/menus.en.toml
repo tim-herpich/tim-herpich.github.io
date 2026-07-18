@@ -1,17 +1,12 @@
 [[main]]
-name = "Home"
-pageRef = "/"
+name = "CV"
+pageRef = "cv"
 weight = 10
 
 [[main]]
-name = "About"
-pageRef = "about"
+name = "Projects"
+pageRef = "projects"
 weight = 20
-
-[[main]]
-name = "CV"
-pageRef = "cv"
-weight = 21
 
 [[main]]
 name = "Publications"
@@ -28,6 +23,11 @@ name = "Blog"
 pageRef = "posts"
 weight = 50
 
+[[main]]
+name = "About"
+pageRef = "about"
+weight = 60
+
 [[footer]]
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/timherpich"
@@ -42,4 +42,3 @@ weight = 20
 name = "ORCID"
 url = "https://orcid.org/0000-0002-2749-2557"
 weight = 30
-

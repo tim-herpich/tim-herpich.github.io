@@ -40,6 +40,11 @@ html.dark body {
   font-size: 1.08rem;
 }
 
+article>header>img.rounded-full.nozoom {
+  width: 15rem;
+  height: 15rem;
+}
+
 .explore-work__label {
   margin: 0 0 0.9rem;
   font-size: 2rem;
