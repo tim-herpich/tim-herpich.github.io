@@ -14,8 +14,8 @@ description = "Welcome to the personal website of Tim Herpich."
 [params.author]
 name = "Tim Herpich"
 image = "images/avatar.png"
-headline = "Risk & Technology Manager in Insurance and Asset Management"
-bio = "Risk & Technology Manager in Insurance and Asset Management"
+headline = "Risk & Technology Manager in Insurance and Asset Management | PhD, MBA, CFA"
+bio = "Risk & Technology Manager in Insurance and Asset Management | PhD, MBA, CFA"
 links = [
   { email = "tim.herpich@d-fine.com" },
   { linkedin = "https://www.linkedin.com/in/timherpich" },

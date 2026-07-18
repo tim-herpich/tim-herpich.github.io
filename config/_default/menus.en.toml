@@ -23,11 +23,6 @@ name = "Blog"
 pageRef = "posts"
 weight = 50
 
-[[main]]
-name = "About"
-pageRef = "about"
-weight = 60
-
 [[footer]]
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/timherpich"

@@ -6,14 +6,7 @@ robots: "index,follow"
 cv:
   hero:
     title: "Curriculum Vitae"
-    subtitle: "My professional profile combines financial services consulting with a quantitative research background and hands-on technology delivery. I work on risk, insurance and asset management topics where analytical modelling, regulatory understanding, software engineering and project leadership need to come together."
-    metrics:
-      - label: "Current role"
-        value: "Manager"
-      - label: "Industry"
-        value: "Insurance & Asset Management"
-      - label: "Thematic Focus"
-        value: "Risk & Technology"
+    subtitle: "My professional profile combines extensive experience in financial services consulting with a strong academic foundation in theoretical physics and business."
 
   timeline:
     - period: "07/2025 - Present"
