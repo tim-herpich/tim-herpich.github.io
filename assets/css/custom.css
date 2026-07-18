@@ -20,82 +20,124 @@ html.dark body {
   }
 }
 
-.explore-work {
-  margin-top: 2rem;
-}
-
-.home-profile-copy {
-  padding-top: 1rem;
-}
-
-.home-profile-copy :where(h1:first-child, h2:first-child) {
-  margin-top: 0;
-  margin-bottom: 1.15rem;
-  font-size: clamp(2.35rem, 5vw, 3.5rem);
-  line-height: 0.98;
-  letter-spacing: -0.04em;
-}
-
-.home-profile-copy :where(p:first-of-type) {
-  font-size: 1.08rem;
-}
-
 article>header>img.rounded-full.nozoom {
   width: 15rem;
   height: 15rem;
 }
 
-.explore-work__label {
-  margin: 0 0 0.9rem;
-  font-size: 2rem;
-  font-weight: 800;
+.home-profile-copy {
+  max-width: 56rem;
+  margin: 2rem auto 0;
+  text-align: left;
 }
 
-/* .dark .explore-work__label {
-  color: rgb(103 232 249);
-} */
-
-.explore-work__grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
-  max-width: 42rem;
+.home-profile-copy>p {
+  margin: 1rem 0 0;
+  color: rgb(71 85 105);
+  font-size: clamp(0.98rem, 1.5vw, 1.12rem);
+  line-height: 1.7;
 }
 
-.explore-work__link {
-  display: block;
-  padding: 1rem 1.1rem;
-  border: 1px solid rgba(148, 163, 184, 0.28);
-  border-radius: 1rem;
-  background: linear-gradient(180deg, rgba(248, 250, 252, 0.96), rgba(241, 245, 249, 0.88));
-  color: rgb(15 23 42);
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+.home-profile-copy>p:first-child {
+  margin-top: 0;
 }
 
-.explore-work__link:hover {
-  transform: translateY(-2px);
-  border-color: rgba(14, 165, 233, 0.4);
-  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.1);
+.dark .home-profile-copy>p {
+  color: rgb(186 190 200);
+}
+
+.home-profile-copy hr {
+  margin: 2rem 0 0;
+  border: 0;
+  border-top: 1px solid rgba(100, 116, 139, 0.22);
+}
+
+.home-profile-copy h2 {
+  margin: 3rem 0 0;
   color: rgb(8 145 178);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.dark .explore-work__link {
-  border-color: rgba(82, 82, 91, 0.7);
-  background: linear-gradient(180deg, rgba(24, 24, 27, 0.94), rgba(39, 39, 42, 0.9));
-  color: rgb(244 244 245);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
-}
-
-.dark .explore-work__link:hover {
+.dark .home-profile-copy h2 {
   color: rgb(103 232 249);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 767px) {
-  .explore-work__grid {
-    grid-template-columns: 1fr;
-  }
+.home-profile-copy h3 {
+  margin: 0.35rem 0 0;
+  color: rgb(15 23 42);
+  font-size: clamp(1.8rem, 3vw, 2.65rem);
+  font-weight: 850;
+  line-height: 1.05;
+}
+
+.dark .home-profile-copy h3 {
+  color: rgb(245 245 245);
+}
+
+.home-profile-copy h3+p {
+  margin: 1rem 0 0;
+}
+
+.home-profile-copy ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.home-profile-copy li {
+  margin: 0;
+  padding-left: 0;
+}
+
+.home-profile-copy>ul:first-of-type a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.6rem;
+  padding: 0.62rem 0.95rem;
+  border: 1px solid rgba(8, 145, 178, 0.28);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.62);
+  text-decoration: none;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.home-profile-copy>ul:first-of-type a:hover {
+  transform: translateY(-1px);
+  border-color: rgba(8, 145, 178, 0.5);
+  background: rgba(240, 249, 255, 0.86);
+}
+
+.dark .home-profile-copy>ul:first-of-type a {
+  border-color: rgba(103, 232, 249, 0.28);
+  background: rgba(24, 24, 27, 0.58);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.2);
+}
+
+.dark .home-profile-copy>ul:first-of-type a:hover {
+  border-color: rgba(103, 232, 249, 0.5);
+  background: rgba(39, 39, 42, 0.72);
+}
+
+.home-profile-copy a {
+  color: rgb(8 145 178);
+  font-weight: 800;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
+.home-profile-copy a.protected-email {
+  font-weight: 600;
+}
+
+.dark .home-profile-copy a {
+  color: rgb(103 232 249);
 }

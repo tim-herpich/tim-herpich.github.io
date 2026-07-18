@@ -1,15 +1,173 @@
 {{ define "main" }}
-<article class="max-w-full">
-    <header>
-        {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
-        {{ partial "breadcrumbs.html" . }}
+{{ $data := .Params.cv }}
+<article class="cv-page">
+  <header class="cv-hero">
+    {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
+    {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <p class="cv-eyebrow">Professional Profile</p>
+    <h1>{{ $data.hero.title | default .Title }}</h1>
+    <p class="cv-hero__subtitle">{{ $data.hero.subtitle | default .Description }}</p>
+
+    {{ with $data.hero.badges }}
+    <div class="cv-badges" aria-label="Profile tags">
+      {{ range . }}
+      <span>{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ with $data.hero.metrics }}
+    <dl class="cv-metrics">
+      {{ range . }}
+      <div>
+        <dt>{{ .label }}</dt>
+        <dd>{{ .value }}</dd>
+      </div>
+      {{ end }}
+    </dl>
+    {{ end }}
+  </header>
+
+  {{ $workItems := where $data.timeline "category" "Work Experience" }}
+  {{ $academicItems := where $data.timeline "category" "Education" }}
+  {{ $credentialItems := where $data.timeline "category" "in" (slice "Certification" "Award") }}
+
+  <section class="cv-section" aria-labelledby="cv-work-timeline">
+    <div class="cv-section__header">
+      <p class="cv-section__kicker">Professional Experience</p>
+      <h2 id="cv-work-timeline">Consulting</h2>
+      <!-- <p>Roles across financial services consulting, quantitative risk, insurance analytics and technology delivery.</p> -->
+    </div>
+
+    <ol class="cv-timeline">
+      {{ range $workItems }}
+      <li>
+        <div class="cv-timeline__period">{{ .period }}</div>
+        <div class="cv-timeline__content">
+          <div class="cv-timeline__topline">
+            {{ with .category }}<p class="cv-timeline__category">{{ . }}</p>{{ end }}
+            {{ with .location }}<p class="cv-timeline__location">{{ . }}</p>{{ end }}
+          </div>
+          <h3>
+            {{ if .link }}
+            <a href="{{ .link }}" target="_blank" rel="noreferrer">{{ .title }}</a>
+            {{ else }}
+            {{ .title }}
+            {{ end }}
+          </h3>
+          {{ with .organization }}<p class="cv-timeline__organization">{{ . }}</p>{{ end }}
+          {{ with .summary }}<p class="cv-timeline__summary">{{ . }}</p>{{ end }}
+          {{ with .thesis }}
+          <p class="cv-timeline__links">
+            <a href="{{ . }}" target="_blank" rel="noreferrer">Thesis</a>
+          </p>
+          {{ end }}
+          {{ with .tags }}
+          <div class="cv-pills" aria-label="Tags">
+            {{ range . }}
+            <span class="cv-pill">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+  </section>
+
+  <section class="cv-section" aria-labelledby="cv-academic-timeline">
+    <div class="cv-section__header">
+      <p class="cv-section__kicker">Academic Path</p>
+      <h2 id="cv-academic-timeline">Education and Research</h2>
+      <!-- <p>Academic milestones connecting management education, statistical physics and quantitative research.</p> -->
+    </div>
+
+    <ol class="cv-timeline">
+      {{ range $academicItems }}
+      <li>
+        <div class="cv-timeline__period">{{ .period }}</div>
+        <div class="cv-timeline__content">
+          <div class="cv-timeline__topline">
+            {{ with .category }}<p class="cv-timeline__category">{{ . }}</p>{{ end }}
+            {{ with .location }}<p class="cv-timeline__location">{{ . }}</p>{{ end }}
+          </div>
+          <h3>
+            {{ if .link }}
+            <a href="{{ .link }}" target="_blank" rel="noreferrer">{{ .title }}</a>
+            {{ else }}
+            {{ .title }}
+            {{ end }}
+          </h3>
+          {{ with .organization }}<p class="cv-timeline__organization">{{ . }}</p>{{ end }}
+          {{ with .summary }}<p class="cv-timeline__summary">{{ . }}</p>{{ end }}
+          {{ with .thesis }}
+          <p class="cv-timeline__links">
+            <a href="{{ . }}" target="_blank" rel="noreferrer">Thesis</a>
+          </p>
+          {{ end }}
+          {{ with .tags }}
+          <div class="cv-pills" aria-label="Tags">
+            {{ range . }}
+            <span class="cv-pill">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+  </section>
+
+  <section class="cv-section" aria-labelledby="cv-credentials">
+    <div class="cv-section__header">
+      <p class="cv-section__kicker">Credentials</p>
+      <h2 id="cv-credentials">Certifications and Awards</h2>
+      <!-- <p>Professional credentials and academic distinctions that support the broader consulting profile.</p> -->
+    </div>
+
+    <div class="cv-credentials-grid">
+      {{ range $credentialItems }}
+      <article class="cv-credential-card">
+        <div class="cv-credential-card__topline">
+          <p class="cv-timeline__category">{{ .category }}</p>
+          <p class="cv-credential-card__period">{{ .period }}</p>
+        </div>
+        <h3>{{ .title }}</h3>
+        {{ with .organization }}<p class="cv-timeline__organization">{{ . }}</p>{{ end }}
+        {{ with .summary }}<p class="cv-timeline__summary">{{ . }}</p>{{ end }}
+        {{ with .tags }}
+        <div class="cv-pills" aria-label="Tags">
+          {{ range . }}
+          <span class="cv-pill">{{ . }}</span>
+          {{ end }}
+        </div>
         {{ end }}
-        <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-            {{ .Title | emojify }}
-        </h1>
-    </header>
-    <section class="max-w-full mt-6 prose dark:prose-invert">
-        {{ .Content }}
-    </section>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="cv-section" aria-labelledby="cv-skills">
+    <div class="cv-section__header">
+      <p class="cv-section__kicker">Capabilities</p>
+      <h2 id="cv-skills">Skills and Tools</h2>
+      <!-- <p>Core capabilities across financial services, delivery, programming and the tools used in day-to-day consulting
+        work.</p> -->
+    </div>
+
+    <div class="cv-skills-grid">
+      {{ range $data.skills }}
+      <section class="cv-skill-panel" aria-labelledby="{{ anchorize .group }}">
+        <h3 id="{{ anchorize .group }}">{{ .group }}</h3>
+        <div class="cv-pills">
+          {{ range .items }}
+          <span class="cv-pill">{{ . }}</span>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+    </div>
+  </section>
 </article>
 {{ end }}
