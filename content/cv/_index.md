@@ -1,147 +1,196 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+title: "Curriculum Vitae"
+description: "Overview of professional experience, education, certifications, skills and selected awards."
+summary: "Overview of professional experience, education, certifications, skills and selected awards."
+robots: "index,follow"
+cv:
+  hero:
+    title: "Curriculum Vitae"
+    subtitle: "My professional profile combines financial services consulting with a quantitative research background and hands-on technology delivery. I work on risk, insurance and asset management topics where analytical modelling, regulatory understanding, software engineering and project leadership need to come together."
+    metrics:
+      - label: "Current role"
+        value: "Manager"
+      - label: "Industry"
+        value: "Insurance & Asset Management"
+      - label: "Thematic Focus"
+        value: "Risk & Technology"
 
-description: "Overview of education, work experience, and professional milestones."
-layout: "simple"
-# robots: noindex
+  timeline:
+    - period: "07/2025 - Present"
+      title: "Manager"
+      organization: "d-fine AG"
+      location: "Zurich, Switzerland"
+      category: "Work Experience"
+      summary: "Manager in financial services consulting, working with insurance and asset management clients at the intersection of risk, investment, technology and delivery."
+      tags:
+        - Consulting
+        - Project Leadership
+        - Insurance
+        - Asset Management
+        - Technology Delivery
+
+    - period: "03/2023 - 06/2025"
+      title: "Senior Consultant"
+      organization: "d-fine AG"
+      location: "Zurich, Switzerland"
+      category: "Work Experience"
+      summary: "Senior consultant focused on quantitative risk, Solvency II, insurance analytics, portfolio topics and implementation-oriented delivery."
+      tags:
+        - Quantitative Risk
+        - Solvency II
+        - Insurance Analytics
+        - Python
+        - Stakeholder Management
+
+    - period: "06/2020 - 02/2023"
+      title: "(Senior) Consultant"
+      organization: "d-fine GmbH"
+      location: "Frankfurt, Germany"
+      category: "Work Experience"
+      summary: "Consulting work across internal models, regulatory reporting, risk automation, model validation and quantitative software development."
+      tags:
+        - Internal Models
+        - Regulatory Reporting
+        - Model Validation
+        - Python
+        - Automation
+
+    - period: "2022 - 2024"
+      title: "MBA, Business Administration"
+      organization: "Mannheim Business School"
+      category: "Education"
+      summary: "MBA studies with focus on business administration, strategy, leadership and applied management topics. Grade: GPA - 1.2. Thesis: Development of an Innovative Strategy to Leverage Marketing Potentials on Ionity Charging Locations."
+      tags:
+        - MBA
+        - Strategy
+        - Leadership
+        - Management
+
+    - period: "2016 - 2020"
+      title: "PhD, Statistical Physics"
+      organization: "University of Luxembourg"
+      category: "Education"
+      summary: "Doctoral research on nonequilibrium thermodynamics, stochastic thermodynamics and Monte Carlo simulations. Thesis: Collective Effects in Stochastic Thermodynamics."
+      thesis: "https://orbilu.uni.lu/handle/10993/42843"
+      tags:
+        - PhD
+        - Statistical Physics
+        - Monte Carlo
+        - Research
+        - Publications
+
+    - period: "2013 - 2015"
+      title: "Master of Science, Theoretical and Mathematical Physics"
+      organization: "Leipzig University"
+      category: "Education"
+      summary: "Graduated with distinction. Grade: GPA - 1.0, ranked first among peers. Thesis: Linear and nonlinear microrheology."
+      tags:
+        - Theoretical Physics
+        - Mathematical Physics
+        - Distinction
+        - Microrheology
+
+    - period: "2010 - 2013"
+      title: "Bachelor of Science, Physics"
+      organization: "Chemnitz University of Technology"
+      category: "Education"
+      summary: "Graduated with distinction. Grade: GPA - 1.3, ranked first among peers. Thesis: Effekte der Tachyonenphysik."
+      tags:
+        - Physics
+        - Distinction
+        - Research
+
+    - period: "10/2025"
+      title: "Chartered Financial Analyst"
+      organization: "CFA Institute"
+      category: "Certification"
+      summary: "CFA Charterholder, complementing quantitative and technical work with investment analysis, portfolio management and professional ethics."
+      tags:
+        - CFA
+        - Investment Analysis
+        - Portfolio Management
+        - Ethics
+
+    - period: "09/2024"
+      title: "Professional Scrum Master I"
+      organization: "Scrum.org"
+      category: "Certification"
+      summary: "Professional Scrum Master I certification supporting agile delivery, team coordination and iterative project execution."
+      tags:
+        - Agile
+        - Scrum
+        - Delivery
+
+    - period: "04/2016"
+      title: "AFR-PhD Grant"
+      organization: "National Research Fund of Luxembourg"
+      category: "Award"
+      summary: "Competitive PhD grant of 160k EUR awarded by the National Research Fund of Luxembourg."
+      tags:
+        - Research Funding
+        - PhD
+        - Statistical Physics
+
+    - period: "01/2016"
+      title: "Sponsorship Prize"
+      organization: "Freundeskreis e.V., Leipzig University"
+      category: "Award"
+      summary: "Sponsorship prize donated by the alumni network for graduating with distinction."
+      tags:
+        - Academic Excellence
+        - Leipzig University
+
+    - period: "04/2014"
+      title: "Sponsorship Prize"
+      organization: "Institute of Physics, Chemnitz University"
+      category: "Award"
+      summary: "Sponsorship prize awarded to the best undergraduate student."
+      tags:
+        - Academic Excellence
+        - Physics
+
+  skills:
+    - group: "Financial Services"
+      items:
+        - Risk Assessment
+        - Portfolio Analytics
+        - Insurance
+        - Asset Management
+        - Solvency II
+        - DORA
+        - OECD Export Credit Risk Framework
+
+    - group: "Project & Delivery"
+      items:
+        - Project Leadership
+        - Agile Delivery
+        - Stakeholder Engagement
+        - Cross-Functional Team Leadership
+        - Budget Planning
+        - Resource Management
+
+    - group: "Technology"
+      items:
+        - Python
+        - C#
+        - C/C++
+        - Java
+        - R
+        - VBA
+        - SQL
+        - REST APIs
+        - Swagger
+        - CI/CD
+        - Docker
+        - Git
+
+    - group: "Tools & Platforms"
+      items:
+        - JIRA
+        - Confluence
+        - Refinitiv
+        - Bloomberg
+        - GitLab CI
+        - DevOps
+        - AWS
 ---
-<h1>Curriculum Vitae</h1>
-
-<div class="reduced-font">
-
-<!-- Work Experience -->
-<h2>Work Experience</h2>
-<ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Manager, d-fine AG, Zürich, Switzerland</span>
-      <span style="text-align: right; min-width: 100px;">07/2025</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Senior Consultant, d-fine AG, Zürich, Switzerland</span>
-      <span style="text-align: right; min-width: 100px;">03/2023 - 06/2025</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>(Senior) Consultant, d-fine GmbH, Frankfurt, Germany</span>
-      <span style="text-align: right; min-width: 100px;">06/2020 - 02/2023</span>
-    </div>
-  </li>
-</ul>
-
-<!-- Education -->
-<h2>Education</h2>
-<ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>
-        MSc, Business Administration, Mannheim Business School<br>
-        - Grade: GPA – 1.2.<br>
-        - Thesis: An Innovative Strategy to Leverage Marketing Potentials on Charging Locations
-      </span>
-      <span style="text-align: right; min-width: 100px;">2022–2024</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>
-        PhD, Statistical Physics, University of Luxembourg<br>
-        - Thesis: <a href="https://orbilu.uni.lu/handle/10993/42843">Collective Effects in Stochastic Thermodynamics</a>
-      </span>
-      <span style="text-align: right; min-width: 100px;">2016–2020</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>
-        Master of Science, Theoretical and Mathematical Physics, Leipzig University<br>
-        - Grade: GPA – 1.0 (ranked first among peers).<br>
-        - Thesis: Linear and nonlinear microrheology
-      </span>
-      <span style="text-align: right; min-width: 100px;">2013–2015</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>
-        Bachelor of Science, Physics, Chemnitz University of Technology<br>
-        - Grade: GPA – 1.3 (ranked first among peers).<br>
-        - Thesis: Effekte der Tachyonenphysik
-      </span>
-      <span style="text-align: right; min-width: 100px;">2010–2013</span>
-    </div>
-  </li>
-</ul>
-
-
-<!-- Certifications -->
-<h2>Certifications</h2>
-<ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Chatered Financial Analyst since October 2025.</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Professional Scrum Master I (PSM I) since September 2024.</span>
-    </div>
-  </li>
-</ul>
-
-<!-- Skills -->
-<h2>Skills</h2>
-<ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Financial Services: Risk assessment, portfolio analytics, insurance & asset management industry</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Project Management: Agile, stakeholder engagement, cross-functional team leadership</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Regulatory Compliance: Solvency II, DORA, OECD framework for export credit risks</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Programming Languages: Python, C#, C/C++, Java, R, HTML, CSS, VBA</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Tools & Technologies: CI/CD, Docker, Git, REST API / Swagger, JIRA, Confluence, Refinitiv, Bloomberg, SQL</span>
-    </div>
-  </li>
-</ul>
-
-
-<h2>Awards</h2>
-<ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>AFR-PhD Grant (160k EUR) from National Research Fund of Luxembourg</span>
-      <span style="text-align: right; min-width: 100px;">04/2016</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Sponsorship prize donated by the alumni network Freundeskreis e.V. (Leipzig University) for graduating with distinction</span>
-      <span style="text-align: right; min-width: 100px;">01/2016</span>
-    </div>
-  </li>
-  <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span>Sponsorship prize donated by Institute of Physics (Chemnitz University) to the best undergraduate student</span>
-      <span style="text-align: right; min-width: 100px;">04/2014</span>
-    </div>
-  </li>
-</ul>

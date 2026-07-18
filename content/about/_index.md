@@ -12,54 +12,6 @@ I hold an MBA from [Mannheim Business School](https://www.mannheim-business-scho
 
 In addition, I am a CFA Charterholder and an active member of [CFA Society Switzerland](https://cfasocietyswitzerland.org/), complementing my quantitative background with expertise in investment analysis, portfolio management, and professional ethics.
 
-<!--
-## Expertise
-
-### Leadership
-
-Directing delivery, governance and stakeholder alignment for complex transformation work.
-
-- Project Leadership
-- Budget Planning
-- Budget Controlling
-- Resource Management
-- Stakeholder Management
-- Agile Delivery
-- Team Leadership
-
-### Quantitative Methods
-
-Turning mathematical modelling into decision-ready insurance and risk platforms.
-
-- Portfolio Optimization
-- Mean-Variance Optimization
-- Monte Carlo
-- Credit Risk
-- Pricing
-- Exposure Modelling
-- Smith-Wilson
-- Solvency II
-- Internal Models
-
-### Technology
-
-Building production-grade systems across analytics, APIs, cloud, DevOps and enterprise platforms.
-
-- Python
-- C#
-- .NET 8
-- ASP.NET Core
-- REST APIs
-- Streamlit
-- SQL Server
-- PostgreSQL
-- Azure
-- Kubernetes
-- GitLab CI
-- Azure DevOps
-- Microsoft Dynamics 365 Business Central
--->
-
 ## Why This Website?
 
 This website serves as a platform to share insights from my work in financial services and academia. On my [blog](/posts/), I discuss topics related to risk and asset management, reflect on practical experiences, and engage with ongoing debates in the field.

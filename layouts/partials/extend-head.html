@@ -7,3 +7,12 @@
     href="{{ $projectsCSS.RelPermalink }}"
     integrity="{{ $projectsCSS.Data.Integrity }}">
 {{ end }}
+{{ with resources.Get "css/cv.css" }}
+  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+  {{ $cvCSS := . | resources.Minify | resources.Fingerprint $alg }}
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="{{ $cvCSS.RelPermalink }}"
+    integrity="{{ $cvCSS.Data.Integrity }}">
+{{ end }}
