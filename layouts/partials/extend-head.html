@@ -16,3 +16,12 @@
     href="{{ $cvCSS.RelPermalink }}"
     integrity="{{ $cvCSS.Data.Integrity }}">
 {{ end }}
+{{ with resources.Get "css/collections.css" }}
+  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+  {{ $collectionsCSS := . | resources.Minify | resources.Fingerprint $alg }}
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="{{ $collectionsCSS.RelPermalink }}"
+    integrity="{{ $collectionsCSS.Data.Integrity }}">
+{{ end }}

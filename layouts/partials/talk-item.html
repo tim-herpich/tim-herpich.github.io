@@ -1,5 +1,12 @@
-<li>
-  <em>{{ .Title }}</em><br>
-  {{ with .Params.location }}{{ . }}, {{ end }}{{ with .Params.year }}{{ . }}{{ end }}<br>
-  {{ with .Params.presentation }}<a href="{{ . }}" target="_blank" rel="noopener">[presentation]</a>{{ end }}
+<li class="collection-item talk-item">
+  <div class="collection-item__body">
+    <p class="collection-item__type">{{ .Params.type }}</p>
+    <h3>{{ strings.TrimSpace .Title }}</h3>
+    <p class="collection-item__meta">
+      {{ with .Params.location }}{{ . }}{{ end }}{{ with .Params.year }} · {{ . }}{{ end }}
+    </p>
+    <div class="collection-item__links">
+      {{ with .Params.presentation }}<a href="{{ . }}" target="_blank" rel="noopener">Presentation</a>{{ end }}
+    </div>
+  </div>
 </li>
