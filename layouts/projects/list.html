@@ -1,0 +1,80 @@
+{{ define "main" }}
+{{ $data := .Params.portfolio }}
+<article class="projects-page">
+  <header class="projects-hero">
+    {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
+    {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <p class="projects-eyebrow">Project Portfolio</p>
+    <h1>{{ $data.hero.title | default .Title }}</h1>
+    <p class="projects-hero__subtitle">{{ $data.hero.subtitle | default .Description }}</p>
+
+    {{ with $data.hero.badges }}
+    <div class="projects-badges" aria-label="Core competencies">
+      {{ range . }}
+      <span>{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ with $data.hero.metrics }}
+    <dl class="projects-metrics">
+      {{ range . }}
+      <div>
+        <dt>{{ .label }}</dt>
+        <dd>{{ .value }}</dd>
+      </div>
+      {{ end }}
+    </dl>
+    {{ end }}
+  </header>
+
+  <section class="projects-section" aria-labelledby="featured-projects">
+    <div class="projects-section__header">
+      <!-- <p class="projects-section__kicker">Featured Projects</p> -->
+      <h2 id="featured-projects">Featured projects</h2>
+      <p>A selection of projects spanning technical leadership, quantitative finance, risk modelling, and the successful
+        delivery of business-critical software in the insurance and asset management sectors.</p>
+    </div>
+    <div class="featured-projects-grid">
+      {{ range $data.featured }}
+      {{ partial "project-card.html" (dict "project" . "featured" true) }}
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="projects-section" aria-labelledby="additional-projects">
+    <div class="projects-section__header">
+      <!-- <p class="projects-section__kicker">Additional Experience</p> -->
+      <h2 id="additional-projects">Further project references</h2>
+      <!-- <p>Further projects across leadership, quantitative risk, regulatory analytics, automation and technology
+        implementation.</p> -->
+    </div>
+    <div class="additional-projects-grid">
+      {{ range $data.additional }}
+      {{ partial "project-card.html" (dict "project" . "featured" false) }}
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="projects-section" aria-labelledby="project-timeline">
+    <div class="projects-section__header">
+      <p class="projects-section__kicker">Timeline</p>
+      <h2 id="project-timeline">Project history</h2>
+    </div>
+    <ol class="projects-timeline">
+      {{ range $data.timeline }}
+      <li>
+        <div class="projects-timeline__year">{{ .year }}</div>
+        <div class="projects-timeline__content">
+          <h3>{{ .project }}</h3>
+          {{ $meta := slice }}
+          {{ with .industry }}{{ $meta = $meta | append . }}{{ end }}
+          {{ with $meta }}<p>{{ delimit . " / " }}</p>{{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+  </section>
+</article>
+{{ end }}

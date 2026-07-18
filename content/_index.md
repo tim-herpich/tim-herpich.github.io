@@ -13,9 +13,9 @@ This website brings together the main strands of my work: applied perspectives f
 ---
 
 <div class="explore-work">
-	<p class="explore-work__label">Explore my work</p>
+	<p class="explore-work__label">Explore My Work</p>
 	<div class="explore-work__grid">
-		<a class="explore-work__link" href="/about/">About</a>
+		<a class="explore-work__link" href="/projects/">Projects</a>
 		<a class="explore-work__link" href="/publications/">Publications</a>
 		<a class="explore-work__link" href="/talks/">Talks</a>
 		<a class="explore-work__link" href="/posts/">Blog</a>

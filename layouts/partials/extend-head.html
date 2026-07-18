@@ -1,0 +1,9 @@
+{{ with resources.Get "css/projects.css" }}
+  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+  {{ $projectsCSS := . | resources.Minify | resources.Fingerprint $alg }}
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="{{ $projectsCSS.RelPermalink }}"
+    integrity="{{ $projectsCSS.Data.Integrity }}">
+{{ end }}

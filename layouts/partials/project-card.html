@@ -1,0 +1,44 @@
+{{ $project := .project }}
+{{ $featured := .featured | default false }}
+{{ $cardClass := cond $featured "project-card project-card--featured" "project-card project-card--compact" }}
+<article class="{{ $cardClass }}">
+  <div class="project-card__topline">
+    <div class="project-card__icon" aria-hidden="true">
+      {{ partial "icon.html" ($project.icon | default "code") }}
+    </div>
+    <div>
+      {{ with $project.industry }}<p class="project-card__industry">{{ . }}</p>{{ end }}
+      {{ with $project.timeframe }}<p class="project-card__timeframe">{{ . }}</p>{{ end }}
+    </div>
+  </div>
+
+  <div class="project-card__body">
+    <h3>{{ $project.title }}</h3>
+    {{ with $project.role }}<p class="project-card__role">{{ . }}</p>{{ end }}
+    {{ with $project.summary }}<p class="project-card__summary">{{ . }}</p>{{ end }}
+  </div>
+
+  {{ with $project.achievements }}
+    <ul class="project-card__achievements">
+      {{ range . }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+  {{ with $project.technologies }}
+    <div class="project-card__pills" aria-label="Technologies">
+      {{ range . }}
+        <span class="project-pill project-pill--tech">{{ . }}</span>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{ with $project.competencies }}
+    <div class="project-card__pills project-card__pills--competencies" aria-label="Competencies">
+      {{ range . }}
+        <span class="project-pill project-pill--competency">{{ . }}</span>
+      {{ end }}
+    </div>
+  {{ end }}
+</article>
