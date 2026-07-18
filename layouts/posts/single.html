@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{ $page := . }}
+<article class="blog-page blog-post">
+  <header class="blog-post__header">
+    <p class="blog-eyebrow">Blog</p>
+    <h1>{{ .Title | emojify }}</h1>
+    <div class="blog-post__meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+      {{ if gt .ReadingTime 0 }}<span>{{ .ReadingTime }} min read</span>{{ end }}
+      {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
+    </div>
+    {{ with .GetTerms "categories" }}
+    <div class="blog-post__terms" aria-label="Categories">
+      {{ range . }}
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </header>
+
+  <section class="blog-content prose dark:prose-invert">
+    {{ .Content }}
+  </section>
+
+  {{ with .GetTerms "tags" }}
+  <footer class="blog-post__footer">
+    <div class="blog-post__tags" aria-label="Tags">
+      {{ range . }}
+      <a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+      {{ end }}
+    </div>
+    {{ partial "article-pagination.html" $page }}
+  </footer>
+  {{ else }}
+  <footer class="blog-post__footer">
+    {{ partial "article-pagination.html" $page }}
+  </footer>
+  {{ end }}
+</article>
+{{ end }}

@@ -52,7 +52,6 @@ comments: true
 
 <figure style="text-align: center; max-width: 500px; margin: 0 auto;">
   <img src="/assets/images/mba_defense.jpg" alt="Team photo after defense" width="800" style="border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-  <figcaption style="margin-top: -10px; margin-bottom: 40px; color: #555;">
     From left to right: Gerrit, me, Maria, Faith, and Volodymyr.
   </figcaption>
 </figure>

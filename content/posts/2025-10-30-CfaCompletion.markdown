@@ -46,10 +46,7 @@ More information about the CFA Institute and the CFA Program can be found on the
 
 <figure style="text-align: center; max-width: 500px; margin: 0 auto;">
   <img src="/assets/images/cfa-logo.png" alt="CFA Institute Logo" width="600" style="border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-  <figcaption style="margin-top: -10px; margin-bottom: 40px; color: #555;">
         <i>Image courtesy of the CFA Institute. All rights reserved.</i>
   </figcaption>
 </figure>
-
-
 </div>
