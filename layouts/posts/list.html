@@ -1,0 +1,32 @@
+{{ define "main" }}
+<article class="blog-page">
+  <header class="blog-hero">
+    <p class="blog-eyebrow">Notes & reflections</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="blog-hero__subtitle">{{ . }}</p>{{ end }}
+  </header>
+
+  {{ $posts := sort (where .Site.RegularPages "Section" "posts") "Date" "desc" }}
+  {{ if gt (len $posts) 0 }}
+  <section class="blog-archive" aria-label="Blog posts">
+    {{ $currentYear := "" }}
+    {{ range $posts }}
+    {{ $year := .Date.Format "2006" }}
+    {{ if ne $year $currentYear }}
+    {{ if ne $currentYear "" }}</div>
+  </section>{{ end }}
+  <section class="blog-year">
+    <h2>{{ $year }}</h2>
+    <div class="blog-list">
+      {{ $currentYear = $year }}
+      {{ end }}
+      {{ partial "blog/card.html" . }}
+      {{ end }}
+      {{ if ne $currentYear "" }}</div>
+  </section>{{ end }}
+  </section>
+  {{ else }}
+  <p class="blog-empty">No posts yet.</p>
+  {{ end }}
+</article>
+{{ end }}

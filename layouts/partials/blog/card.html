@@ -1,0 +1,49 @@
+{{ $page := . }}
+{{ $image := "" }}
+{{ with $page.Params.featureimage }}
+  {{ $image = . }}
+{{ else }}
+  {{ with $page.Params.excerpt }}
+    {{ if findRE "src=['\"][^'\"]+['\"]" . }}
+      {{ $image = replaceRE "(?s).*src=['\"]([^'\"]+)['\"].*" "$1" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $summary := "" }}
+{{ with $page.Params.description }}
+  {{ $summary = . }}
+{{ else }}
+  {{ with $page.Params.excerpt }}
+    {{ $summary = . | plainify }}
+  {{ else }}
+    {{ $summary = $page.Summary | plainify }}
+  {{ end }}
+{{ end }}
+
+<article class="blog-card">
+  {{ with $image }}
+  <div class="blog-card__media">
+    <img src="{{ . }}" alt="Cover image for {{ $page.Title }}" loading="lazy" decoding="async" data-zoom-src="{{ . }}">
+  </div>
+  {{ end }}
+  <div class="blog-card__body">
+    <p class="blog-card__meta">
+      <time datetime="{{ $page.Date.Format "2006-01-02" }}">{{ $page.Date.Format "2 Jan 2006" }}</time>
+      {{ if gt $page.ReadingTime 0 }}<span>{{ $page.ReadingTime }} min read</span>{{ end }}
+    </p>
+    <h3>
+      <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+    </h3>
+    {{ with $summary }}
+    <p class="blog-card__summary">{{ . | truncate 235 }}</p>
+    {{ end }}
+    {{ with $page.GetTerms "categories" }}
+    <div class="blog-card__terms" aria-label="Categories">
+      {{ range first 3 . }}
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</article>

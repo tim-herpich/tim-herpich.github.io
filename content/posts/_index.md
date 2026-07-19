@@ -1,5 +1,4 @@
 ---
 title: "Blog Posts"
-description: "Posts about recent topics on finance, tech, or science."
+description: "Posts about risk and asset management, regulatory change, quantitative methods, technical implementation and selected professional milestones."
 ---
-

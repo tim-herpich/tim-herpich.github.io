@@ -25,3 +25,12 @@
     href="{{ $collectionsCSS.RelPermalink }}"
     integrity="{{ $collectionsCSS.Data.Integrity }}">
 {{ end }}
+{{ with resources.Get "css/blog.css" }}
+  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+  {{ $blogCSS := . | resources.Minify | resources.Fingerprint $alg }}
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="{{ $blogCSS.RelPermalink }}"
+    integrity="{{ $blogCSS.Data.Integrity }}">
+{{ end }}
