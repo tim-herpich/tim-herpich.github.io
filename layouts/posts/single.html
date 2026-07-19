@@ -1,5 +1,13 @@
 {{ define "main" }}
 {{ $page := . }}
+{{ $deck := "" }}
+{{ with .Params.description }}
+  {{ $deck = . }}
+{{ else }}
+  {{ with .Params.excerpt }}
+    {{ $deck = . | plainify }}
+  {{ end }}
+{{ end }}
 <article class="blog-page blog-post">
   <header class="blog-post__header">
     <p class="blog-eyebrow">Blog</p>
@@ -9,6 +17,7 @@
       {{ if gt .ReadingTime 0 }}<span>{{ .ReadingTime }} min read</span>{{ end }}
       {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
     </div>
+    {{ with $deck }}<p class="blog-post__deck">{{ . | truncate 285 }}</p>{{ end }}
     {{ with .GetTerms "categories" }}
     <div class="blog-post__terms" aria-label="Categories">
       {{ range . }}

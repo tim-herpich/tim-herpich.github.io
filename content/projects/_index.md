@@ -9,20 +9,19 @@ portfolio:
     subtitle: "As a Financial Services Manager with a strong quantitative and technical background, I advise insurers and asset managers on risk, investment and technology transformation. The project references below highlight my track record of translating complex regulatory and business requirements into quantitative models, production-grade software, and successful delivery across actuarial, risk and engineering teams."
 
   featured:
-    - title: "Credit Risk & Pricing Platform"
+    - title: "Credit Risk & Pricing Application"
       role: "Project Lead"
       industry: "Export Credit Agency"
       # timeframe: "Recent transformation initiative"
       icon: "shield"
-      summary: "Led the delivery of an enterprise pricing and credit risk platform for business-critical export credit insurance decisions."
+      summary: "Led the delivery of an enterprise pricing and credit risk .NET application for business-critical export credit insurance decisions."
       achievements:
         - "Led a cross-functional six-person team across business and technology streams."
         - "Managed project planning, budget forecasting, budget controlling and resource allocation."
         - "Extended an existing C#/.NET 8 pricing engine."
         - "Contributed to a new pricing and credit risk framework."
         - "Designed REST APIs and integration patterns."
-        - "Integrated the platform with Microsoft Dynamics 365 Business Central."
-        - "Deployed on an on-premises Kubernetes platform."
+        - "Integrated the application with a Microsoft Dynamics 365 Business Central platform."
       technologies:
         - "C#"
         - ".NET 8"

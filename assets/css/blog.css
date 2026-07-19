@@ -67,6 +67,14 @@
   line-height: 1.65;
 }
 
+.blog-post__deck {
+  max-width: 52rem;
+  margin: 1.15rem 0 0;
+  color: var(--blog-muted);
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  line-height: 1.65;
+}
+
 .blog-archive {
   display: grid;
   gap: 2.6rem;
@@ -197,11 +205,25 @@
 }
 
 .blog-content {
-  max-width: 48rem;
+  max-width: 52rem;
   margin: 0 auto;
+  padding: clamp(1.4rem, 3vw, 2.35rem);
+  border: 1px solid var(--blog-border);
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.48)),
+    var(--blog-panel);
   color: var(--blog-ink);
   font-size: 1rem;
   line-height: 1.72;
+  box-shadow: 0 16px 48px rgba(15, 23, 42, 0.08);
+}
+
+.dark .blog-content {
+  background:
+    linear-gradient(180deg, rgba(39, 39, 42, 0.66), rgba(24, 24, 27, 0.54)),
+    var(--blog-panel);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.24);
 }
 
 .blog-content > div[style*="font-size"] {
@@ -213,16 +235,58 @@
 }
 
 .blog-content h2 {
-  margin-top: 2.4rem;
+  position: relative;
+  margin-top: 2.6rem;
+  padding-left: 1rem;
   color: var(--blog-ink);
   font-size: clamp(1.45rem, 2.5vw, 2rem);
   font-weight: 850;
   line-height: 1.15;
 }
 
+.blog-content h2::before {
+  position: absolute;
+  top: 0.08em;
+  bottom: 0.08em;
+  left: 0;
+  width: 0.22rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--blog-accent), var(--blog-warm));
+  content: "";
+}
+
+.blog-content > div[style*="font-size"] > h2:first-child {
+  margin-top: 0.2rem;
+}
+
 .blog-content p,
 .blog-content li {
   color: var(--blog-muted);
+  font-size: 1.02rem;
+  line-height: 1.78;
+}
+
+.blog-content p {
+  margin-top: 1.05rem;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin-top: 1rem;
+}
+
+.blog-content li {
+  padding-left: 0.15rem;
+}
+
+.blog-content li::marker {
+  color: var(--blog-accent);
+  font-weight: 900;
+}
+
+.blog-content strong {
+  color: var(--blog-ink);
+  font-weight: 850;
 }
 
 .blog-content a {
@@ -235,10 +299,15 @@
 
 .blog-content img {
   border-radius: 0.6rem;
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.12);
+}
+
+.dark .blog-content img {
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
 }
 
 .blog-content figure {
-  margin: 2rem auto;
+  margin: 2.4rem auto;
 }
 
 .blog-content figcaption {
