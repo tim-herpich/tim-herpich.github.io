@@ -6,7 +6,12 @@ robots: "index,follow"
 cv:
   hero:
     title: "Curriculum Vitae"
-    subtitle: "My professional profile combines extensive experience in financial services consulting with a strong academic foundation in theoretical physics and business."
+    subtitle: |-
+      My professional profile combines extensive experience in financial services consulting with a strong academic foundation in theoretical physics and business.
+
+      Currently, I am a manager in financial services with a strong quantitative and technical background, currently based in the Zurich office of a [**European consulting boutique**](https://www.d-fine.com/en/locations/switzerland/). I consult on risk, insurance and asset management topics where analytical modelling, regulatory expertise and software engineering intersect. My work focuses on translating regulatory and business requirements into practical, data-driven solutions that strengthen risk frameworks and investment processes.
+
+      Before moving into consulting, I built my career in academic research, developing expertise in statistical physics, computational modelling and numerical simulation. I obtained a PhD in Statistical Physics within an internationally leading research group, where my research focused on nonequilibrium thermodynamics and Monte Carlo simulations under the supervision of [**Prof. M. Esposito**](https://sites.google.com/site/massimilianoespositogennaro/home). I also earned an MBA from [**Mannheim Business School**](https://www.mannheim-business-school.com/) where my studies strengthening my foundation in business administration, strategy, leadership and applied management topics. As a CFA Charterholder and active member of [**CFA Society Switzerland**](https://cfasocietyswitzerland.org/), I complement this interdisciplinary background with a broad understanding of investment analysis, financial markets, asset valuation, and portfolio and risk management.
 
   timeline:
     - period: "07/2025 - Present"
@@ -52,7 +57,7 @@ cv:
       title: "MBA, Business Administration"
       organization: "Mannheim Business School"
       category: "Education"
-      summary: "MBA studies with focus on business administration, strategy, leadership and applied management topics. Grade: GPA - 1.2. Thesis: Development of an Innovative Strategy to Leverage Marketing Potentials on Ionity Charging Locations."
+      summary: "Graduated with highest honors (GPA: 1.2). Thesis: Development of an Innovative Strategy to Leverage Marketing Potentials on Ionity Charging Locations."
       tags:
         - MBA
         - Strategy
@@ -76,21 +81,19 @@ cv:
       title: "Master of Science, Theoretical and Mathematical Physics"
       organization: "Leipzig University"
       category: "Education"
-      summary: "Graduated with distinction. Grade: GPA - 1.0, ranked first among peers. Thesis: Linear and nonlinear microrheology."
+      summary: "Graduated with distinction, ranking first in the cohort (GPA: 1.0). Thesis: Linear and nonlinear microrheology."
       tags:
         - Theoretical Physics
         - Mathematical Physics
         - Distinction
-        - Microrheology
 
     - period: "2010 - 2013"
       title: "Bachelor of Science, Physics"
       organization: "Chemnitz University of Technology"
       category: "Education"
-      summary: "Graduated with distinction. Grade: GPA - 1.3, ranked first among peers. Thesis: Effekte der Tachyonenphysik."
+      summary: "Graduated with highest honors, ranking first in the cohort (GPA: 1.3)."
       tags:
         - Physics
-        - Distinction
         - Research
 
     - period: "10/2025"

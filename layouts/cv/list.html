@@ -7,7 +7,7 @@
     {{ end }}
     <p class="cv-eyebrow">Professional Profile</p>
     <h1>{{ $data.hero.title | default .Title }}</h1>
-    <p class="cv-hero__subtitle">{{ $data.hero.subtitle | default .Description }}</p>
+    <div class="cv-hero__subtitle">{{ $data.hero.subtitle | default .Description | markdownify }}</div>
 
     {{ with $data.hero.badges }}
     <div class="cv-badges" aria-label="Profile tags">

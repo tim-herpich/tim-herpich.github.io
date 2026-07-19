@@ -13,7 +13,7 @@ I hold an MBA from [**Mannheim Business School**](https://www.mannheim-business-
 
 ### About 
 
-This website is a compact map of my work across financial services consulting, quantitative risk, asset management and technical implementation. The project section highlight selected client work at the boundary between regulation, models, data and software; the academic sections collect publications and talks from my research in statistical physics; and the blog is where I connect practical delivery experience with broader questions in risk management, investment processes and technology.
+This website is a compact map of my work across consulting, risk & asset management, technical implementation and previously academic research.
 
 You can explore the main areas here:
 
