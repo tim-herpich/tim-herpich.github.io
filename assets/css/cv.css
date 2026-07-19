@@ -69,6 +69,22 @@
   line-height: 1.65;
 }
 
+.cv-hero__subtitle p {
+  margin: 0;
+}
+
+.cv-hero__subtitle p + p {
+  margin-top: 1rem;
+}
+
+.cv-hero__subtitle a {
+  color: var(--cv-accent);
+  font-weight: 800;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
 .cv-badges,
 .cv-pills {
   display: flex;
