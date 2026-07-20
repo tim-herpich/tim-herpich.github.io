@@ -6,7 +6,7 @@ robots: "index,follow"
 portfolio:
   hero:
     title: "Selected Projects"
-    subtitle: "As a Financial Services Manager with a strong quantitative and technical background, I advise insurers and asset managers on risk, investment and technology transformation. The project references below highlight my track record of translating complex regulatory and business requirements into quantitative models, production-grade software, and successful delivery across actuarial, risk and engineering teams."
+    subtitle: "The project references below highlight my track record of translating complex regulatory and business requirements into quantitative models, production-grade software, and successful delivery across actuarial, risk and engineering teams."
 
   featured:
     - title: "Credit Risk & Pricing Application"
