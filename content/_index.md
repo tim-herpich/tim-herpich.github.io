@@ -5,7 +5,7 @@ description: "Tim Herpich, Consulting, Risk Management, Asset Management, Softwa
 ## 
 
 ### About 
-I am a Manager in financial services consulting, helping insurers and asset managers navigate complex challenges in risk, regulation, and investment. Combining quantitative modelling, software engineering, and industry insight, I turn regulatory and business requirements into practical, data-driven solutions—from stronger risk frameworks to reliable tools that support better decisions.
+I am a manager in financial services, advising insurers and asset managers on how to navigate complex challenges in financial regulation, risk and portfolio management, and technology. Combining quantitative modelling, software engineering, and industry insight, I turn regulatory and business requirements into practical, data-driven solutions—from stronger risk frameworks to reliable tools that support better decisions.
 
 This website is a compact map of my work across consulting, risk & asset management, technical implementation and previously academic research.
 
