@@ -45,6 +45,6 @@ comments: true
 <h2><i class="fas fa-cogs"></i> Why This Matters</h2>
 <p>The framework provides a consistent foundation for treating premium-capital interactions in export credit insurance, including both capitalised surcharges and the reduction of insured capital through premium refunds. It also supported the digitalisation of premium calculations in a semi-automated software application.</p>
 
-<p>Curious? Read the full whitepaper <a href="https://www.serv-ch.com/en/about-us/news/detail/wie-man-die-finanzierung-von-versicherungspraemien-in-den-griff-bekommt/" target="_blank">here</a> and explore its general framework for premium-capital interactions in export credit insurance.</p>
+<p>Curious? Read the full whitepaper <a href="https://www.serv-ch.com/en/about-us/news/detail/getting-to-grips-with-financing-insurance-premiums/" target="_blank">here</a> and explore its general framework for premium-capital interactions in export credit insurance.</p>
 
 </div>
