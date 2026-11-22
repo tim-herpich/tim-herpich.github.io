@@ -1,0 +1,87 @@
+{{ $project := .project }}
+{{ $page := .page }}
+{{ $source := "" }}
+{{ if not $project.access }}
+  {{ $source = $project.source | default "" }}
+{{ end }}
+<li class="collection-item software-item" id="{{ $project.id }}">
+  <article class="collection-item__body" aria-labelledby="{{ $project.id }}-title">
+    <header class="software-item__header">
+      <div>
+        {{ with $project.category }}<p class="collection-item__type">{{ . }}</p>{{ end }}
+        <h2 class="collection-item__title collection-item__title--featured" id="{{ $project.id }}-title">{{ $project.title }}</h2>
+        {{ with $project.subtitle }}<p class="software-item__subtitle">{{ . }}</p>{{ end }}
+      </div>
+      {{ with $project.logo }}
+      <img class="software-item__logo nozoom" src="{{ .src | relURL }}" alt="{{ .alt }}"
+        width="{{ .width | default 40 }}" height="{{ .height | default 40 }}" decoding="async">
+      {{ end }}
+    </header>
+    {{ with $project.preview }}
+    <figure class="software-item__preview">
+      <img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy" decoding="async"
+        {{ with .width }}width="{{ . }}"{{ end }} {{ with .height }}height="{{ . }}"{{ end }}>
+    </figure>
+    {{ end }}
+    <div class="software-item__description">
+      <p>{{ $project.summary }}</p>
+      {{ with $project.application }}
+      <p class="software-item__try">
+        Try it for yourself: <a href="{{ . }}" target="_blank" rel="noopener noreferrer">Launch Application<span
+            class="sr-only"> (external site, opens in a new tab)</span></a>
+        {{ $project.application_invitation | default "and explore the application at your own pace." }}
+      </p>
+      {{ end }}
+      {{ with $project.description }}<p>{{ . }}</p>{{ end }}
+    </div>
+    <dl class="collection-item__meta software-item__details">
+      {{ with $project.status }}<div>
+        <dt class="collection-item__type">Status</dt>
+        <dd>{{ . }}</dd>
+      </div>{{ end }}
+      {{ with $project.technologies }}<div>
+        <dt class="collection-item__type">Technologies</dt>
+        <dd>{{ delimit . ", " }}</dd>
+      </div>{{ end }}
+      {{ with $project.domains }}<div>
+        <dt class="collection-item__type">Domains</dt>
+        <dd>{{ delimit . " · " }}</dd>
+      </div>{{ end }}
+      {{ with $project.version }}<div>
+        <dt class="collection-item__type">Version</dt>
+        <dd>{{ . }}</dd>
+      </div>{{ end }}
+      {{ with $project.release_date }}<div>
+        <dt class="collection-item__type">Released</dt>
+        <dd><time datetime="{{ . }}">{{ time.Format "2 Jan 2006" . }}</time></dd>
+      </div>{{ end }}
+    </dl>
+    {{ if or $project.access $project.license }}
+    <aside class="software-item__license{{ if $project.access }} software-item__license--access{{ end }}"
+      aria-label="{{ if $project.access }}Source access and licensing{{ else }}Licensing{{ end }}">
+      {{ with $project.access }}
+      <div class="software-item__access-intro">
+        <div>
+          <p class="collection-item__type">Source Access & Licensing</p>
+          <p class="collection-item__meta">{{ .description }}</p>
+        </div>
+        <a class="software-item__access-link" href="{{ .contact | relURL }}">{{ .label | default "Request Source Access" }}</a>
+      </div>
+      {{ else }}
+      <p class="collection-item__type">Licensing</p>
+      {{ end }}
+      {{ with $project.license }}<p class="collection-item__meta software-item__permission">{{ . }}</p>{{ end }}
+    </aside>
+    {{ end }}
+    {{ if or $project.post $source }}
+    <div class="collection-item__links software-item__links">
+      {{ with $source }}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer">View Source Code<span class="sr-only"> (opens in a new tab)</span></a>
+      {{ end }}
+      {{ with $project.post }}
+      <a href="{{ relref $page . }}">Read About the Project</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </article>
+</li>

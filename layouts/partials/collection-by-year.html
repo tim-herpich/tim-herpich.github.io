@@ -1,0 +1,17 @@
+{{ $years := slice }}
+{{ range .pages }}
+  {{ with .Params.year }}
+    {{ $years = $years | append . }}
+  {{ end }}
+{{ end }}
+
+{{ range sort (uniq $years) "value" "desc" }}
+<div class="collection-group">
+  <h2>{{ . }}</h2>
+  <ol class="collection-list">
+    {{ range where $.pages "Params.year" . }}
+      {{ partial $.item . }}
+    {{ end }}
+  </ol>
+</div>
+{{ end }}

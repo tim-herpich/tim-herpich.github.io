@@ -1,36 +1,5 @@
-{{ with resources.Get "css/projects.css" }}
-  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
-  {{ $projectsCSS := . | resources.Minify | resources.Fingerprint $alg }}
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="{{ $projectsCSS.RelPermalink }}"
-    integrity="{{ $projectsCSS.Data.Integrity }}">
-{{ end }}
-{{ with resources.Get "css/cv.css" }}
-  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
-  {{ $cvCSS := . | resources.Minify | resources.Fingerprint $alg }}
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="{{ $cvCSS.RelPermalink }}"
-    integrity="{{ $cvCSS.Data.Integrity }}">
-{{ end }}
-{{ with resources.Get "css/collections.css" }}
-  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
-  {{ $collectionsCSS := . | resources.Minify | resources.Fingerprint $alg }}
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="{{ $collectionsCSS.RelPermalink }}"
-    integrity="{{ $collectionsCSS.Data.Integrity }}">
-{{ end }}
-{{ with resources.Get "css/blog.css" }}
-  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
-  {{ $blogCSS := . | resources.Minify | resources.Fingerprint $alg }}
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="{{ $blogCSS.RelPermalink }}"
-    integrity="{{ $blogCSS.Data.Integrity }}">
+{{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+{{ range slice "projects" "cv" "collections" "blog" "software" }}
+  {{ $stylesheet := resources.Get (printf "css/%s.css" .) | resources.Minify | resources.Fingerprint $alg }}
+  <link rel="stylesheet" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}">
 {{ end }}

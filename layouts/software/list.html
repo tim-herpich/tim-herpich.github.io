@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="library-page">
+  <header class="library-hero">
+    <p class="library-eyebrow">{{ .Params.eyebrow }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="library-hero__subtitle">{{ .Params.introduction | default .Description }}</p>
+  </header>
+
+  <section aria-label="Software projects">
+    <ul class="collection-list">
+      {{ range .Params.software }}
+      {{ partial "software-item.html" (dict "project" . "page" $) }}
+      {{ end }}
+    </ul>
+  </section>
+</article>
+{{ end }}

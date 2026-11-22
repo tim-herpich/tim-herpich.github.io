@@ -1,24 +1,5 @@
 .cv-page {
-  --cv-ink: rgb(15 23 42);
-  --cv-muted: rgb(71 85 105);
-  --cv-soft: rgb(248 250 252);
-  --cv-panel: rgba(255, 255, 255, 0.88);
-  --cv-border: rgba(100, 116, 139, 0.22);
-  --cv-accent: rgb(8 145 178);
-  --cv-accent-strong: rgb(15 118 110);
-  --cv-warm: rgb(180 83 9);
-  color: var(--cv-ink);
-}
-
-.dark .cv-page {
-  --cv-ink: rgb(245 245 245);
-  --cv-muted: rgb(186 190 200);
-  --cv-soft: rgb(18 24 31);
-  --cv-panel: rgba(24, 24, 27, 0.86);
-  --cv-border: rgba(148, 163, 184, 0.24);
-  --cv-accent: rgb(103 232 249);
-  --cv-accent-strong: rgb(94 234 212);
-  --cv-warm: rgb(251 191 36);
+  color: var(--site-ink);
 }
 
 .cv-hero {
@@ -26,12 +7,12 @@
   overflow: hidden;
   margin: 1.5rem 0 4rem;
   padding: clamp(2.5rem, 6vw, 5rem);
-  border: 1px solid var(--cv-border);
+  border: 1px solid var(--site-border);
   border-radius: 0.75rem;
   background:
     linear-gradient(135deg, rgba(14, 165, 233, 0.14), transparent 34%),
     linear-gradient(315deg, rgba(245, 158, 11, 0.12), transparent 38%),
-    var(--cv-panel);
+    var(--site-panel);
   box-shadow: 0 24px 80px rgba(15, 23, 42, 0.10);
 }
 
@@ -44,7 +25,7 @@
 .cv-timeline__category,
 .cv-timeline__location {
   margin: 0;
-  color: var(--cv-accent);
+  color: var(--site-accent);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -54,7 +35,7 @@
 .cv-hero h1 {
   max-width: 58rem;
   margin: 0.85rem 0 2rem;
-  color: var(--cv-ink);
+  color: var(--site-ink);
   font-size: clamp(2.15rem, 4vw, 3.45rem);
   font-weight: 900;
   line-height: 1.05;
@@ -64,7 +45,7 @@
 .cv-hero__subtitle {
   max-width: 52rem;
   margin: 0;
-  color: var(--cv-muted);
+  color: var(--site-muted);
   font-size: clamp(0.98rem, 1.5vw, 1.12rem);
   line-height: 1.65;
 }
@@ -78,7 +59,7 @@
 }
 
 .cv-hero__subtitle a {
-  color: var(--cv-accent);
+  color: var(--site-accent);
   font-weight: 800;
   text-decoration-color: currentColor;
   text-decoration-thickness: 2px;
@@ -101,10 +82,10 @@
   display: inline-flex;
   align-items: center;
   min-height: 2rem;
-  border: 1px solid var(--cv-border);
+  border: 1px solid var(--site-border);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.62);
-  color: var(--cv-ink);
+  color: var(--site-ink);
   font-size: 0.82rem;
   font-weight: 700;
   line-height: 1;
@@ -121,7 +102,7 @@
 
 .cv-pill {
   padding: 0.38rem 0.58rem;
-  color: var(--cv-accent-strong);
+  color: var(--site-accent-strong);
   font-size: 0.75rem;
 }
 
@@ -135,7 +116,7 @@
 
 .cv-metrics div {
   padding: 1rem;
-  border: 1px solid var(--cv-border);
+  border: 1px solid var(--site-border);
   border-radius: 0.5rem;
   background: rgba(255, 255, 255, 0.58);
 }
@@ -145,7 +126,7 @@
 }
 
 .cv-metrics dt {
-  color: var(--cv-muted);
+  color: var(--site-muted);
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -153,7 +134,7 @@
 
 .cv-metrics dd {
   margin: 0.25rem 0 0;
-  color: var(--cv-ink);
+  color: var(--site-ink);
   font-size: 1.25rem;
   font-weight: 900;
 }
@@ -169,7 +150,7 @@
 
 .cv-section__header h2 {
   margin: 0.35rem 0 0;
-  color: var(--cv-ink);
+  color: var(--site-ink);
   font-size: clamp(1.8rem, 3vw, 2.65rem);
   font-weight: 850;
   line-height: 1.05;
@@ -177,7 +158,7 @@
 
 .cv-section__header p:not(.cv-section__kicker) {
   margin: 0.8rem 0 0;
-  color: var(--cv-muted);
+  color: var(--site-muted);
   font-size: 1rem;
   line-height: 1.7;
 }
@@ -197,7 +178,7 @@
   bottom: 0.5rem;
   left: 6.2rem;
   width: 1px;
-  background: var(--cv-border);
+  background: var(--site-border);
   content: "";
 }
 
@@ -215,10 +196,10 @@
   min-height: 2.2rem;
   padding: 0.45rem 0.7rem;
   place-items: center;
-  border: 1px solid var(--cv-border);
+  border: 1px solid var(--site-border);
   border-radius: 999px;
-  background: var(--cv-soft);
-  color: var(--cv-accent);
+  background: var(--site-soft);
+  color: var(--site-accent);
   font-size: 0.78rem;
   font-weight: 900;
   text-align: center;
@@ -227,9 +208,9 @@
 .cv-timeline__content,
 .cv-skill-panel,
 .cv-credential-card {
-  border: 1px solid var(--cv-border);
+  border: 1px solid var(--site-border);
   border-radius: 0.6rem;
-  background: var(--cv-panel);
+  background: var(--site-panel);
   box-shadow: 0 14px 42px rgba(15, 23, 42, 0.08);
 }
 
@@ -253,7 +234,7 @@
 .cv-timeline h3,
 .cv-skill-panel h3 {
   margin: 0;
-  color: var(--cv-ink);
+  color: var(--site-ink);
   font-weight: 850;
   line-height: 1.16;
 }
@@ -265,21 +246,21 @@
 
 .cv-timeline h3 a {
   color: inherit;
-  text-decoration-color: var(--cv-accent);
+  text-decoration-color: var(--site-accent);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.18em;
 }
 
 .cv-timeline__organization {
   margin: 0.45rem 0 0;
-  color: var(--cv-warm);
+  color: var(--site-warm);
   font-size: 0.92rem;
   font-weight: 800;
 }
 
 .cv-timeline__summary {
   margin: 0.75rem 0 0;
-  color: var(--cv-muted);
+  color: var(--site-muted);
   line-height: 1.65;
 }
 
@@ -288,7 +269,7 @@
 }
 
 .cv-timeline__links a {
-  color: var(--cv-accent);
+  color: var(--site-accent);
   font-size: 0.9rem;
   font-weight: 800;
   text-decoration-color: currentColor;
@@ -320,14 +301,14 @@
 
 .cv-credential-card__period {
   margin: 0;
-  color: var(--cv-muted);
+  color: var(--site-muted);
   font-size: 0.78rem;
   font-weight: 800;
 }
 
 .cv-credential-card h3 {
   margin: 0.75rem 0 0;
-  color: var(--cv-ink);
+  color: var(--site-ink);
   font-size: 1.08rem;
   font-weight: 850;
   line-height: 1.16;
