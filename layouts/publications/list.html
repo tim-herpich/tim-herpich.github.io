@@ -8,7 +8,7 @@
 
   <div class="library-controls">
     <p>View by</p>
-    <div class="collection-toggle" data-toggle-group="publications" role="tablist" aria-label="Publication sorting">
+    <div class="collection-toggle" role="tablist" aria-label="Publication sorting">
       <button type="button" data-target="pubs-by-year" class="is-active" role="tab" aria-selected="true">Year</button>
       <button type="button" data-target="pubs-by-type" role="tab" aria-selected="false">Type</button>
     </div>
@@ -16,24 +16,7 @@
 
   {{ $pages := where .Site.RegularPages "Section" "publications" }}
   <section id="pubs-by-year" class="collection-panel is-active" role="tabpanel">
-    {{ $sortedByYear := sort $pages "Params.year" "desc" }}
-    {{ $currentYear := "" }}
-    {{ range $sortedByYear }}
-    {{ $year := printf "%v" .Params.year }}
-    {{ if and $year (ne $year "<nil>") }}
-      {{ if ne $year $currentYear }}
-      {{ if ne $currentYear "" }}</ol>
-      </div>{{ end }}
-      <div class="collection-group">
-        <h2>{{ $year }}</h2>
-        <ol class="collection-list">
-          {{ $currentYear = $year }}
-          {{ end }}
-          {{ partial "publication-item.html" . }}
-          {{ end }}
-          {{ end }}
-          {{ if ne $currentYear "" }}</ol>
-      </div>{{ end }}
+    {{ partial "collection-by-year.html" (dict "pages" $pages "item" "publication-item.html") }}
   </section>
 
   <section id="pubs-by-type" class="collection-panel" role="tabpanel">

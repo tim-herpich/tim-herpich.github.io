@@ -21,14 +21,16 @@ Content is Markdown-driven and structured to be easy to maintain and extend over
 
 ```text
 ├── config/_default/       # Hugo and Blowfish configuration
+├── assets/                # Styles, scripts, and images processed by Hugo
 ├── content/               # Markdown content
 │   ├── posts/             # Blog posts
 │   ├── publications/      # Publication items and list page
 │   ├── talks/             # Talk items and list page
-│   ├── cv/                # CV page
-│   └── about/             # About page
-├── layouts/               # Custom Hugo templates for publications and talks
-├── static/assets/         # Images, PDFs, icons, and legacy static assets
+│   ├── projects/          # Consulting projects
+│   ├── software/          # Independent software projects
+│   └── cv/                # CV page
+├── layouts/               # Custom Hugo templates and partials
+├── static/assets/         # Images, PDFs, and icons copied as-is
 ├── themes/blowfish/       # Vendored Blowfish theme
 ├── .github/workflows/     # CI workflows
 └── readme.md              # Repository documentation
@@ -61,7 +63,7 @@ hugo --gc --minify
 | Home page | `content/_index.md` |
 | Blog posts | `content/posts/` |
 | CV page | `content/cv/_index.md` |
-| About page | `content/about/_index.md` |
+| Consulting projects | `content/projects/_index.md` |
 | Publications | `content/publications/` |
 | Talks | `content/talks/` |
 | Software projects | `content/software/_index.md` |
@@ -77,7 +79,7 @@ Append an entry to the `software` list in `content/software/_index.md`. Each ent
 `id` (a unique URL fragment), `title`, `subtitle`, `summary`, `description`,
 `technologies`, and `domains`. Optional fields are `category`, `status`, `version`, `release_date`
 (`YYYY-MM-DD`), `license`, `application` (live URL), `source` (verified public URL),
-and `post` (Hugo content path, resolved with `RelRef`). The application link appears
+and `post` (Hugo content path, resolved with `relref`). The application link appears
 in an invitation immediately after the summary; optional `application_invitation`
 provides the text following the link. For a private repository,
 omit `source` and add an `access` map with `description`, `contact` (for example

@@ -1,12 +1,15 @@
 {{ $project := .project }}
 {{ $page := .page }}
+{{ $source := "" }}
+{{ if not $project.access }}
+  {{ $source = $project.source | default "" }}
+{{ end }}
 <li class="collection-item software-item" id="{{ $project.id }}">
   <article class="collection-item__body" aria-labelledby="{{ $project.id }}-title">
     <header class="software-item__header">
       <div>
         {{ with $project.category }}<p class="collection-item__type">{{ . }}</p>{{ end }}
-        <h2 class="collection-item__title collection-item__title--featured" id="{{ $project.id }}-title">{{
-          $project.title }}</h2>
+        <h2 class="collection-item__title collection-item__title--featured" id="{{ $project.id }}-title">{{ $project.title }}</h2>
         {{ with $project.subtitle }}<p class="software-item__subtitle">{{ . }}</p>{{ end }}
       </div>
       {{ with $project.logo }}
@@ -16,8 +19,8 @@
     </header>
     {{ with $project.preview }}
     <figure class="software-item__preview">
-      <img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy" decoding="async" {{ with .width }} width="{{ . }}"
-        {{ end }}{{ with .height }} height="{{ . }}" {{ end }}>
+      <img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy" decoding="async"
+        {{ with .width }}width="{{ . }}"{{ end }} {{ with .height }}height="{{ . }}"{{ end }}>
     </figure>
     {{ end }}
     <div class="software-item__description">
@@ -62,8 +65,7 @@
           <p class="collection-item__type">Source Access & Licensing</p>
           <p class="collection-item__meta">{{ .description }}</p>
         </div>
-        <a class="software-item__access-link" href="{{ .contact | relURL }}">{{ .label | default "Request Source Access"
-          }}</a>
+        <a class="software-item__access-link" href="{{ .contact | relURL }}">{{ .label | default "Request Source Access" }}</a>
       </div>
       {{ else }}
       <p class="collection-item__type">Licensing</p>
@@ -71,12 +73,14 @@
       {{ with $project.license }}<p class="collection-item__meta software-item__permission">{{ . }}</p>{{ end }}
     </aside>
     {{ end }}
-    {{ if or $project.post (and $project.source (not $project.access)) }}
+    {{ if or $project.post $source }}
     <div class="collection-item__links software-item__links">
-      {{ if not $project.access }}{{ with $project.source }}<a href="{{ . }}" target="_blank"
-        rel="noopener noreferrer">View Source Code<span class="sr-only"> (GitHub, opens in a new tab)</span></a>{{ end
-      }}{{ end }}
-      {{ with $project.post }}<a href="{{ $page.RelRef (dict " path" .) }}">Read About the Project</a>{{ end }}
+      {{ with $source }}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer">View Source Code<span class="sr-only"> (opens in a new tab)</span></a>
+      {{ end }}
+      {{ with $project.post }}
+      <a href="{{ relref $page . }}">Read About the Project</a>
+      {{ end }}
     </div>
     {{ end }}
   </article>

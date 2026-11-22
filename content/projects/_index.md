@@ -12,7 +12,6 @@ portfolio:
     - title: "Credit Risk & Pricing Application"
       role: "Project Lead"
       industry: "Export Credit Agency"
-      # timeframe: "Recent transformation initiative"
       icon: "shield"
       summary: "Led the delivery of an enterprise pricing and credit risk .NET application for business-critical export credit insurance decisions."
       achievements:
@@ -41,7 +40,6 @@ portfolio:
     - title: "Portfolio Optimization Application"
       role: "Project Lead"
       industry: "Global Private Market Firm"
-      # timeframe: "Portfolio analytics program"
       icon: "list-check"
       summary: "Designed and delivered an analytical application for portfolio optimization, capital-aware decision support and management demonstrations."
       achievements:
@@ -70,7 +68,6 @@ portfolio:
     - title: "Solvency II Return-on-Equity Application"
       role: "Technical Project Lead"
       industry: "Global Insurance Group"
-      # timeframe: "Regulatory analytics application"
       icon: "code"
       summary: "Built a Python-based return-on-equity application for Solvency II analytics with resilient delivery practices and stakeholder-facing controls."
       achievements:

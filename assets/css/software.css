@@ -27,7 +27,7 @@
 
 .software-item__subtitle {
   margin: 0.45rem 0 0;
-  color: var(--library-warm);
+  color: var(--site-warm);
   font-size: 0.92rem;
   font-weight: 800;
   line-height: 1.55;
@@ -36,7 +36,7 @@
 .software-item__description {
   max-width: 56rem;
   margin-top: 1.25rem;
-  color: var(--library-muted);
+  color: var(--site-muted);
   font-size: 1rem;
   line-height: 1.65;
 }
@@ -50,7 +50,7 @@
 }
 
 .software-item__try a {
-  color: var(--library-accent-strong);
+  color: var(--site-accent-strong);
   font-weight: 800;
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -63,7 +63,7 @@
   gap: 1.25rem 2rem;
   margin: 1.5rem 0 0;
   padding-top: 1.25rem;
-  border-top: 1px solid var(--library-border);
+  border-top: 1px solid var(--site-border);
 }
 
 .software-item__details > div {
@@ -77,14 +77,14 @@
 .software-item__license {
   margin-top: 1.5rem;
   padding-top: 1.25rem;
-  border-top: 1px solid var(--library-border);
+  border-top: 1px solid var(--site-border);
 }
 
 .software-item__license--access {
   padding: 1.25rem;
-  border: 1px solid var(--library-border);
+  border: 1px solid var(--site-border);
   border-radius: 0.6rem;
-  background: var(--library-soft);
+  background: var(--site-soft);
 }
 
 .software-item__access-intro {
@@ -100,10 +100,10 @@
   justify-content: center;
   min-height: 2.75rem;
   padding: 0.65rem 0.9rem;
-  border: 1px solid var(--library-accent-strong);
+  border: 1px solid var(--site-accent-strong);
   border-radius: 0.45rem;
-  background: var(--library-panel);
-  color: var(--library-accent-strong);
+  background: var(--site-panel);
+  color: var(--site-accent-strong);
   font-size: 0.9rem;
   font-weight: 800;
   line-height: 1.5;
@@ -145,7 +145,7 @@
 .software-item__preview img {
   width: 100%;
   height: auto;
-  border: 1px solid var(--library-border);
+  border: 1px solid var(--site-border);
   border-radius: 0.6rem;
 }
 
