@@ -13,6 +13,7 @@ You can explore the main areas here:
 
 - [**Projects**](/projects/)
 - [**Publications**](/publications/)
+- [**Software**](/software/)
 - [**Talks**](/talks/)
 - [**Blog**](/posts/)
 

@@ -1,36 +1,28 @@
 {{ with resources.Get "css/projects.css" }}
-  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
-  {{ $projectsCSS := . | resources.Minify | resources.Fingerprint $alg }}
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="{{ $projectsCSS.RelPermalink }}"
-    integrity="{{ $projectsCSS.Data.Integrity }}">
+{{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+{{ $projectsCSS := . | resources.Minify | resources.Fingerprint $alg }}
+<link type="text/css" rel="stylesheet" href="{{ $projectsCSS.RelPermalink }}"
+  integrity="{{ $projectsCSS.Data.Integrity }}">
 {{ end }}
 {{ with resources.Get "css/cv.css" }}
-  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
-  {{ $cvCSS := . | resources.Minify | resources.Fingerprint $alg }}
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="{{ $cvCSS.RelPermalink }}"
-    integrity="{{ $cvCSS.Data.Integrity }}">
+{{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+{{ $cvCSS := . | resources.Minify | resources.Fingerprint $alg }}
+<link type="text/css" rel="stylesheet" href="{{ $cvCSS.RelPermalink }}" integrity="{{ $cvCSS.Data.Integrity }}">
 {{ end }}
 {{ with resources.Get "css/collections.css" }}
-  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
-  {{ $collectionsCSS := . | resources.Minify | resources.Fingerprint $alg }}
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="{{ $collectionsCSS.RelPermalink }}"
-    integrity="{{ $collectionsCSS.Data.Integrity }}">
+{{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+{{ $collectionsCSS := . | resources.Minify | resources.Fingerprint $alg }}
+<link type="text/css" rel="stylesheet" href="{{ $collectionsCSS.RelPermalink }}"
+  integrity="{{ $collectionsCSS.Data.Integrity }}">
 {{ end }}
 {{ with resources.Get "css/blog.css" }}
-  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
-  {{ $blogCSS := . | resources.Minify | resources.Fingerprint $alg }}
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="{{ $blogCSS.RelPermalink }}"
-    integrity="{{ $blogCSS.Data.Integrity }}">
+{{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+{{ $blogCSS := . | resources.Minify | resources.Fingerprint $alg }}
+<link type="text/css" rel="stylesheet" href="{{ $blogCSS.RelPermalink }}" integrity="{{ $blogCSS.Data.Integrity }}">
+{{ end }}
+{{ with resources.Get "css/software.css" }}
+{{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+{{ $softwareCSS := . | resources.Minify | resources.Fingerprint $alg }}
+<link type="text/css" rel="stylesheet" href="{{ $softwareCSS.RelPermalink }}"
+  integrity="{{ $softwareCSS.Data.Integrity }}">
 {{ end }}

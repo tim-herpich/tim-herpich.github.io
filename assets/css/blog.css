@@ -107,6 +107,10 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
 }
 
+.blog-card--text {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .blog-card__media {
   display: grid;
   position: relative;
@@ -160,7 +164,7 @@
 }
 
 .blog-card h3 a {
-  color: inherit;
+  color: var(--blog-accent);
   text-decoration-color: var(--blog-accent);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.18em;
@@ -295,6 +299,10 @@
   text-decoration-color: currentColor;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.18em;
+}
+
+.blog-content a strong {
+  color: inherit;
 }
 
 .blog-content img {

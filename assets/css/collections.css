@@ -157,12 +157,18 @@
   padding: 1.1rem 1.2rem;
 }
 
-.collection-item h3 {
+.collection-item h3,
+.collection-item__title {
   margin: 0.45rem 0 0;
   color: var(--library-ink);
   font-size: 1.12rem;
   font-weight: 850;
   line-height: 1.22;
+}
+
+.collection-item__title--featured {
+  font-size: 1.55rem;
+  line-height: 1.16;
 }
 
 .collection-item__authors,

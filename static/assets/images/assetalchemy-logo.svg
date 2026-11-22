@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="40" viewBox="0 0 232 40">
+  <g fill="none" stroke="#14917F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M19 5.5 L33.5 33 L4.5 33 Z"/>
+    <path d="M10 24 H28"/>
+  </g>
+  <circle cx="19" cy="17.5" r="2.1" fill="#14917F"/>
+  <text x="44" y="27.5" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="19.5" font-weight="650" letter-spacing="-0.4">
+    <tspan fill="#14917F">Asset</tspan><tspan fill="#7D878C"> Alchemy</tspan>
+  </text>
+</svg>

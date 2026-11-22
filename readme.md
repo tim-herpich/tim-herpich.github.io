@@ -10,6 +10,7 @@ The site showcases:
 
 - Academic and professional biography
 - Curriculum Vitae
+- Independent quantitative software and applications
 - Academic and industrial publications
 - Academic and industrial talks
 - Blog posts on finance, technology, and science
@@ -63,11 +64,41 @@ hugo --gc --minify
 | About page | `content/about/_index.md` |
 | Publications | `content/publications/` |
 | Talks | `content/talks/` |
+| Software projects | `content/software/_index.md` |
 | Images | `static/assets/images/` |
 | Publication PDFs | `static/assets/publications/` |
 | Presentation PDFs | `static/assets/presentations/` |
 
 Existing content links use `/assets/...`; Hugo serves those files from `static/assets/...`.
+
+### Adding software
+
+Append an entry to the `software` list in `content/software/_index.md`. Each entry uses
+`id` (a unique URL fragment), `title`, `subtitle`, `summary`, `description`,
+`technologies`, and `domains`. Optional fields are `category`, `status`, `version`, `release_date`
+(`YYYY-MM-DD`), `license`, `application` (live URL), `source` (verified public URL),
+and `post` (Hugo content path, resolved with `RelRef`). The application link appears
+in an invitation immediately after the summary; optional `application_invitation`
+provides the text following the link. For a private repository,
+omit `source` and add an `access` map with `description`, `contact` (for example
+`/#contact`), and `label` to render the source-access invitation and contact button.
+An optional `preview` map
+accepts `src`, descriptive `alt`, `width`, and `height` for a real application image.
+An optional `logo` map accepts the same fields for a compact mark next to the title.
+Keep supplied brand assets in `static/assets/images/`. Blog listing images use
+`featureimage`, with optional descriptive `featureimagealt` text.
+Omitted fields do not render. The list template and `software-item.html` partial
+reuse the existing collection styles, with additions in `assets/css/software.css`.
+
+Verify functionality and licensing before publishing an entry. Software is presented
+as independently developed, with all rights reserved. Asset Alchemy's entry and article
+invite readers to contact Tim Herpich for access to its private source repository.
+Any commercial use of the application and any use of its source code require his
+prior written permission, including after repository access has been granted.
+Repository access alone does not grant a license. Keep each project's repository license
+consistent with its website notice; this website does not update external repositories.
+Blog posts added under `content/posts/` appear automatically in the archive, search,
+feeds, taxonomy pages, and sitemap, using the existing dated permalink convention.
 
 ## Continuous Integration
 

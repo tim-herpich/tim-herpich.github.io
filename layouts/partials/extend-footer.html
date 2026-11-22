@@ -1,0 +1,5 @@
+{{ with resources.Get "js/mobile-navigation.js" }}
+  {{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+  {{ $navigationJS := . | resources.Minify | resources.Fingerprint $alg }}
+  <script src="{{ $navigationJS.RelPermalink }}" integrity="{{ $navigationJS.Data.Integrity }}" defer></script>
+{{ end }}

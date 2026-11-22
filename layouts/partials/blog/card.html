@@ -21,10 +21,10 @@
   {{ end }}
 {{ end }}
 
-<article class="blog-card">
+<article class="blog-card{{ if not $image }} blog-card--text{{ end }}">
   {{ with $image }}
   <div class="blog-card__media">
-    <img src="{{ . }}" alt="Cover image for {{ $page.Title }}" loading="lazy" decoding="async" data-zoom-src="{{ . }}">
+    <img src="{{ . }}" alt="{{ $page.Params.featureimagealt | default (printf "Cover image for %s" $page.Title) }}" loading="lazy" decoding="async" data-zoom-src="{{ . }}">
   </div>
   {{ end }}
   <div class="blog-card__body">
